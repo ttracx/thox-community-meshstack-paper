@@ -1,0 +1,134 @@
+[
+  {
+    "name": "paper",
+    "width": 1280,
+    "scheme": "light",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hscroll": false,
+    "errors": [],
+    "kat": null,
+    "flows": null
+  },
+  {
+    "name": "paper",
+    "width": 1280,
+    "scheme": "dark",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hscroll": false,
+    "errors": [],
+    "kat": null,
+    "flows": null
+  },
+  {
+    "name": "paper",
+    "width": 390,
+    "scheme": "light",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "hscroll": false,
+    "errors": [],
+    "kat": null,
+    "flows": null
+  },
+  {
+    "name": "paper",
+    "width": 390,
+    "scheme": "dark",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "hscroll": false,
+    "errors": [],
+    "kat": null,
+    "flows": null
+  },
+  {
+    "name": "demo",
+    "width": 1280,
+    "scheme": "light",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hscroll": false,
+    "errors": [],
+    "kat": true,
+    "flows": {
+      "tokenVerifies": true,
+      "redeemed": true,
+      "doubleSpend": true,
+      "fp16TokenAuditNever": true,
+      "admission": "first half of the queue: 4 contributor-tier, 2 base-tier",
+      "proofTrue": true,
+      "tamperFalse": true,
+      "forkRefused": true,
+      "labRows": 12,
+      "labFails": 0
+    }
+  },
+  {
+    "name": "demo",
+    "width": 1280,
+    "scheme": "dark",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hscroll": false,
+    "errors": [],
+    "kat": true,
+    "flows": {
+      "tokenVerifies": true,
+      "redeemed": true,
+      "doubleSpend": true,
+      "fp16TokenAuditNever": true,
+      "admission": "first half of the queue: 4 contributor-tier, 2 base-tier",
+      "proofTrue": true,
+      "tamperFalse": true,
+      "forkRefused": true,
+      "labRows": 12,
+      "labFails": 0
+    }
+  },
+  {
+    "name": "demo",
+    "width": 390,
+    "scheme": "light",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "hscroll": false,
+    "errors": [],
+    "kat": true,
+    "flows": {
+      "tokenVerifies": true,
+      "redeemed": true,
+      "doubleSpend": true,
+      "fp16TokenAuditNever": true,
+      "admission": "first half of the queue: 4 contributor-tier, 2 base-tier",
+      "proofTrue": true,
+      "tamperFalse": true,
+      "forkRefused": true,
+      "labRows": 12,
+      "labFails": 0
+    }
+  },
+  {
+    "name": "demo",
+    "width": 390,
+    "scheme": "dark",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "hscroll": false,
+    "errors": [],
+    "kat": true,
+    "flows": {
+      "tokenVerifies": true,
+      "redeemed": true,
+      "doubleSpend": true,
+      "fp16TokenAuditNever": true,
+      "admission": "first half of the queue: 4 contributor-tier, 2 base-tier",
+      "proofTrue": true,
+      "tamperFalse": true,
+      "forkRefused": true,
+      "labRows": 12,
+      "labFails": 0
+    }
+  }
+]

@@ -1,0 +1,1792 @@
+[
+ {
+  "t": 1794331057.194,
+  "event": "device_enrolled",
+  "member": "m_alice",
+  "node": "B1"
+ },
+ {
+  "t": 1794331061.421,
+  "event": "device_enrolled",
+  "member": "m_bob",
+  "node": "B2"
+ },
+ {
+  "t": 1794331065.353,
+  "event": "device_enrolled",
+  "member": "m_carol",
+  "node": "C1"
+ },
+ {
+  "t": 1794331069.305,
+  "event": "device_enrolled",
+  "member": "m_carol",
+  "node": "C2"
+ },
+ {
+  "t": 1794331073.626,
+  "event": "device_enrolled",
+  "member": "m_thox_audit",
+  "node": "A1"
+ },
+ {
+  "t": 1794331081.111,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 3,
+  "surplus": false
+ },
+ {
+  "t": 1794331081.135,
+  "event": "issue_refused",
+  "reason": "not_a_subscriber"
+ },
+ {
+  "t": 1794331081.208,
+  "event": "issue_refused",
+  "reason": "budget_exhausted",
+  "member": "m_erin",
+  "tier": "base"
+ },
+ {
+  "t": 1794331081.21,
+  "event": "issue_refused",
+  "reason": "budget_exhausted",
+  "member": "m_dana",
+  "tier": "contrib"
+ },
+ {
+  "t": 1794331081.228,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331083.816,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331095.642,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "34e4130f5ed53ba0"
+ },
+ {
+  "t": 1794331095.645,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "34e4130f5ed53ba0"
+ },
+ {
+  "t": 1794331098.096,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331105.39,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "48c549b0483e15f1"
+ },
+ {
+  "t": 1794331105.393,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "48c549b0483e15f1"
+ },
+ {
+  "t": 1794331107.798,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331115.256,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "bc2a4124c70f15a8"
+ },
+ {
+  "t": 1794331115.259,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "bc2a4124c70f15a8"
+ },
+ {
+  "t": 1794331117.652,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331125.434,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "9dc91d946e5c76a9"
+ },
+ {
+  "t": 1794331125.436,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "9dc91d946e5c76a9"
+ },
+ {
+  "t": 1794331127.884,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331135.247,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "18e36eb24da253e0"
+ },
+ {
+  "t": 1794331135.25,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "18e36eb24da253e0"
+ },
+ {
+  "t": 1794331137.767,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331144.946,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "6a5a237089f41994"
+ },
+ {
+  "t": 1794331144.949,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "6a5a237089f41994"
+ },
+ {
+  "t": 1794331147.593,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331155.157,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "98dfa39da5b3701c"
+ },
+ {
+  "t": 1794331155.16,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "98dfa39da5b3701c"
+ },
+ {
+  "t": 1794331157.655,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331165.272,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "19999b324b1272f6"
+ },
+ {
+  "t": 1794331165.275,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "19999b324b1272f6"
+ },
+ {
+  "t": 1794331167.752,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331175.367,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 8,
+  "lease_id": "f91e872a85da6af6"
+ },
+ {
+  "t": 1794331175.37,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "f91e872a85da6af6"
+ },
+ {
+  "t": 1794331175.373,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 24,
+  "lease_id": "f91e872a85da6af6"
+ },
+ {
+  "t": 1794331175.379,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331177.887,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331185.484,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "72eb1455ac2cf11d"
+ },
+ {
+  "t": 1794331185.487,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "72eb1455ac2cf11d"
+ },
+ {
+  "t": 1794331187.894,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331195.147,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "81f23433cac353dc"
+ },
+ {
+  "t": 1794331195.149,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "81f23433cac353dc"
+ },
+ {
+  "t": 1794331195.153,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331197.85,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331205.283,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "3270ed06d91889c1"
+ },
+ {
+  "t": 1794331205.286,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "3270ed06d91889c1"
+ },
+ {
+  "t": 1794331205.29,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331208.017,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331215.369,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_alice",
+  "tokens": 32,
+  "lease_id": "7393d482f0f6f9f3"
+ },
+ {
+  "t": 1794331215.371,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "7393d482f0f6f9f3"
+ },
+ {
+  "t": 1794331215.375,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331218.093,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331218.561,
+  "event": "ledger",
+  "kind": "slash",
+  "member": "m_alice",
+  "node_id": "B1",
+  "lease_id": "95331318cb3b407c",
+  "receipt_sha": "39f6d8861596100922b89848b69c0df893d9adc34e84793de68a4be5922336ec",
+  "finding_sha": "19d1cdb1383887bde9f6fe10965cb62b9a5a057897bf9a7895fd3c582883d9f9"
+ },
+ {
+  "t": 1794331227.085,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 32,
+  "lease_id": "3f0301d6937db43c"
+ },
+ {
+  "t": 1794331227.088,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 32,
+  "lease_id": "3f0301d6937db43c"
+ },
+ {
+  "t": 1794331227.095,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331231.444,
+  "event": "device_enrolled",
+  "member": "m_bob",
+  "node": "R1"
+ },
+ {
+  "t": 1794331231.627,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331233.256,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "4b6d792648859090"
+ },
+ {
+  "t": 1794331233.259,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "4b6d792648859090"
+ },
+ {
+  "t": 1794331234.022,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331235.626,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "1034bb82c60c119d"
+ },
+ {
+  "t": 1794331236.322,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331239.019,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "3c13ab96035ce333"
+ },
+ {
+  "t": 1794331239.022,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "3c13ab96035ce333"
+ },
+ {
+  "t": 1794331239.74,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331242.238,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "5d37ca720e399300"
+ },
+ {
+  "t": 1794331242.937,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331244.52,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "7e4cc86eee8567a7"
+ },
+ {
+  "t": 1794331245.241,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331246.888,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b615bc9ef0aa0947"
+ },
+ {
+  "t": 1794331246.891,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "b615bc9ef0aa0947"
+ },
+ {
+  "t": 1794331247.606,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331249.201,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "25d6af10dc10aab1"
+ },
+ {
+  "t": 1794331249.204,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "25d6af10dc10aab1"
+ },
+ {
+  "t": 1794331249.894,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331251.414,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "23f76a6a8eb75d53"
+ },
+ {
+  "t": 1794331252.038,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331253.6,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "57a161ab707af408"
+ },
+ {
+  "t": 1794331254.286,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331255.995,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "741cbd6bcdc9347f"
+ },
+ {
+  "t": 1794331255.997,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "741cbd6bcdc9347f"
+ },
+ {
+  "t": 1794331256.688,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331258.327,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "bb0fcfea6c4eff04"
+ },
+ {
+  "t": 1794331258.33,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "bb0fcfea6c4eff04"
+ },
+ {
+  "t": 1794331259.032,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331260.579,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "2651ea84356c4449"
+ },
+ {
+  "t": 1794331261.241,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331262.876,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "7f149aba10994c56"
+ },
+ {
+  "t": 1794331263.592,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331265.211,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "14558fe42ee12642"
+ },
+ {
+  "t": 1794331265.213,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "14558fe42ee12642"
+ },
+ {
+  "t": 1794331265.922,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331267.603,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "cf0cbec9eda09380"
+ },
+ {
+  "t": 1794331267.607,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "cf0cbec9eda09380"
+ },
+ {
+  "t": 1794331268.298,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331269.838,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "a030ef0ea67770c0"
+ },
+ {
+  "t": 1794331270.474,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331272.07,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "f0d0bac03fd83d9a"
+ },
+ {
+  "t": 1794331272.768,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331274.394,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b326b4c43315226b"
+ },
+ {
+  "t": 1794331274.397,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "b326b4c43315226b"
+ },
+ {
+  "t": 1794331275.099,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331276.86,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "ae783c19c28b661f"
+ },
+ {
+  "t": 1794331276.863,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "ae783c19c28b661f"
+ },
+ {
+  "t": 1794331277.549,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331279.12,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "385e8eb559f2bd65"
+ },
+ {
+  "t": 1794331279.776,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331281.34,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "0199087bcd5d6652"
+ },
+ {
+  "t": 1794331282.022,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331283.7,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "8494df26f4b6843e"
+ },
+ {
+  "t": 1794331283.702,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "8494df26f4b6843e"
+ },
+ {
+  "t": 1794331284.444,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331286.121,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b78a844e0b005012"
+ },
+ {
+  "t": 1794331286.124,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "b78a844e0b005012"
+ },
+ {
+  "t": 1794331286.865,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331288.494,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b1552d31f660d2b0"
+ },
+ {
+  "t": 1794331289.273,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331290.92,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "04d5b877cdef943a"
+ },
+ {
+  "t": 1794331291.642,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331293.408,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "f5de3ca8cfa1cb1c"
+ },
+ {
+  "t": 1794331293.411,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "f5de3ca8cfa1cb1c"
+ },
+ {
+  "t": 1794331294.15,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331295.956,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "0b3befe881e8c4aa"
+ },
+ {
+  "t": 1794331295.959,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "0b3befe881e8c4aa"
+ },
+ {
+  "t": 1794331296.669,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331298.273,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "e5588a848e00db36"
+ },
+ {
+  "t": 1794331298.955,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331300.499,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "fc7dc58608c2503f"
+ },
+ {
+  "t": 1794331301.193,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331302.762,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "e93e378a1a0d74b9"
+ },
+ {
+  "t": 1794331302.764,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "e93e378a1a0d74b9"
+ },
+ {
+  "t": 1794331303.435,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331305.006,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "d63223f76200eb19"
+ },
+ {
+  "t": 1794331305.008,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "d63223f76200eb19"
+ },
+ {
+  "t": 1794331305.758,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331307.215,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "eb2db825bdbd5ca1"
+ },
+ {
+  "t": 1794331307.84,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331309.448,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "42bbf6ba2d2d0505"
+ },
+ {
+  "t": 1794331310.098,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331311.874,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "6ec34396e45f21fa"
+ },
+ {
+  "t": 1794331311.878,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "6ec34396e45f21fa"
+ },
+ {
+  "t": 1794331312.585,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331314.19,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "ce2cbc8a6fd2402b"
+ },
+ {
+  "t": 1794331314.192,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "ce2cbc8a6fd2402b"
+ },
+ {
+  "t": 1794331314.904,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331316.517,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "993b0aabc363e514"
+ },
+ {
+  "t": 1794331317.229,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331318.832,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "6811f4c8ec9a3aa1"
+ },
+ {
+  "t": 1794331319.508,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331321.177,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b273490a82d8e162"
+ },
+ {
+  "t": 1794331321.18,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "b273490a82d8e162"
+ },
+ {
+  "t": 1794331321.881,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331323.556,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "66f129c2d5b9f93d"
+ },
+ {
+  "t": 1794331323.56,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "66f129c2d5b9f93d"
+ },
+ {
+  "t": 1794331324.419,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331326.131,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "2088576fb75e4b05"
+ },
+ {
+  "t": 1794331326.863,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331328.454,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b86635265efdd457"
+ },
+ {
+  "t": 1794331329.216,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331331.018,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "02f91a57d5f8d8be"
+ },
+ {
+  "t": 1794331331.021,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "02f91a57d5f8d8be"
+ },
+ {
+  "t": 1794331331.77,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331333.576,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "f63410fbcb2a65a1"
+ },
+ {
+  "t": 1794331333.578,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "f63410fbcb2a65a1"
+ },
+ {
+  "t": 1794331334.243,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331335.773,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "c02c18e0b4a57666"
+ },
+ {
+  "t": 1794331336.413,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331337.936,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "7cbb47040a5dd4dc"
+ },
+ {
+  "t": 1794331338.554,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331340.228,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "41deced8bb16abc2"
+ },
+ {
+  "t": 1794331340.231,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "41deced8bb16abc2"
+ },
+ {
+  "t": 1794331340.92,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331342.636,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "d23ca67402856d56"
+ },
+ {
+  "t": 1794331342.639,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "d23ca67402856d56"
+ },
+ {
+  "t": 1794331343.349,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331344.883,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "be399d63ce5d5857"
+ },
+ {
+  "t": 1794331345.535,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331347.047,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "89c938e1dff8ad1e"
+ },
+ {
+  "t": 1794331347.734,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331349.439,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "47edc071cd5d1da4"
+ },
+ {
+  "t": 1794331349.442,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "47edc071cd5d1da4"
+ },
+ {
+  "t": 1794331350.18,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331351.828,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "a2e2131d9b37c527"
+ },
+ {
+  "t": 1794331351.83,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "a2e2131d9b37c527"
+ },
+ {
+  "t": 1794331352.518,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331354.163,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "de68a22c09a21939"
+ },
+ {
+  "t": 1794331354.865,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331356.432,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "07599b0272f8d11e"
+ },
+ {
+  "t": 1794331357.135,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331358.908,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "8058278562d0425d"
+ },
+ {
+  "t": 1794331358.91,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "8058278562d0425d"
+ },
+ {
+  "t": 1794331359.623,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331361.353,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "29733c280ef74b5d"
+ },
+ {
+  "t": 1794331361.356,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "29733c280ef74b5d"
+ },
+ {
+  "t": 1794331362.058,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331363.765,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "b1ba1d044dfab5b1"
+ },
+ {
+  "t": 1794331364.441,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331366.014,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "a4728d42813b6879"
+ },
+ {
+  "t": 1794331366.631,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331368.239,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "37c795a51c871502"
+ },
+ {
+  "t": 1794331368.242,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "37c795a51c871502"
+ },
+ {
+  "t": 1794331368.912,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331370.531,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "fec411bbf98c945c"
+ },
+ {
+  "t": 1794331370.533,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "fec411bbf98c945c"
+ },
+ {
+  "t": 1794331371.252,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331372.773,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "db3ef191e3b5648b"
+ },
+ {
+  "t": 1794331373.435,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331375.027,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "824e665ce076bf1f"
+ },
+ {
+  "t": 1794331375.766,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331377.462,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_bob",
+  "tokens": 8,
+  "lease_id": "caef73eeb86faec8"
+ },
+ {
+  "t": 1794331377.465,
+  "event": "ledger",
+  "kind": "service",
+  "member": "m_carol",
+  "tokens": 8,
+  "lease_id": "caef73eeb86faec8"
+ },
+ {
+  "t": 1794331378.151,
+  "event": "issued",
+  "member": "m_carol",
+  "tier": "contrib",
+  "count": 4,
+  "surplus": false
+ },
+ {
+  "t": 1794331378.189,
+  "event": "issued",
+  "member": "m_erin",
+  "tier": "base",
+  "count": 8,
+  "surplus": false
+ },
+ {
+  "t": 1794331378.483,
+  "event": "issue_refused",
+  "reason": "budget_exhausted",
+  "member": "m_erin",
+  "tier": "base"
+ },
+ {
+  "t": 1794331378.549,
+  "event": "issued",
+  "member": "m_erin",
+  "tier": "base",
+  "count": 112,
+  "surplus": false
+ },
+ {
+  "t": 1794331379.336,
+  "event": "issued",
+  "member": "m_erin",
+  "tier": "base",
+  "count": 1,
+  "surplus": true
+ },
+ {
+  "t": 1794331379.345,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331379.357,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 1,
+  "surplus": false
+ },
+ {
+  "t": 1794331379.371,
+  "event": "issue_refused",
+  "reason": "budget_exhausted",
+  "member": "m_erin",
+  "tier": "base"
+ },
+ {
+  "t": 1794331379.377,
+  "event": "issued",
+  "member": "m_erin",
+  "tier": "base",
+  "count": 1,
+  "surplus": true
+ },
+ {
+  "t": 1794331379.384,
+  "event": "issue_refused",
+  "reason": "budget_exhausted",
+  "member": "m_erin",
+  "tier": "contrib"
+ },
+ {
+  "t": 1794331381.938,
+  "event": "issued",
+  "member": "m_dana",
+  "tier": "base",
+  "count": 2,
+  "surplus": false
+ }
+]

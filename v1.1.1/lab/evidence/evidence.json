@@ -1,0 +1,1669 @@
+{
+ "lab": "THOX community mesh virtual lab",
+ "date": "2026-11-10",
+ "scope": "fifteen OS processes on one host over loopback; real cryptography and a real model; no THOX hardware, no wide-area network, no production service",
+ "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+ "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+ "model_fp": "2ca2f9e9fd30d75e5b9af91992f39028",
+ "stages": {
+  "s0": [
+   0,
+   10
+  ],
+  "s1": [
+   10,
+   20
+  ],
+  "s2": [
+   20,
+   30
+  ]
+ },
+ "host": {
+  "machine": "x86_64",
+  "python": "3.13.18",
+  "torch": "2.15.0+cpu",
+  "cpus": 2
+ },
+ "scenarios": {
+  "A_enrolment": {
+   "nodes": {
+    "B1": {
+     "stage": "s1",
+     "role": "contributor",
+     "cert_ok": true,
+     "first_advert_code": 200,
+     "params_held": 35400960,
+     "params_total": 134515008,
+     "pid": 15138
+    },
+    "B2": {
+     "stage": "s1",
+     "role": "contributor",
+     "cert_ok": true,
+     "first_advert_code": 200,
+     "params_held": 35400960,
+     "params_total": 134515008,
+     "pid": 15143
+    },
+    "C1": {
+     "stage": "s2",
+     "role": "contributor",
+     "cert_ok": true,
+     "first_advert_code": 200,
+     "params_held": 35400960,
+     "params_total": 134515008,
+     "pid": 15148
+    },
+    "C2": {
+     "stage": "s2",
+     "role": "contributor",
+     "cert_ok": true,
+     "first_advert_code": 200,
+     "params_held": 35400960,
+     "params_total": 134515008,
+     "pid": 15155
+    },
+    "A1": {
+     "stage": "s1",
+     "role": "auditor",
+     "cert_ok": true,
+     "first_advert_code": 200,
+     "params_held": 70801920,
+     "params_total": 134515008,
+     "pid": 15160
+    }
+   },
+   "distinct_pids": 6,
+   "forged_certificate_advert": {
+    "code": 403,
+    "error": "no_authority_certificate"
+   },
+   "non_subscriber_enrol": {
+    "code": 403,
+    "error": "not_a_subscriber"
+   },
+   "cloud_model_tag_advert": {
+    "code": 422,
+    "error": "cloud_model_is_not_mesh_compute"
+   },
+   "restored_advert_code": 200,
+   "pool_size": 5,
+   "pass": true
+  },
+  "B_tokens": {
+   "issue_subscriber_code": 200,
+   "issue_non_subscriber": {
+    "code": 403,
+    "error": "not_a_subscriber"
+   },
+   "issue_over_budget": {
+    "code": 429,
+    "error": "budget_exhausted"
+   },
+   "issue_contrib_tier_without_credit_code": 429,
+   "redeem_first": true,
+   "redeem_again": "double_spend",
+   "forged_signature": "invalid_token",
+   "wrong_audience": "invalid_token",
+   "local_only_class": "local_only_never_leaves_device",
+   "mesh_only_class": "mesh_only_never_leaves_owner_devices",
+   "confidential_class": "confidential_unavailable_no_attested_boundary",
+   "plan_digest_in_lease": true,
+   "lease_signature_valid": true,
+   "pass": true
+  },
+  "C_inference": {
+   "requests": 8,
+   "new_tokens_each": 32,
+   "token_exact": 8,
+   "receipts_verified": 512,
+   "honest_audited_steps": 32,
+   "honest_audit_all_match": true,
+   "seconds_per_request_median": 7.505063232999873,
+   "hop_ms_median": 144.595503249775,
+   "credits_after": {
+    "m_alice": 256.0,
+    "m_carol": 256.0
+   },
+   "budgets_after": {
+    "m_alice": {
+     "base": 120,
+     "contrib": 5
+    },
+    "m_bob": {
+     "base": 120,
+     "contrib": 0
+    },
+    "m_carol": {
+     "base": 120,
+     "contrib": 5
+    },
+    "m_erin": {
+     "base": 120,
+     "contrib": 0
+    },
+    "m_mallory": {
+     "base": 120,
+     "contrib": 0
+    },
+    "m_dana": {
+     "base": 120,
+     "contrib": 0
+    },
+    "m_thox_audit": {
+     "base": 120,
+     "contrib": 0
+    }
+   },
+   "rows": [
+    {
+     "prompt": "Explain what a mesh network is in two sentences.",
+     "token_exact": true,
+     "seconds": 11.816535855000438,
+     "hop_ms_median": 144.43845049981974,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 32,
+     "audit_all_match": true,
+     "text": "A mesh network is a type of network where nodes are connected in a mesh-like structure, allowing for efficient routing and connection of nodes. It is a network"
+    },
+    {
+     "prompt": "List three uses for a spare laptop.",
+     "token_exact": true,
+     "seconds": 7.285986838999634,
+     "hop_ms_median": 144.75255599973025,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "Here are three uses for a spare laptop:\n\n1. **Access to a Virtual Private Network (VPN)**: A spare laptop can be used to access"
+    },
+    {
+     "prompt": "Summarise the idea of a lease in distributed systems.",
+     "token_exact": true,
+     "seconds": 7.4522530020003614,
+     "hop_ms_median": 142.828905999977,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "A lease in distributed systems is a type of lease agreement that allows a company to lease a shared resource, such as a server or a database, to another company"
+    },
+    {
+     "prompt": "Why do batteries degrade faster when they are hot?",
+     "token_exact": true,
+     "seconds": 7.774656407999828,
+     "hop_ms_median": 159.97311949968207,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "When batteries are heated, they undergo a series of chemical reactions that lead to a decrease in their capacity and lifespan. This process is known as thermal degradation. The"
+    },
+    {
+     "prompt": "What is the difference between privacy and anonymity?",
+     "token_exact": true,
+     "seconds": 7.354853980000371,
+     "hop_ms_median": 145.4857459998493,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "Privacy and anonymity are two related but distinct concepts in the realm of online privacy.\n\nAnonymity refers to the lack of identifiable information about an individual"
+    },
+    {
+     "prompt": "What is a hash function used for?",
+     "token_exact": true,
+     "seconds": 7.17228177800007,
+     "hop_ms_median": 142.77674699997078,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "A hash function is a mathematical function that takes a string of data as input and produces a fixed-size string of characters, known as a hash code. The"
+    },
+    {
+     "prompt": "Give two reasons to back up your files.",
+     "token_exact": true,
+     "seconds": 7.557873463999385,
+     "hop_ms_median": 142.9174195000087,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "Here are two reasons why I recommend backing up my files:\n\n1. **Data Integrity**: When you're working on a project, you might forget to save"
+    },
+    {
+     "prompt": "Explain fairness to a ten-year-old.",
+     "token_exact": true,
+     "seconds": 7.611299924999912,
+     "hop_ms_median": 154.82161050022114,
+     "receipts": 64,
+     "route": [
+      "B1",
+      "C1"
+     ],
+     "credited": {
+      "m_alice": 32,
+      "m_carol": 32
+     },
+     "audited_steps": 0,
+     "audit_all_match": true,
+     "text": "Fairness means that everyone gets to do the same things, like playing with toys or eating food. It's like if you and your friends all got to play"
+    }
+   ],
+   "pass": true
+  },
+  "D_owner_protection": {
+   "first_route": [
+    "B1",
+    "C1"
+   ],
+   "events": [
+    {
+     "step": 8,
+     "event": "hop_failed",
+     "node": "B1",
+     "code": 409,
+     "error": "owner_active"
+    },
+    {
+     "step": 8,
+     "event": "rerouted",
+     "route": [
+      "B2",
+      "C1"
+     ]
+    }
+   ],
+   "final_route": [
+    "B2",
+    "C1"
+   ],
+   "token_exact": true,
+   "pool_owner_active_during": {
+    "B1": true,
+    "B2": false,
+    "C1": false,
+    "C2": false,
+    "A1": false
+   },
+   "new_lease_route_while_owner_active": [
+    "B2",
+    "C1"
+   ],
+   "pool_owner_active_after": {
+    "B1": false,
+    "B2": false,
+    "C1": false,
+    "C2": false,
+    "A1": false
+   },
+   "pass": true
+  },
+  "E_contributor_death": {
+   "route_before": [
+    "B1",
+    "C1"
+   ],
+   "killed": "C1",
+   "killed_process_alive_after": false,
+   "events": [
+    {
+     "step": 12,
+     "event": "hop_failed",
+     "node": "C1",
+     "code": 502,
+     "error": "downstream_failed"
+    },
+    {
+     "step": 12,
+     "event": "rerouted",
+     "route": [
+      "B1",
+      "C2"
+     ]
+    }
+   ],
+   "final_route": [
+    "B1",
+    "C2"
+   ],
+   "token_exact": true,
+   "pass": true
+  },
+  "F_audit": {
+   "cheater": "B1",
+   "audit_only": {
+    "noise": {
+     "digest_audit_detected_at_step": 0,
+     "unaudited_output_token_exact": true,
+     "first_token_divergence": null
+    },
+    "fp16": {
+     "digest_audit_detected_at_step": 0,
+     "unaudited_output_token_exact": true,
+     "first_token_divergence": null
+    },
+    "skip1": {
+     "digest_audit_detected_at_step": 0,
+     "unaudited_output_token_exact": false,
+     "first_token_divergence": 0
+    }
+   },
+   "sampled_audit_rate": 0.25,
+   "events": [
+    {
+     "step": 1,
+     "event": "audit_mismatch",
+     "node": "B1"
+    },
+    {
+     "step": 1,
+     "event": "fraud_proof",
+     "accepted": true
+    },
+    {
+     "step": 1,
+     "event": "rerouted_and_restarted",
+     "tokens_discarded": 1,
+     "route": [
+      "B2",
+      "C2"
+     ]
+    }
+   ],
+   "audits": [
+    {
+     "step": 1,
+     "match": [
+      false
+     ]
+    },
+    {
+     "step": 4,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 6,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 15,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 18,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 20,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 22,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 25,
+     "match": [
+      true,
+      true
+     ]
+    },
+    {
+     "step": 26,
+     "match": [
+      true,
+      true
+     ]
+    }
+   ],
+   "final_route": [
+    "B2",
+    "C2"
+   ],
+   "detected_at_step": 1,
+   "output_token_exact_after_restart": true,
+   "suspended": {
+    "B1": true,
+    "B2": false,
+    "C1": false,
+    "C2": false,
+    "A1": false
+   },
+   "credits_after_slash": {
+    "m_alice": 0.0,
+    "m_carol": 448.0,
+    "m_bob": 56.0
+   },
+   "route_after_suspension": [
+    "B2",
+    "C2"
+   ],
+   "pass": true
+  },
+  "K_replica_vs_pipeline": {
+   "joined_mid_run": {
+    "stage": "s12",
+    "cert_ok": true,
+    "first_advert_code": 200,
+    "params_held": 70801920
+   },
+   "tokens_per_trial": 8,
+   "pipeline": {
+    "trials": 30,
+    "mean_ms": 134.48691008752576,
+    "ci95_ms": [
+     132.4904149667077,
+     136.51642533337358
+    ],
+    "cv_percent": 4.283104557589847,
+    "d37_dispersion_condition": true
+   },
+   "replica": {
+    "trials": 30,
+    "mean_ms": 124.42778941248207,
+    "ci95_ms": [
+     122.66750533331485,
+     126.20106802080879
+    ],
+    "cv_percent": 3.950711376573228,
+    "d37_dispersion_condition": true
+   },
+   "replica_over_pipeline": 0.9252037193173887,
+   "all_token_exact": true,
+   "attempts": 62,
+   "completed": 62,
+   "replica_receipts_per_step": 1,
+   "pipeline_receipts_per_step": 2,
+   "replica_audit_all_match": true,
+   "trials": [
+    {
+     "topology": "pipeline",
+     "warmup": true,
+     "hop_ms_mean": 131.34809387474888,
+     "token_exact": true
+    },
+    {
+     "topology": "replica",
+     "warmup": true,
+     "hop_ms_mean": 125.18122637493434,
+     "token_exact": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 0,
+     "hop_ms_mean": 130.71231325022836,
+     "hop_ms_first": 137.1157100002165,
+     "seconds": 2.689821033000044,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 1,
+     "hop_ms_mean": 120.74478274996636,
+     "hop_ms_first": 119.1292040002736,
+     "seconds": 2.487170485000206,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 2,
+     "hop_ms_mean": 126.1497490002057,
+     "hop_ms_first": 109.9169979997896,
+     "seconds": 1.5742505819998769,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 3,
+     "hop_ms_mean": 127.63874900008432,
+     "hop_ms_first": 117.5161040000603,
+     "seconds": 1.6410496939997756,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 4,
+     "hop_ms_mean": 126.68205587499415,
+     "hop_ms_first": 119.13068299963925,
+     "seconds": 1.588201334000587,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 5,
+     "hop_ms_mean": 118.23255687465917,
+     "hop_ms_first": 108.83661599928018,
+     "seconds": 1.5112174790001518,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 6,
+     "hop_ms_mean": 123.46189124991724,
+     "hop_ms_first": 110.32732900002884,
+     "seconds": 1.553865400000177,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 7,
+     "hop_ms_mean": 136.1744155001361,
+     "hop_ms_first": 127.36160100030247,
+     "seconds": 1.7025622030005252,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 8,
+     "hop_ms_mean": 129.52405974976955,
+     "hop_ms_first": 123.57827599953453,
+     "seconds": 1.6307782539997788,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 9,
+     "hop_ms_mean": 120.57781812518442,
+     "hop_ms_first": 131.67279900062567,
+     "seconds": 1.5372258670004157,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 10,
+     "hop_ms_mean": 128.70709275000536,
+     "hop_ms_first": 122.03896700066252,
+     "seconds": 1.6223969729999226,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 11,
+     "hop_ms_mean": 130.02041974993972,
+     "hop_ms_first": 153.5730750001676,
+     "seconds": 1.6124027160003607,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 12,
+     "hop_ms_mean": 134.49044925005182,
+     "hop_ms_first": 119.01539199971012,
+     "seconds": 1.6740193499999805,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 13,
+     "hop_ms_mean": 121.09604324984957,
+     "hop_ms_first": 100.59453199937707,
+     "seconds": 1.5313135409996903,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 14,
+     "hop_ms_mean": 126.07967849999113,
+     "hop_ms_first": 118.18987500009825,
+     "seconds": 1.5870288440000877,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 15,
+     "hop_ms_mean": 132.1600798750069,
+     "hop_ms_first": 126.20944199989026,
+     "seconds": 1.6199223909998182,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 16,
+     "hop_ms_mean": 142.01046850007515,
+     "hop_ms_first": 130.2877489997627,
+     "seconds": 1.7552819980001004,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 17,
+     "hop_ms_mean": 121.97144212507283,
+     "hop_ms_first": 115.78079399987473,
+     "seconds": 1.5618897849999485,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 18,
+     "hop_ms_mean": 122.38429725016431,
+     "hop_ms_first": 122.2734170005424,
+     "seconds": 1.5540636689993335,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 19,
+     "hop_ms_mean": 134.4825488748711,
+     "hop_ms_first": 130.93190499967022,
+     "seconds": 1.669458029999987,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 20,
+     "hop_ms_mean": 135.86971337508658,
+     "hop_ms_first": 161.54733700022916,
+     "seconds": 1.6708519049998358,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 21,
+     "hop_ms_mean": 128.33273912485765,
+     "hop_ms_first": 110.64008999983344,
+     "seconds": 1.6191985059995204,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 22,
+     "hop_ms_mean": 132.23911537477306,
+     "hop_ms_first": 141.2365279993537,
+     "seconds": 1.6371015369995803,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 23,
+     "hop_ms_mean": 137.04165625006226,
+     "hop_ms_first": 122.72069600021496,
+     "seconds": 1.7575269530007063,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 24,
+     "hop_ms_mean": 145.48391312507647,
+     "hop_ms_first": 131.4779410004121,
+     "seconds": 1.7992744880002647,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 25,
+     "hop_ms_mean": 126.86199512506846,
+     "hop_ms_first": 147.83729200007656,
+     "seconds": 1.5909531320003225,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 26,
+     "hop_ms_mean": 123.01947275000202,
+     "hop_ms_first": 122.54744300025777,
+     "seconds": 1.5341083950006578,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 27,
+     "hop_ms_mean": 126.33251150009528,
+     "hop_ms_first": 133.12600600056612,
+     "seconds": 1.561555915000099,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 28,
+     "hop_ms_mean": 126.00181612492634,
+     "hop_ms_first": 134.72160099991015,
+     "seconds": 1.5646448759998748,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 29,
+     "hop_ms_mean": 114.7731057500323,
+     "hop_ms_first": 106.91984400000365,
+     "seconds": 1.448483376000695,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 30,
+     "hop_ms_mean": 126.22670399991875,
+     "hop_ms_first": 112.26977500064095,
+     "seconds": 1.598965328000304,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 31,
+     "hop_ms_mean": 142.30925674996797,
+     "hop_ms_first": 140.04826499967749,
+     "seconds": 1.770581950999258,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 32,
+     "hop_ms_mean": 128.74755250015824,
+     "hop_ms_first": 123.60451499989722,
+     "seconds": 1.5974646989998291,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 33,
+     "hop_ms_mean": 127.56876824994379,
+     "hop_ms_first": 139.05694200002472,
+     "seconds": 1.6044315199997072,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 34,
+     "hop_ms_mean": 126.15579550015354,
+     "hop_ms_first": 139.3812030000845,
+     "seconds": 1.591190383999674,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 35,
+     "hop_ms_mean": 135.5890373749844,
+     "hop_ms_first": 134.85945299999003,
+     "seconds": 1.659948919999806,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 36,
+     "hop_ms_mean": 134.5264889999953,
+     "hop_ms_first": 127.86097600019275,
+     "seconds": 1.6699329420007416,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 37,
+     "hop_ms_mean": 136.43528774991864,
+     "hop_ms_first": 110.70548099996813,
+     "seconds": 1.7033957249996092,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 38,
+     "hop_ms_mean": 123.14821950008081,
+     "hop_ms_first": 110.58935700020811,
+     "seconds": 1.5806572560004497,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 39,
+     "hop_ms_mean": 144.74742037475608,
+     "hop_ms_first": 159.08146299989312,
+     "seconds": 1.7946295360006843,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 40,
+     "hop_ms_mean": 145.93013087483087,
+     "hop_ms_first": 158.12439199999062,
+     "seconds": 1.7983884389996092,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 41,
+     "hop_ms_mean": 119.49561787491803,
+     "hop_ms_first": 125.42026800019812,
+     "seconds": 1.5197360580004897,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 42,
+     "hop_ms_mean": 119.72579687494544,
+     "hop_ms_first": 119.37011500049266,
+     "seconds": 1.5137738800003717,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 43,
+     "hop_ms_mean": 135.49204775006274,
+     "hop_ms_first": 120.9429860000455,
+     "seconds": 1.6677580010000383,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 44,
+     "hop_ms_mean": 134.75881925012345,
+     "hop_ms_first": 160.8390760002294,
+     "seconds": 1.7096978919998946,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 45,
+     "hop_ms_mean": 121.65145962489987,
+     "hop_ms_first": 126.51353599994763,
+     "seconds": 1.5207077700006266,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 46,
+     "hop_ms_mean": 119.79945550012872,
+     "hop_ms_first": 114.87464400033787,
+     "seconds": 1.5013365889999477,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 47,
+     "hop_ms_mean": 134.74605450005583,
+     "hop_ms_first": 143.5396259994377,
+     "seconds": 1.6976254339997467,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 48,
+     "hop_ms_mean": 132.10890387495056,
+     "hop_ms_first": 127.98896999993303,
+     "seconds": 1.6401194800000667,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 49,
+     "hop_ms_mean": 131.62057425006424,
+     "hop_ms_first": 111.80360599973937,
+     "seconds": 1.6364616810005828,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 50,
+     "hop_ms_mean": 124.10429724991445,
+     "hop_ms_first": 120.94195999998192,
+     "seconds": 1.5577671629998804,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 51,
+     "hop_ms_mean": 141.8396676251632,
+     "hop_ms_first": 130.12185900061013,
+     "seconds": 1.7656838820003031,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 52,
+     "hop_ms_mean": 136.62422325012358,
+     "hop_ms_first": 142.35768299931806,
+     "seconds": 1.7192131159999917,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 53,
+     "hop_ms_mean": 134.00880087499445,
+     "hop_ms_first": 144.0350330003639,
+     "seconds": 1.695853461000297,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 54,
+     "hop_ms_mean": 123.25761874990349,
+     "hop_ms_first": 113.58339199978218,
+     "seconds": 1.5649849500005075,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 55,
+     "hop_ms_mean": 128.06674825014852,
+     "hop_ms_first": 145.88413700039382,
+     "seconds": 1.6004327589998866,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 56,
+     "hop_ms_mean": 129.546123500063,
+     "hop_ms_first": 121.55414599965297,
+     "seconds": 1.6116528519996791,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 57,
+     "hop_ms_mean": 119.30145737494513,
+     "hop_ms_first": 119.75549799990404,
+     "seconds": 1.511229405999984,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "replica",
+     "warmup": false,
+     "trial": 58,
+     "hop_ms_mean": 125.70204899998316,
+     "hop_ms_first": 122.19009999989794,
+     "seconds": 1.5840247689993703,
+     "route": [
+      "R1"
+     ],
+     "receipts": 8,
+     "token_exact": true,
+     "audit_all_match": true
+    },
+    {
+     "topology": "pipeline",
+     "warmup": false,
+     "trial": 59,
+     "hop_ms_mean": 134.9496577499849,
+     "hop_ms_first": 159.56697700039513,
+     "seconds": 1.6887498859996413,
+     "route": [
+      "B2",
+      "C2"
+     ],
+     "receipts": 16,
+     "token_exact": true,
+     "audit_all_match": true
+    }
+   ],
+   "pass": true
+  },
+  "G_admission": {
+   "contributor_contrib_budget": 13,
+   "consumer_contrib_budget": 0,
+   "submitted": {
+    "base": 8,
+    "contrib": 4
+   },
+   "tier_weight": {
+    "base": 1,
+    "contrib": 3
+   },
+   "grant_order": [
+    "base",
+    "contrib",
+    "contrib",
+    "contrib",
+    "base",
+    "contrib",
+    "base",
+    "base",
+    "base",
+    "base",
+    "base",
+    "base"
+   ],
+   "contrib_grants_in_first_half": 4,
+   "heavy_member_over_budget": {
+    "code": 429,
+    "error": "budget_exhausted"
+   },
+   "pass": true
+  },
+  "L_load_indexed_issuance": {
+   "pool_idle_before": true,
+   "over_budget_while_idle": {
+    "code": 200,
+    "surplus": true
+   },
+   "pool_idle_while_all_routes_leased": false,
+   "over_budget_while_busy": {
+    "code": 429,
+    "error": "budget_exhausted"
+   },
+   "over_budget_after_release": {
+    "code": 200,
+    "surplus": true
+   },
+   "contributor_tier_never_issued_as_surplus_code": 429,
+   "surplus_issued": {
+    "m_erin": 2
+   },
+   "pass": true
+  },
+  "H_cloud_plane": {
+   "plane_label": "cloud",
+   "notice": "served by a hosted provider that can read this prompt",
+   "tokens_match_local_whole_model": true,
+   "seconds": 2.5864949189999606,
+   "token_replay": "double_spend",
+   "community_class_at_cloud": "privacy_class_forbids_cloud_plane",
+   "pass": true
+  },
+  "J_ledger": {
+   "entries": 123,
+   "entry_signatures_valid": 123,
+   "epoch": 0,
+   "root": "14ea8aed0f41456a688ab65449ad33be9a1cf117604ac3bac4f15b06e39aff13",
+   "ledger_head_signature_valid": true,
+   "witness_cosignatures_valid": 3,
+   "witnesses": 3,
+   "seal_build_ms": 0.23320699983742088,
+   "seal_cosign_ms": 50.24938099995779,
+   "replayed_credits": {
+    "m_alice": 0.0,
+    "m_carol": 696.0,
+    "m_bob": 552.0
+   },
+   "authority_credits": {
+    "m_alice": 0.0,
+    "m_carol": 696.0,
+    "m_bob": 552.0
+   },
+   "replay_matches_authority": true,
+   "slash_entry_seq": 27,
+   "inclusion_proof_hashes": 7,
+   "inclusion_proof_valid": true,
+   "tampered_entry_proof_valid": false,
+   "fork_attempt": {
+    "cosigned_by": 0,
+    "refusals": [
+     "fork_detected",
+     "fork_detected",
+     "fork_detected"
+    ]
+   },
+   "next_epoch_chains": true,
+   "ledger_contains_consumer_account": false,
+   "ledger_contains_prompt": false,
+   "pass": true
+  },
+  "I_information_flow": {
+   "method": "each process records every request body it receives; the lab then searches those bytes for consumer account bearers, redeemed token values and prompt text. Sealed bodies are opaque to this scan by construction, so the scan shows what a party could read off the wire, not what it decrypts: the coordinator and gateway decrypt tokens, stage nodes decrypt activations, and the gateway decrypts the prompt.",
+   "wire_matrix": {
+    "authority": {
+     "inbound_messages": 237,
+     "inbound_bytes": 315988,
+     "saw_consumer_account": true,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "coordinator": {
+     "inbound_messages": 260,
+     "inbound_bytes": 1036829,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "relay": {
+     "inbound_messages": 1242,
+     "inbound_bytes": 204579814,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "B1": {
+     "inbound_messages": 406,
+     "inbound_bytes": 90073250,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "B2": {
+     "inbound_messages": 307,
+     "inbound_bytes": 57102156,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "R1": {
+     "inbound_messages": 249,
+     "inbound_bytes": 43730562,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "C2": {
+     "inbound_messages": 402,
+     "inbound_bytes": 79629563,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "A1": {
+     "inbound_messages": 61,
+     "inbound_bytes": 12626310,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    },
+    "gateway": {
+     "inbound_messages": 4,
+     "inbound_bytes": 2811,
+     "saw_consumer_account": false,
+     "saw_token_value": false,
+     "saw_prompt_text": false
+    }
+   },
+   "decrypts_by_design": {
+    "coordinator": [
+     "token"
+    ],
+    "gateway": [
+     "token",
+     "prompt"
+    ],
+    "stage nodes and auditor": [
+     "activations, which prior work shows can be inverted to text"
+    ],
+    "authority": [
+     "account, blinded token only"
+    ],
+    "relay": []
+   },
+   "tokens_issued": 213,
+   "relay_ciphertext_bytes": 204535520,
+   "pass": true
+  }
+ },
+ "summary": {
+  "A_enrolment": true,
+  "B_tokens": true,
+  "C_inference": true,
+  "D_owner_protection": true,
+  "E_contributor_death": true,
+  "F_audit": true,
+  "K_replica_vs_pipeline": true,
+  "G_admission": true,
+  "L_load_indexed_issuance": true,
+  "H_cloud_plane": true,
+  "J_ledger": true,
+  "I_information_flow": true
+ },
+ "all_pass": true,
+ "processes": {
+  "authority": 15121,
+  "ledger": 15123,
+  "W1": 15125,
+  "W2": 15127,
+  "W3": 15129,
+  "coordinator": 15131,
+  "relay": 15136,
+  "B1": 15138,
+  "B2": 15143,
+  "C1": 15148,
+  "C2": 15155,
+  "A1": 15160,
+  "gateway": 15165,
+  "R1": 16856
+ },
+ "rss_mb": {
+  "authority": 37.0,
+  "ledger": 36.1,
+  "W1": 35.7,
+  "W2": 35.7,
+  "W3": 35.8,
+  "coordinator": 39.1,
+  "relay": 240.9,
+  "B1": 639.3,
+  "B2": 646.6,
+  "C2": 626.8,
+  "A1": 690.7,
+  "gateway": 947.1,
+  "R1": 762.6
+ }
+}

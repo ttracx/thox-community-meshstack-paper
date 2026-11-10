@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THOX Community Mesh Demo</title>
+<style>
+:root{--bg:#FFFFFF;--panel:#F6F7F9;--ink:#111827;--muted:#5B6472;--rule:#E1E4E8;--brand:#047C3D;--brand-ink:#FFFFFF;--pale:#E6F4EC;--warn:#B45309;--bad:#B42318;--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0B0F14;--panel:#131A22;--ink:#F3F4F6;--muted:#9CA3AF;--rule:#243040;--brand:#05A451;--brand-ink:#04140B;--pale:#0F2A1C;--warn:#F59E0B;--bad:#F87171}}
+:root[data-theme="dark"]{--bg:#0B0F14;--panel:#131A22;--ink:#F3F4F6;--muted:#9CA3AF;--rule:#243040;--brand:#05A451;--brand-ink:#04140B;--pale:#0F2A1C;--warn:#F59E0B;--bad:#F87171}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.5}
+main{max-width:920px;margin:0 auto;padding:20px 16px 56px}
+header .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+h1{font-size:24px;line-height:1.2;margin:6px 0 8px}
+h2{font-size:17px;margin:0 0 4px}
+p{margin:0 0 10px}
+.lede{color:var(--muted);max-width:68ch}
+section{border:1px solid var(--rule);border-radius:10px;padding:16px;margin:16px 0;background:var(--panel)}
+.tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--brand);color:var(--brand);border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+.tag.sim{border-color:var(--warn);color:var(--warn)}
+button{font:inherit;font-weight:600;background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:9px 14px;margin:4px 6px 4px 0;cursor:pointer;min-height:40px}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+pre{font-family:var(--mono);font-size:12px;line-height:1.45;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:10px;margin:8px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;min-height:44px}
+label{display:block;font-size:13px;color:var(--muted);margin:8px 0 2px}
+input[type=number],select{font:inherit;width:100%;max-width:220px;padding:8px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:var(--ink)}
+input[type=range]{width:100%;max-width:340px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.row>div{flex:1 1 160px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.kpi{border:1px solid var(--rule);border-top:3px solid var(--brand);border-radius:8px;padding:10px;background:var(--panel)}
+.kpi b{display:block;font-family:var(--mono);font-size:20px;color:var(--brand)}
+.kpi span{font-size:12px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:11px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.ok{color:var(--brand);font-weight:600}.no{color:var(--bad);font-weight:600}
+.tablewrap{overflow-x:auto}
+.chips span{display:inline-block;font-family:var(--mono);font-size:11px;border-radius:6px;padding:3px 7px;margin:2px;background:var(--bg);border:1px solid var(--rule)}
+.chips span.c{background:var(--pale);border-color:var(--brand);color:var(--brand)}
+footer{color:var(--muted);font-size:12px;margin-top:22px}
+@media (max-width:640px){.kpis{grid-template-columns:1fr 1fr}h1{font-size:20px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="eyebrow">THOX.ai Research &middot; companion demo &middot; __VERSION__</div>
+  <h1>Community mesh: the mechanisms, running in your browser</h1>
+  <p class="lede">Every control below runs the real logic on this page: RFC 9474 blind signatures, a Merkle settlement log with witnesses, tier-weighted admission and the audit arithmetic. The numbers come from the paper's experiment and virtual lab outputs, embedded unchanged.</p>
+  <div id="kat" class="chips" aria-live="polite"></div>
+</header>
+
+<div class="kpis" id="kpis"></div>
+
+<section aria-labelledby="h-token">
+  <h2 id="h-token">1. Ask without being known <span class="tag">runs here</span></h2>
+  <p>The subscription authority signs a token it cannot read. The pool accepts the token without learning which subscriber holds it. Test key: RFC 9474 Appendix A.3 (public test material).</p>
+  <button id="tIssue">Issue a token</button><button id="tRedeem" class="ghost">Redeem it</button><button id="tAgain" class="ghost">Redeem it again</button>
+  <pre id="tOut">Press "Issue a token".</pre>
+</section>
+
+<section aria-labelledby="h-audit">
+  <h2 id="h-audit">2. Catch a cheating contributor <span class="tag">measured detection rates</span></h2>
+  <p>An audit replays a sampled request. How fast a persistent cheat is caught depends on the audit rate and on what the audit compares.</p>
+  <div class="row">
+    <div><label for="aCheat">Cheat</label><select id="aCheat"></select></div>
+    <div><label for="aQ">Audit rate q: <b id="aQv"></b></label><input id="aQ" type="range" min="1" max="50" value="10"></div>
+  </div>
+  <pre id="aOut"></pre>
+</section>
+
+<section aria-labelledby="h-adm">
+  <h2 id="h-adm">3. Contribution moves you up the queue <span class="tag">runs here</span></h2>
+  <p>The pool cannot see who is asking, so priority rides on the token's tier. Queued requests are granted to the tier with the least service per unit weight.</p>
+  <div class="row">
+    <div><label for="gB">Base-tier requests</label><input id="gB" type="number" min="0" max="40" value="8"></div>
+    <div><label for="gC">Contributor-tier requests</label><input id="gC" type="number" min="0" max="40" value="4"></div>
+    <div><label for="gW">Contributor weight</label><input id="gW" type="number" min="1" max="8" value="3"></div>
+  </div>
+  <button id="gRun">Grant in order</button>
+  <div id="gOut" class="chips" style="margin-top:8px"></div>
+  <pre id="gNote"></pre>
+</section>
+
+<section aria-labelledby="h-led">
+  <h2 id="h-led">4. A ledger nobody can quietly rewrite <span class="tag">runs here</span></h2>
+  <p>Credits and penalties go into a hash tree after the request is over. Witnesses sign each tree head only if it extends the history they have already seen.</p>
+  <button id="lSeal">Seal an epoch</button><button id="lProve" class="ghost">Prove entry 3</button><button id="lTamper" class="ghost">Tamper with entry 3</button><button id="lFork" class="ghost">Operator rewrites history</button>
+  <pre id="lOut">Press "Seal an epoch".</pre>
+</section>
+
+<section aria-labelledby="h-lab">
+  <h2 id="h-lab">5. Virtual lab evidence <span class="tag">recorded run</span></h2>
+  <p id="labNote"></p>
+  <div class="tablewrap"><table><thead><tr><th>Scenario</th><th>What happened</th><th>Result</th></tr></thead><tbody id="labRows"></tbody></table></div>
+</section>
+
+<section aria-labelledby="h-sim">
+  <h2 id="h-sim">6. Admission policies under load <span class="tag sim">simulation</span></h2>
+  <label for="sLoad">Offered load relative to pool capacity</label><select id="sLoad"></select>
+  <div class="tablewrap"><table><thead><tr><th>Policy</th><th>Contributors p95 wait</th><th>Others p95 wait</th><th>Heavy members' share of service</th></tr></thead><tbody id="sRows"></tbody></table></div>
+</section>
+
+<footer>
+  <p><b>What is measured:</b> cryptographic costs and audit detection on one 2-vCPU host with a 135M-parameter model; the lab is fifteen processes on loopback. <b>What is simulated:</b> admission under load. <b>What is not claimed:</b> any THOX device result, any wide-area result, any throughput figure, content privacy against the contributor that executes a stage.</p>
+  <p>Your AI. Your Data. Your Rules.&trade; &middot; THOX&reg;, ThoxOS&trade;, MeshStack&trade; and ThoxWork&trade; are marks of THOX.ai LLC. Preprint companion, not peer reviewed.</p>
+</footer>
+</main>
+<script>
+"use strict";
+const S = /*__SUMMARY__*/;
+const $ = (id) => document.getElementById(id);
+const hex = (b) => Array.from(b, (x) => x.toString(16).padStart(2, "0")).join("");
+const unhex = (h) => Uint8Array.from(h.match(/../g).map((x) => parseInt(x, 16)));
+const cat = (...a) => { const o = new Uint8Array(a.reduce((n, x) => n + x.length, 0)); let i = 0; for (const x of a) { o.set(x, i); i += x.length; } return o; };
+const enc = (s) => new TextEncoder().encode(s);
+
+// ---- SHA-256 (FIPS 180-4), pure JS
+const K256 = (() => { const k = [], isP = (n) => { for (let i = 2; i * i <= n; i++) if (n % i === 0) return false; return true; }; for (let n = 2; k.length < 64; n++) if (isP(n)) k.push(Math.floor((Math.cbrt(n) % 1) * 2 ** 32) >>> 0); return k; })();
+function sha256(msg) {
+  const H = [0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19];
+  const l = msg.length, n = ((l + 9 + 63) >> 6) << 6, m = new Uint8Array(n); m.set(msg); m[l] = 0x80;
+  const dv = new DataView(m.buffer); dv.setUint32(n - 4, (l * 8) >>> 0); dv.setUint32(n - 8, Math.floor(l / 2 ** 29));
+  const w = new Uint32Array(64), r = (x, s) => (x >>> s) | (x << (32 - s));
+  for (let o = 0; o < n; o += 64) {
+    for (let i = 0; i < 16; i++) w[i] = dv.getUint32(o + i * 4);
+    for (let i = 16; i < 64; i++) { const a = w[i - 15], b = w[i - 2]; w[i] = (w[i - 16] + (r(a, 7) ^ r(a, 18) ^ (a >>> 3)) + w[i - 7] + (r(b, 17) ^ r(b, 19) ^ (b >>> 10))) >>> 0; }
+    let [a, b, c, d, e, f, g, h] = H;
+    for (let i = 0; i < 64; i++) {
+      const t1 = (h + (r(e, 6) ^ r(e, 11) ^ r(e, 25)) + ((e & f) ^ (~e & g)) + K256[i] + w[i]) >>> 0;
+      const t2 = ((r(a, 2) ^ r(a, 13) ^ r(a, 22)) + ((a & b) ^ (a & c) ^ (b & c))) >>> 0;
+      h = g; g = f; f = e; e = (d + t1) >>> 0; d = c; c = b; b = a; a = (t1 + t2) >>> 0;
+    }
+    [a, b, c, d, e, f, g, h].forEach((v, i) => { H[i] = (H[i] + v) >>> 0; });
+  }
+  const out = new Uint8Array(32); H.forEach((v, i) => new DataView(out.buffer).setUint32(i * 4, v)); return out;
+}
+
+// ---- SHA-384 (FIPS 180-4) with BigInt words
+const M64 = (1n << 64n) - 1n;
+const K512 = (() => {
+  const primes = []; for (let n = 2; primes.length < 80; n++) { let p = true; for (let i = 2; i * i <= n; i++) if (n % i === 0) { p = false; break; } if (p) primes.push(n); }
+  const icbrt = (v) => { let x = BigInt(Math.floor(Math.cbrt(Number(v)))); while (x * x * x > v) x--; while ((x + 1n) ** 3n <= v) x++; return x; };
+  return primes.map((p) => icbrt(BigInt(p) << 192n) & M64);
+})();
+function sha384(msg) {
+  let H = [0xcbbb9d5dc1059ed8n, 0x629a292a367cd507n, 0x9159015a3070dd17n, 0x152fecd8f70e5939n, 0x67332667ffc00b31n, 0x8eb44a8768581511n, 0xdb0c2e0d64f98fa7n, 0x47b5481dbefa4fa4n];
+  const l = msg.length, n = ((l + 17 + 127) >> 7) << 7, m = new Uint8Array(n); m.set(msg); m[l] = 0x80;
+  const dv = new DataView(m.buffer); dv.setBigUint64(n - 8, BigInt(l) * 8n);
+  const r = (x, s) => ((x >> BigInt(s)) | (x << BigInt(64 - s))) & M64, w = new Array(80);
+  for (let o = 0; o < n; o += 128) {
+    for (let i = 0; i < 16; i++) w[i] = dv.getBigUint64(o + i * 8);
+    for (let i = 16; i < 80; i++) { const a = w[i - 15], b = w[i - 2]; w[i] = (w[i - 16] + (r(a, 1) ^ r(a, 8) ^ (a >> 7n)) + w[i - 7] + (r(b, 19) ^ r(b, 61) ^ (b >> 6n))) & M64; }
+    let [a, b, c, d, e, f, g, h] = H;
+    for (let i = 0; i < 80; i++) {
+      const t1 = (h + (r(e, 14) ^ r(e, 18) ^ r(e, 41)) + ((e & f) ^ (~e & M64 & g)) + K512[i] + w[i]) & M64;
+      const t2 = ((r(a, 28) ^ r(a, 34) ^ r(a, 39)) + ((a & b) ^ (a & c) ^ (b & c))) & M64;
+      h = g; g = f; f = e; e = (d + t1) & M64; d = c; c = b; b = a; a = (t1 + t2) & M64;
+    }
+    H = [a, b, c, d, e, f, g, h].map((v, i) => (H[i] + v) & M64);
+  }
+  const out = new Uint8Array(48); for (let i = 0; i < 6; i++) new DataView(out.buffer).setBigUint64(i * 8, H[i]); return out;
+}
+
+// ---- RFC 9474 RSABSSA-SHA384-PSS
+const b2i = (b) => BigInt("0x" + (hex(b) || "0"));
+const i2b = (v, len) => unhex(v.toString(16).padStart(len * 2, "0"));
+function modpow(b, e, m) { let r = 1n; b %= m; while (e > 0n) { if (e & 1n) r = (r * b) % m; b = (b * b) % m; e >>= 1n; } return r; }
+function modinv(a, m) { let [r0, r1, s0, s1] = [m, a % m, 0n, 1n]; while (r1 !== 0n) { const q = r0 / r1; [r0, r1] = [r1, r0 - q * r1]; [s0, s1] = [s1, s0 - q * s1]; } return ((s0 % m) + m) % m; }
+function mgf1(seed, len) { let out = new Uint8Array(0); for (let c = 0; out.length < len; c++) out = cat(out, sha384(cat(seed, Uint8Array.of(c >>> 24, c >>> 16, c >>> 8, c)))); return out.slice(0, len); }
+function pssEncode(msg, emBits, salt) {
+  const mh = sha384(msg), emLen = Math.ceil(emBits / 8);
+  const h = sha384(cat(new Uint8Array(8), mh, salt));
+  const db = cat(new Uint8Array(emLen - salt.length - 48 - 2), Uint8Array.of(1), salt), mask = mgf1(h, emLen - 49);
+  const masked = db.map((v, i) => v ^ mask[i]); masked[0] &= 0xff >> (8 * emLen - emBits);
+  return cat(masked, h, Uint8Array.of(0xbc));
+}
+function pssVerify(msg, em, emBits, sLen) {
+  const emLen = em.length; if (em[emLen - 1] !== 0xbc) return false;
+  const masked = em.slice(0, emLen - 49), h = em.slice(emLen - 49, emLen - 1), mask = mgf1(h, emLen - 49);
+  const db = masked.map((v, i) => v ^ mask[i]); db[0] &= 0xff >> (8 * emLen - emBits);
+  const ps = emLen - 48 - sLen - 2; for (let i = 0; i < ps; i++) if (db[i] !== 0) return false;
+  if (db[ps] !== 1) return false;
+  return hex(sha384(cat(new Uint8Array(8), sha384(msg), db.slice(ps + 1)))) === hex(h);
+}
+const V = S.kat_vector, N = BigInt("0x" + V.n), E = BigInt("0x" + V.e), D = BigInt("0x" + V.d), NB = V.n.length / 2, EMBITS = NB * 8 - 1;
+const P = BigInt("0x" + V.p), Q = BigInt("0x" + V.q), DP = D % (P - 1n), DQ = D % (Q - 1n), QI = modinv(Q, P);
+const signCrt = (z) => { const s1 = modpow(z % P, DP, P), s2 = modpow(z % Q, DQ, Q); return s2 + Q * ((QI * ((s1 - s2) % P + P)) % P); };
+function blind(msg, salt, r) { const m = b2i(pssEncode(msg, EMBITS, salt)); return { z: (m * modpow(r, E, N)) % N, inv: modinv(r, N) }; }
+
+// ---- known-answer tests
+const kats = {
+  "SHA-256 abc": hex(sha256(enc("abc"))) === "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+  "SHA-384 abc": hex(sha384(enc("abc"))) === "cb00753f45a35e8bb5a03d699ac65007272c32ab0eded1631a8b605a43ff5bed8086072ba1e7cc2358baeca134c825a7",
+};
+(() => {
+  const msg = unhex(V.prepared_msg), salt = unhex(V.salt);
+  kats["RFC 9474 encoded_msg"] = hex(pssEncode(msg, EMBITS, salt)) === V.encoded_msg;
+  const r = modinv(BigInt("0x" + V.inv), N), b = blind(msg, salt, r);
+  kats["RFC 9474 blinded_msg"] = b.z === BigInt("0x" + V.blinded_msg);
+  const bs = signCrt(b.z);
+  kats["RFC 9474 blind_sig"] = bs === BigInt("0x" + V.blind_sig);
+  const sig = (bs * b.inv) % N;
+  kats["RFC 9474 sig"] = sig === BigInt("0x" + V.sig);
+  kats["RFC 9474 verify"] = pssVerify(msg, i2b(modpow(sig, E, N), NB), EMBITS, 48);
+})();
+window.__katOk = Object.values(kats).every(Boolean);
+$("kat").innerHTML = Object.entries(kats).map(([k, v]) => `<span class="${v ? "c" : ""}">${v ? "pass" : "FAIL"} ${k}</span>`).join("");
+
+// ---- KPIs
+const f = (x, d = 1) => Number(x).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+const big = S.ledger.batches[S.ledger.batches.length - 1];
+$("kpis").innerHTML = [
+  [`${S.lab.C.token_exact} / ${S.lab.C.requests}`, "lab requests token-exact with the whole model"],
+  [`${Object.values(S.audit.cheats).filter((c) => c.digest_detect_rate === 1).length} / ${Object.keys(S.audit.cheats).length}`, "cheat classes caught by one digest audit"],
+  [`${f(S.token.client_ms_2048 + S.token.issuer_ms_2048, 1)} ms`, "to mint one unlinkable token (RSA-2048)"],
+  [`${f(big.build_us_per_receipt, 2)} µs`, "ledger cost per receipt, off the token path"],
+].map(([v, l]) => `<div class="kpi"><b>${v}</b><span>${l}</span></div>`).join("");
+
+// ---- 1. token flow
+let tok = null; const spent = new Set();
+$("tIssue").onclick = () => {
+  const msg = cat(crypto.getRandomValues(new Uint8Array(32)), enc("|aud=community"));
+  const salt = crypto.getRandomValues(new Uint8Array(48));
+  let r; do { r = b2i(crypto.getRandomValues(new Uint8Array(NB))) % N; } while (r < 2n);
+  const t0 = performance.now(), b = blind(msg, salt, r), bs = signCrt(b.z), sig = (bs * b.inv) % N;
+  const ok = pssVerify(msg, i2b(modpow(sig, E, N), NB), EMBITS, 48), ms = performance.now() - t0;
+  tok = { msg, sig };
+  const zs = b.z.toString(16).padStart(NB * 2, "0"), ss = sig.toString(16).padStart(NB * 2, "0");
+  $("tOut").textContent = `authority saw (blinded):  ${zs.slice(0, 48)}...\ntoken you hold (message): ${hex(msg).slice(0, 48)}...\ntoken you hold (signature): ${ss.slice(0, 48)}...\nsignature verifies under the authority's public key: ${ok}\nblinded value equals signature: ${zs === ss}\nblind + sign + unblind + verify in this browser: ${ms.toFixed(0)} ms`;
+};
+const redeem = () => {
+  if (!tok) return "No token yet.";
+  const id = hex(sha256(tok.msg));
+  if (!pssVerify(tok.msg, i2b(modpow(tok.sig, E, N), NB), EMBITS, 48)) return "refused: invalid_token";
+  if (spent.has(id)) return "refused: double_spend";
+  spent.add(id); return "accepted: lease granted. The pool learned the token is valid. It did not learn whose it is.";
+};
+$("tRedeem").onclick = $("tAgain").onclick = () => { $("tOut").textContent += "\n" + redeem(); };
+
+// ---- 2. audit calculator
+const CH = { skip1: "skip 1 of 10 layers", skip3: "skip 3 of 10 layers", skip10: "skip the whole stage", fp16w: "fp16 weights", int8w: "int8 weights", noise: "0.1% output noise" };
+$("aCheat").innerHTML = Object.keys(S.audit.cheats).map((k) => `<option value="${k}">${CH[k]}</option>`).join("");
+const audit = () => {
+  const q = $("aQ").value / 100, c = S.audit.cheats[$("aCheat").value]; $("aQv").textContent = q.toFixed(2);
+  const n99 = (d) => (d > 0 ? Math.ceil(Math.log(0.01) / Math.log(1 - q * d)) : Infinity);
+  const line = (name, d) => `${name}: catches ${(d * 100).toFixed(0)}% of audited requests -> 99% sure after ${n99(d) === Infinity ? "never" : n99(d).toLocaleString() + " requests"}`;
+  $("aOut").textContent = line("boundary-digest audit", c.digest_detect_rate) + "\n" + line("token-exact audit   ", c.token_detect_rate) +
+    `\nmeasured on ${S.audit.prompts} prompts x ${S.audit.new_tokens} tokens, ${S.audit.model.split("/")[1]}`;
+};
+$("aQ").oninput = $("aCheat").onchange = audit; audit();
+
+// ---- 3. tier-weighted admission (same rule as the lab coordinator)
+$("gRun").onclick = () => {
+  const w = { base: 1, contrib: Math.max(1, +$("gW").value) }, left = { base: +$("gB").value, contrib: +$("gC").value }, served = { base: 0, contrib: 0 }, order = [];
+  while (left.base + left.contrib > 0) {
+    const t = ["base", "contrib"].filter((x) => left[x] > 0).sort((a, b) => served[a] / w[a] - served[b] / w[b] || a.localeCompare(b))[0];
+    order.push(t); left[t]--; served[t] += 32;
+  }
+  $("gOut").innerHTML = order.map((t, i) => `<span class="${t === "contrib" ? "c" : ""}">${i + 1} ${t}</span>`).join("");
+  const half = order.slice(0, Math.ceil(order.length / 2));
+  $("gNote").textContent = `first half of the queue: ${half.filter((t) => t === "contrib").length} contributor-tier, ${half.filter((t) => t === "base").length} base-tier\nlab run granted: ${S.lab.G.grant_order.join(" ")}`;
+};
+
+// ---- 4. Merkle ledger with witnesses (RFC 9162 hashing)
+const leafH = (b) => sha256(cat(Uint8Array.of(0), b)), nodeH = (a, b) => sha256(cat(Uint8Array.of(1), a, b));
+const levels = (ls) => { const L = [ls]; while (L[L.length - 1].length > 1) { const c = L[L.length - 1], n = []; for (let i = 0; i < c.length; i += 2) n.push(i + 1 < c.length ? nodeH(c[i], c[i + 1]) : c[i]); L.push(n); } return L; };
+const prove = (L, i) => { const p = []; for (const l of L.slice(0, -1)) { const s = i ^ 1; if (s < l.length) p.push([s < i, l[s]]); i >>= 1; } return p; };
+const check = (e, p, root) => { let h = leafH(e); for (const [left, s] of p) h = left ? nodeH(s, h) : nodeH(h, s); return hex(h) === hex(root); };
+const members = ["m_alice", "m_bob", "m_carol"]; let entries = [], heads = [], witnesses = [[], [], []];
+const mk = (i) => enc(JSON.stringify(i === 5 ? { seq: i, kind: "slash", member: "m_alice", node_id: "B1" } : { seq: i, kind: "service", member: members[i % 3], tokens: 32 }));
+const cosign = (head) => witnesses.map((seen) => { const prev = seen.length ? hex(sha256(enc(JSON.stringify(seen[seen.length - 1])))) : "0".repeat(64); if (head.epoch !== seen.length || head.prev !== prev) return false; seen.push(head); return true; });
+$("lSeal").onclick = () => {
+  for (let i = 0; i < 8; i++) entries.push(mk(entries.length));
+  const root = levels(entries.map(leafH)).pop()[0], prev = heads.length ? hex(sha256(enc(JSON.stringify(heads[heads.length - 1])))) : "0".repeat(64);
+  const head = { epoch: heads.length, size: entries.length, root: hex(root), prev }, votes = cosign(head);
+  if (votes.filter(Boolean).length >= 2) heads.push(head);
+  $("lOut").textContent = `epoch ${head.epoch}: ${head.size} entries\nroot ${head.root}\nprev ${head.prev.slice(0, 32)}...\nwitness cosignatures: ${votes.filter(Boolean).length} of 3`;
+};
+const need = () => { if (!heads.length) { $("lOut").textContent = "Seal an epoch first."; return true; } return false; };
+$("lProve").onclick = () => { if (need()) return; const L = levels(entries.map(leafH)), p = prove(L, 3); $("lOut").textContent = `entry 3: ${new TextDecoder().decode(entries[3])}\nproof: ${p.length} hashes, ${p.length * 32} bytes\nverifies against the cosigned root: ${check(entries[3], p, L.pop()[0])}`; };
+$("lTamper").onclick = () => { if (need()) return; const L = levels(entries.map(leafH)), p = prove(L, 3), bad = enc(new TextDecoder().decode(entries[3]).replace("32", "3200")); $("lOut").textContent = `tampered entry 3: ${new TextDecoder().decode(bad)}\nverifies against the cosigned root: ${check(bad, p, L.pop()[0])}`; };
+$("lFork").onclick = () => { if (need()) return; const last = heads[heads.length - 1], forged = entries.slice(1); const head = { epoch: last.epoch, size: forged.length, root: hex(levels(forged.map(leafH)).pop()[0]), prev: last.prev }; const votes = cosign(head); $("lOut").textContent = `operator re-issues epoch ${last.epoch} with one entry dropped\nforged root ${head.root}\nwitness cosignatures: ${votes.filter(Boolean).length} of 3 (each witness refuses: fork_detected)\nlab run: ${S.lab.J.fork_attempt.cosigned_by} of ${S.lab.J.witnesses} witnesses cosigned the forged head`; };
+
+// ---- 5. lab evidence
+const L = S.lab, yn = (b) => `<span class="${b ? "ok" : "no"}">${b ? "pass" : "FAIL"}</span>`;
+$("labNote").textContent = `${L.processes} operating-system processes on one host over loopback, real cryptography, ${S.audit.model.split("/")[1]} split into three stages. Not THOX hardware, not a wide-area network.`;
+$("labRows").innerHTML = [
+  ["A. Enrolment", `forged device certificate: ${L.A.forged_certificate_advert.error}; cloud-tagged model advertised as mesh compute: ${L.A.cloud_model_tag_advert.error}`, L.summary.A_enrolment],
+  ["B. Tokens", `second redemption: ${L.B.redeem_again}; forged signature: ${L.B.forged_signature}; over budget: ${L.B.issue_over_budget.error}`, L.summary.B_tokens],
+  ["C. Inference", `${L.C.token_exact} of ${L.C.requests} requests token-exact; ${L.C.receipts_verified} signed receipts verified; ${L.C.honest_audited_steps} honest hops audited, all match`, L.summary.C_inference],
+  ["D. Owner returns", `request moved from ${L.D.first_route[0]} to ${L.D.final_route[0]} mid-stream; output token-exact: ${L.D.token_exact}`, L.summary.D_owner_protection],
+  ["E. Contributor dies", `${L.E.killed} killed at step 12; failed over to ${L.E.final_route[1]}; output token-exact: ${L.E.token_exact}`, L.summary.E_contributor_death],
+  ["F. Cheating contributor", `sampled audit (q = ${L.F.sampled_audit_rate}) caught ${L.F.cheater} at step ${L.F.detected_at_step}; fraud proof accepted; node suspended, credits zeroed; request restarted, token-exact: ${L.F.output_token_exact_after_restart}`, L.summary.F_audit],
+  ["G. Admission", `grant order: ${L.G.grant_order.map((t) => t[0]).join(" ")}; heavy member over budget: ${L.G.heavy_member_over_budget.error}`, L.summary.G_admission],
+  ["H. Cloud plane", `label "${L.H.plane_label}"; token replay: ${L.H.token_replay}; community-class request: ${L.H.community_class_at_cloud}`, L.summary.H_cloud_plane],
+  ["I. Information flow", `relay received ${f(L.I.wire_matrix.relay.inbound_bytes / 1e6, 1)} MB and could read no account, token or prompt`, L.summary.I_information_flow],
+  ["K. Replica route", `whole replica ${f(L.K.replica.mean_ms, 0)} ms against pipeline ${f(L.K.pipeline.mean_ms, 0)} ms per remote round trip, ${L.K.replica.trials} trials each; all token-exact: ${L.K.all_token_exact}`, L.summary.K_replica_vs_pipeline],
+  ["L. Load-indexed issuance", `past budget with the pool idle: issued as surplus; with every route leased: ${L.Lx.over_budget_while_busy.error}`, L.summary.L_load_indexed_issuance],
+  ["J. Ledger", `${L.J.entries} entries; ${L.J.witness_cosignatures_valid} of ${L.J.witnesses} cosignatures valid; replayed balances match: ${L.J.replay_matches_authority}; forged head cosigned by ${L.J.fork_attempt.cosigned_by}`, L.summary.J_ledger],
+].map(([a, b, c]) => `<tr><td>${a}</td><td>${b}</td><td>${yn(c)}</td></tr>`).join("");
+
+// ---- 6. simulation table
+const POL = { fifo: "FIFO", vtc: "least-served-first", vtc_contrib: "contribution-weighted", budget: "fixed issuance budget (unlinkable)", budget_load: "load-indexed budget (unlinkable)" };
+$("sLoad").innerHTML = S.fairness.params.loads.map((l) => `<option value="${l}" ${l === 1.2 ? "selected" : ""}>${l}</option>`).join("");
+const sim = () => { const l = $("sLoad").value; $("sRows").innerHTML = Object.keys(POL).map((p) => { const r = S.fairness.table[`${l}|${p}`]; return `<tr><td>${POL[p]}</td><td>${f(r.contributors_p95_wait_s.median, 0)} s</td><td>${f(r.others_p95_wait_s.median, 0)} s</td><td>${f(r.heavy_service_share.median * 100, 1)}%</td></tr>`; }).join(""); };
+$("sLoad").onchange = sim; sim();
+</script>
+</body>
+</html>

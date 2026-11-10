@@ -1,0 +1,30 @@
+{
+  "erratum": "v1.1.1",
+  "date": "2026-11-10",
+  "source": "Claude lane reruns inside the v1.1.0 pipeline (exp/), handed to Sadie Weaving 2026-11-10; inputs file commit dc8241c in the private program record",
+  "matched_route_comparison": {
+    "protocol": "30 matched pairs, same prompt on both routes, order alternating, auditing kept out of the timed requests; all attempts token-exact; all twelve scenarios passed in both runs",
+    "quiet_host_figure_of_record": {
+      "two_contributors_in_sequence_ms_per_remote_call": 126.4,
+      "one_contributor_both_remote_ranges_ms_per_remote_call": 118.0,
+      "paired_difference_ms": 8.35,
+      "ci95_ms": [6.27, 10.27],
+      "relative_lower_percent": 6.6,
+      "pairs_one_contributor_faster": "27 of 30"
+    },
+    "earlier_shared_host_run": {
+      "two_contributors_in_sequence_ms_per_remote_call": 131.5,
+      "one_contributor_both_remote_ranges_ms_per_remote_call": 124.6,
+      "paired_difference_ms": 6.85,
+      "ci95_ms": [3.66, 9.70],
+      "relative_lower_percent": 5.2,
+      "pairs_one_contributor_faster": "24 of 30"
+    },
+    "supersedes": "Published v1.1.0 Section 6.7 / Section 1 comparison (124.4 vs 134.5 ms class figures, 7.5%), which used different prompts on each route"
+  },
+  "never_started_accounting": {
+    "method": "Arrival traces regenerated per run; started counts taken from the published simulation results; no consistency failures across 750 runs",
+    "load_0.6_fixed_budget": {"all_requests_never_started_median_percent": 27.7, "heavy_members_percent": 80.3, "ordinary_members_percent": 0.2},
+    "load_0.6_least_served_first": {"never_started_median_percent": 0.0, "pooled": "59 of 139,921 requests"}
+  }
+}

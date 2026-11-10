@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "scope": "observed virtual-process prototype measurements, one physical host",
+  "plan_sha256": "18bf649e28157ccb4dc374443d8cb3fd294df53eb9e1baae9c3653fe2a8d6bab",
+  "warmups": 10,
+  "trial_count": 150,
+  "all_failures_retained": true,
+  "baseline_tokens": [
+    230,
+    81,
+    230,
+    81,
+    230,
+    230,
+    230,
+    230
+  ],
+  "configurations": [
+    {
+      "configuration": "replica_0ms",
+      "attempts": 30,
+      "completed": 30,
+      "numerically_equal": 30,
+      "mean_ttft_ms": 30.341531866666667,
+      "p95_ttft_ms": 42.548689699999976,
+      "mean_inter_token_ms": 16.618987523809523,
+      "inter_token_mean_ci95_ms": [
+        13.947606107142857,
+        20.86080024095238
+      ],
+      "inter_token_trial_mean_cv_percent": 64.32599965967819,
+      "mean_elapsed_ms": 146.83230043333333,
+      "mean_settlement_commit_ms": 4.179601166666667,
+      "p95_settlement_commit_ms": 8.337811599999997,
+      "mean_response_ready_ms": 151.0829807,
+      "p95_response_ready_ms": 182.58247809999997,
+      "p95_elapsed_ms": 177.8464219,
+      "d37_dispersion_condition": false,
+      "production_claim_gate": "not passed: prototype and missing production claims-register qualification"
+    },
+    {
+      "configuration": "pipeline_0ms",
+      "attempts": 30,
+      "completed": 30,
+      "numerically_equal": 30,
+      "mean_ttft_ms": 130.54352,
+      "p95_ttft_ms": 170.43834449999997,
+      "mean_inter_token_ms": 79.52085323333333,
+      "inter_token_mean_ci95_ms": [
+        75.20453203702381,
+        84.58898074166666
+      ],
+      "inter_token_trial_mean_cv_percent": 16.54466799743167,
+      "mean_elapsed_ms": 687.9089469,
+      "mean_settlement_commit_ms": 5.3308759,
+      "p95_settlement_commit_ms": 9.977633649999989,
+      "mean_response_ready_ms": 693.3118129333333,
+      "p95_response_ready_ms": 911.3628616,
+      "p95_elapsed_ms": 905.1070973499999,
+      "d37_dispersion_condition": false,
+      "production_claim_gate": "not passed: prototype and missing production claims-register qualification"
+    },
+    {
+      "configuration": "pipeline_5ms",
+      "attempts": 30,
+      "completed": 30,
+      "numerically_equal": 30,
+      "mean_ttft_ms": 150.17999913333333,
+      "p95_ttft_ms": 181.6323455,
+      "mean_inter_token_ms": 100.76863132380953,
+      "inter_token_mean_ci95_ms": [
+        97.28906981630952,
+        104.48771338630952
+      ],
+      "inter_token_trial_mean_cv_percent": 10.257117628496392,
+      "mean_elapsed_ms": 855.9355411,
+      "mean_settlement_commit_ms": 4.642143633333333,
+      "p95_settlement_commit_ms": 9.746584249999994,
+      "mean_response_ready_ms": 860.6526632666667,
+      "p95_response_ready_ms": 986.2935913499999,
+      "p95_elapsed_ms": 981.1492975499999,
+      "d37_dispersion_condition": false,
+      "production_claim_gate": "not passed: prototype and missing production claims-register qualification"
+    },
+    {
+      "configuration": "pipeline_15ms",
+      "attempts": 30,
+      "completed": 30,
+      "numerically_equal": 30,
+      "mean_ttft_ms": 189.65192743333333,
+      "p95_ttft_ms": 228.27434864999998,
+      "mean_inter_token_ms": 148.97841123333333,
+      "inter_token_mean_ci95_ms": [
+        139.9346787982143,
+        163.50604558285713
+      ],
+      "inter_token_trial_mean_cv_percent": 23.732112645291032,
+      "mean_elapsed_ms": 1232.9055643666666,
+      "mean_settlement_commit_ms": 4.804104133333333,
+      "p95_settlement_commit_ms": 8.81395424999999,
+      "mean_response_ready_ms": 1237.8025168,
+      "p95_response_ready_ms": 1368.3049648499998,
+      "p95_elapsed_ms": 1363.27458805,
+      "d37_dispersion_condition": false,
+      "production_claim_gate": "not passed: prototype and missing production claims-register qualification"
+    },
+    {
+      "configuration": "pipeline_audit_paused",
+      "attempts": 30,
+      "completed": 30,
+      "numerically_equal": 30,
+      "mean_ttft_ms": 126.1849735,
+      "p95_ttft_ms": 160.97449769999994,
+      "mean_inter_token_ms": 81.82801067142857,
+      "inter_token_mean_ci95_ms": [
+        76.29356759130953,
+        87.77825029976191
+      ],
+      "inter_token_trial_mean_cv_percent": 20.291004906002517,
+      "mean_elapsed_ms": 699.3329765999999,
+      "mean_settlement_commit_ms": 5.048076066666667,
+      "p95_settlement_commit_ms": 11.363969799999994,
+      "mean_response_ready_ms": 704.4536137666666,
+      "p95_response_ready_ms": 962.9754314999998,
+      "p95_elapsed_ms": 954.0522239999998,
+      "d37_dispersion_condition": false,
+      "production_claim_gate": "not passed: prototype and missing production claims-register qualification"
+    }
+  ],
+  "scenario_passes": 5,
+  "scenario_count": 5,
+  "production_qualification": "not established"
+}

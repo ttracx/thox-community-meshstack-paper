@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THOX Community Mesh Demo</title>
+<style>
+:root{--bg:#FFFFFF;--panel:#F6F7F9;--ink:#111827;--muted:#5B6472;--rule:#E1E4E8;--brand:#047C3D;--brand-ink:#FFFFFF;--pale:#E6F4EC;--warn:#B45309;--bad:#B42318;--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0B0F14;--panel:#131A22;--ink:#F3F4F6;--muted:#9CA3AF;--rule:#243040;--brand:#05A451;--brand-ink:#04140B;--pale:#0F2A1C;--warn:#F59E0B;--bad:#F87171}}
+:root[data-theme="dark"]{--bg:#0B0F14;--panel:#131A22;--ink:#F3F4F6;--muted:#9CA3AF;--rule:#243040;--brand:#05A451;--brand-ink:#04140B;--pale:#0F2A1C;--warn:#F59E0B;--bad:#F87171}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.5}
+main{max-width:920px;margin:0 auto;padding:20px 16px 56px}
+header .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+h1{font-size:24px;line-height:1.2;margin:6px 0 8px}
+h2{font-size:17px;margin:0 0 4px}
+p{margin:0 0 10px}
+.lede{color:var(--muted);max-width:68ch}
+section{border:1px solid var(--rule);border-radius:10px;padding:16px;margin:16px 0;background:var(--panel)}
+.tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--brand);color:var(--brand);border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+.tag.sim{border-color:var(--warn);color:var(--warn)}
+button{font:inherit;font-weight:600;background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:9px 14px;margin:4px 6px 4px 0;cursor:pointer;min-height:40px}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+pre{font-family:var(--mono);font-size:12px;line-height:1.45;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:10px;margin:8px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;min-height:44px}
+label{display:block;font-size:13px;color:var(--muted);margin:8px 0 2px}
+input[type=number],select{font:inherit;width:100%;max-width:220px;padding:8px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:var(--ink)}
+input[type=range]{width:100%;max-width:340px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.row>div{flex:1 1 160px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.kpi{border:1px solid var(--rule);border-top:3px solid var(--brand);border-radius:8px;padding:10px;background:var(--panel)}
+.kpi b{display:block;font-family:var(--mono);font-size:20px;color:var(--brand)}
+.kpi span{font-size:12px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:11px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.ok{color:var(--brand);font-weight:600}.no{color:var(--bad);font-weight:600}
+.tablewrap{overflow-x:auto}
+.chips span{display:inline-block;font-family:var(--mono);font-size:11px;border-radius:6px;padding:3px 7px;margin:2px;background:var(--bg);border:1px solid var(--rule)}
+.chips span.c{background:var(--pale);border-color:var(--brand);color:var(--brand)}
+footer{color:var(--muted);font-size:12px;margin-top:22px}
+@media (max-width:640px){.kpis{grid-template-columns:1fr 1fr}h1{font-size:20px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="eyebrow">THOX.ai Research &middot; companion demo &middot; v1.1.1</div>
+  <h1>Community mesh: the mechanisms, running in your browser</h1>
+  <p class="lede">Every control below runs the real logic on this page: RFC 9474 blind signatures, a Merkle settlement log with witnesses, tier-weighted admission and the audit arithmetic. The numbers come from the paper's experiment and virtual lab outputs, embedded unchanged.</p>
+  <div id="kat" class="chips" aria-live="polite"></div>
+</header>
+
+<div class="kpis" id="kpis"></div>
+
+<section aria-labelledby="h-token">
+  <h2 id="h-token">1. Ask without being known <span class="tag">runs here</span></h2>
+  <p>The subscription authority signs a token it cannot read. The pool accepts the token without learning which subscriber holds it. Test key: RFC 9474 Appendix A.3 (public test material).</p>
+  <button id="tIssue">Issue a token</button><button id="tRedeem" class="ghost">Redeem it</button><button id="tAgain" class="ghost">Redeem it again</button>
+  <pre id="tOut">Press "Issue a token".</pre>
+</section>
+
+<section aria-labelledby="h-audit">
+  <h2 id="h-audit">2. Catch a cheating contributor <span class="tag">measured detection rates</span></h2>
+  <p>An audit replays a sampled request. How fast a persistent cheat is caught depends on the audit rate and on what the audit compares.</p>
+  <div class="row">
+    <div><label for="aCheat">Cheat</label><select id="aCheat"></select></div>
+    <div><label for="aQ">Audit rate q: <b id="aQv"></b></label><input id="aQ" type="range" min="1" max="50" value="10"></div>
+  </div>
+  <pre id="aOut"></pre>
+</section>
+
+<section aria-labelledby="h-adm">
+  <h2 id="h-adm">3. Contribution moves you up the queue <span class="tag">runs here</span></h2>
+  <p>The pool cannot see who is asking, so priority rides on the token's tier. Queued requests are granted to the tier with the least service per unit weight.</p>
+  <div class="row">
+    <div><label for="gB">Base-tier requests</label><input id="gB" type="number" min="0" max="40" value="8"></div>
+    <div><label for="gC">Contributor-tier requests</label><input id="gC" type="number" min="0" max="40" value="4"></div>
+    <div><label for="gW">Contributor weight</label><input id="gW" type="number" min="1" max="8" value="3"></div>
+  </div>
+  <button id="gRun">Grant in order</button>
+  <div id="gOut" class="chips" style="margin-top:8px"></div>
+  <pre id="gNote"></pre>
+</section>
+
+<section aria-labelledby="h-led">
+  <h2 id="h-led">4. A ledger nobody can quietly rewrite <span class="tag">runs here</span></h2>
+  <p>Credits and penalties go into a hash tree after the request is over. Witnesses sign each tree head only if it extends the history they have already seen.</p>
+  <button id="lSeal">Seal an epoch</button><button id="lProve" class="ghost">Prove entry 3</button><button id="lTamper" class="ghost">Tamper with entry 3</button><button id="lFork" class="ghost">Operator rewrites history</button>
+  <pre id="lOut">Press "Seal an epoch".</pre>
+</section>
+
+<section aria-labelledby="h-lab">
+  <h2 id="h-lab">5. Virtual lab evidence <span class="tag">recorded run</span></h2>
+  <p id="labNote"></p>
+  <div class="tablewrap"><table><thead><tr><th>Scenario</th><th>What happened</th><th>Result</th></tr></thead><tbody id="labRows"></tbody></table></div>
+</section>
+
+<section aria-labelledby="h-sim">
+  <h2 id="h-sim">6. Admission policies under load <span class="tag sim">simulation</span></h2>
+  <label for="sLoad">Offered load relative to pool capacity</label><select id="sLoad"></select>
+  <div class="tablewrap"><table><thead><tr><th>Policy</th><th>Contributors p95 wait</th><th>Others p95 wait</th><th>Heavy members' share of service</th></tr></thead><tbody id="sRows"></tbody></table></div>
+</section>
+
+<footer>
+  <p><b>What is measured:</b> cryptographic costs and audit detection on one 2-vCPU host with a 135M-parameter model; the lab is fifteen processes on loopback. <b>What is simulated:</b> admission under load. <b>What is not claimed:</b> any THOX device result, any wide-area result, any throughput figure, content privacy against the contributor that executes a stage.</p>
+  <p>Your AI. Your Data. Your Rules.&trade; &middot; THOX&reg;, ThoxOS&trade;, MeshStack&trade; and ThoxWork&trade; are marks of THOX.ai LLC. Preprint companion, not peer reviewed.</p>
+</footer>
+</main>
+<script>
+"use strict";
+const S = {"kat_vector": {"p": "e1f4d7a34802e27c7392a3cea32a262a34dc3691bd87f3f310dc75673488930559c120fd0410194fb8a0da55bd0b81227e843fdca6692ae80e5a5d414116d4803fca7d8c30eaaae57e44a1816ebb5c5b0606c536246c7f11985d731684150b63c9a3ad9e41b04c0b5b27cb188a692c84696b742a80d3cd00ab891f2457443dadfeba6d6daf108602be26d7071803c67105a5426838e6889d77e8474b29244cefaf418e381b312048b457d73419213063c60ee7b0d81820165864fef93523c9635c22210956e53a8d96322493ffc58d845368e2416e078e5bcb5d2fd68ae6acfa54f9627c42e84a9d3f2774017e32ebca06308a12ecc290c7cd1156dcccfb2311", "q": "c601a9caea66dc3835827b539db9df6f6f5ae77244692780cd334a006ab353c806426b60718c05245650821d39445d3ab591ed10a7339f15d83fe13f6a3dfb20b9452c6a9b42eaa62a68c970df3cadb2139f804ad8223d56108dfde30ba7d367e9b0a7a80c4fdba2fd9dde6661fc73fc2947569d2029f2870fc02d8325acf28c9afa19ecf962daa7916e21afad09eb62fe9f1cf91b77dc879b7974b490d3ebd2e95426057f35d0a3c9f45f79ac727ab81a519a8b9285932d9b2e5ccd347e59f3f32ad9ca359115e7da008ab7406707bd0e8e185a5ed8758b5ba266e8828f8d863ae133846304a2936ad7bc7c9803879d2fc4a28e69291d73dbd799f8bc238385", "n": "aec4d69addc70b990ea66a5e70603b6fee27aafebd08f2d94cbe1250c556e047a928d635c3f45ee9b66d1bc628a03bac9b7c3f416fe20dabea8f3d7b4bbf7f963be335d2328d67e6c13ee4a8f955e05a3283720d3e1f139c38e43e0338ad058a9495c53377fc35be64d208f89b4aa721bf7f7d3fef837be2a80e0f8adf0bcd1eec5bb040443a2b2792fdca522a7472aed74f31a1ebe1eebc1f408660a0543dfe2a850f106a617ec6685573702eaaa21a5640a5dcaf9b74e397fa3af18a2f1b7c03ba91a6336158de420d63188ee143866ee415735d155b7c2d854d795b7bc236cffd71542df34234221a0413e142d8c61355cc44d45bda94204974557ac2704cd8b593f035a5724b1adf442e78c542cd4414fce6f1298182fb6d8e53cef1adfd2e90e1e4deec52999bdc6c29144e8d52a125232c8c6d75c706ea3cc06841c7bda33568c63a6c03817f722b50fcf898237d788a4400869e44d90a3020923dc646388abcc914315215fcd1bae11b1c751fd52443aac8f601087d8d42737c18a3fa11ecd4131ecae017ae0a14acfc4ef85b83c19fed33cfd1cd629da2c4c09e222b398e18d822f77bb378dea3cb360b605e5aa58b20edc29d000a66bd177c682a17e7eb12a63ef7c2e4183e0d898f3d6bf567ba8ae84f84f1d23bf8b8e261c3729e2fa6d07b832e07cddd1d14f55325c6f924267957121902dc19b3b32948bdead5", "e": "010001", "d": "0d43242aefe1fb2c13fbc66e20b678c4336d20b1808c558b6e62ad16a287077180b177e1f01b12f9c6cd6c52630257ccef26a45135a990928773f3bd2fc01a313f1dac97a51cec71cb1fd7efc7adffdeb05f1fb04812c924ed7f4a8269925dad88bd7dcfbc4ef01020ebfc60cb3e04c54f981fdbd273e69a8a58b8ceb7c2d83fbcbd6f784d052201b88a9848186f2a45c0d2826870733e6fd9aa46983e0a6e82e35ca20a439c5ee7b502a9062e1066493bdadf8b49eb30d9558ed85abc7afb29b3c9bc644199654a4676681af4babcea4e6f71fe4565c9c1b85d9985b84ec1abf1a820a9bbebee0df1398aae2c85ab580a9f13e7743afd3108eb32100b870648fa6bc17e8abac4d3c99246b1f0ea9f7f93a5dd5458c56d9f3f81ff2216b3c3680a13591673c43194d8e6fc93fc1e37ce2986bd628ac48088bc723d8fbe293861ca7a9f4a73e9fa63b1b6d0074f5dea2a624c5249ff3ad811b6255b299d6bc5451ba7477f19c5a0db690c3e6476398b1483d10314afd38bbaf6e2fbdbcd62c3ca9797a420ca6034ec0a83360a3ee2adf4b9d4ba29731d131b099a38d6a23cc463db754603211260e99d19affc902c915d7854554aabf608e3ac52c19b8aa26ae042249b17b2d29669b5c859103ee53ef9bdc73ba3c6b537d5c34b6d8f034671d7f3a8a6966cc4543df223565343154140fd7391c7e7be03e241f4ecfeb877a051", "prepared_msg": "8f3dc6fb8c4a02f4d6352edf0907822c1210a9b32f9bdda4c45a698c80023aa6b59f8cfec5fdbb36331372ebefedae7d", "salt": "051722b35f458781397c3a671a7d3bd3096503940e4c4f1aaa269d60300ce449555cd7340100df9d46944c5356825abf", "inv": "80682c48982407b489d53d1261b19ec8627d02b8cda5336750b8cee332ae260de57b02d72609c1e0e9f28e2040fc65b6f02d56dbd6aa9af8fde656f70495dfb723ba01173d4707a12fddac628ca29f3e32340bd8f7ddb557cf819f6b01e445ad96f874ba235584ee71f6581f62d4f43bf03f910f6510deb85e8ef06c7f09d9794a008be7ff2529f0ebb69decef646387dc767b74939265fec0223aa6d84d2a8a1cc912d5ca25b4e144ab8f6ba054b54910176d5737a2cff011da431bd5f2a0d2d66b9e70b39f4b050e45c0d9c16f02deda9ddf2d00f3e4b01037d7029cd49c2d46a8e1fc2c0c17520af1f4b5e25ba396afc4cd60c494a4c426448b35b49635b337cfb08e7c22a39b256dd032c00adddafb51a627f99a0e1704170ac1f1912e49d9db10ec04c19c58f420212973e0cb329524223a6aa56c7937c5dffdb5d966b6cd4cbc26f3201dd25c80960a1a111b32947bb78973d269fac7f5186530930ed19f68507540eed9e1bab8b00f00d8ca09b3f099aae46180e04e3584bd7ca054df18a1504b89d1d1675d0966c4ae1407be325cdf623cf13ff13e4a28b594d59e3eadbadf6136eee7a59d6a444c9eb4e2198e8a974f27a39eb63af2c9af3870488b8adaad444674f512133ad80b9220e09158521614f1faadfe8505ef57b7df6813048603f0dd04f4280177a11380fbfc861dbcbd7418d62155248dad5fdec0991f", "encoded_msg": "6e0c464d9c2f9fbc147b43570fc4f238e0d0b38870b3addcf7a4217df912ccef17a7f629aa850f63a063925f312d61d6437be954b45025e8282f9c0b1131bc8ff19a8a928d859b37113db1064f92a27f64761c181c1e1f9b251ae5a2f8a4047573b67a270584e089beadcb13e7c82337797119712e9b849ff56e04385d144d3ca9d8d92bf78adb20b5bbeb3685f17038ec6afade3ef354429c51c687b45a7018ee3a6966b3af15c9ba8f40e6461ba0a17ef5a799672ad882bab02b518f9da7c1a962945c2e9b0f02f29b31b9cdf3e633f9d9d2a22e96e1de28e25241ca7dd04147112f578973403e0f4fd80865965475d22294f065e17a1c4a201de93bd14223e6b1b999fd548f2f759f52db71964528b6f15b9c2d7811f2a0a35d534b8216301c47f4f04f412cae142b48c4cdff78bc54df690fd43142d750c671dd8e2e938e6a440b2f825b6dbb3e19f1d7a3c0150428a47948037c322365b7fe6fe57ac88d8f80889e9ff38177bad8c8d8d98db42908b389cb59692a58ce275aa15acb032ca951b3e0a3404b7f33f655b7c7d83a2f8d1b6bbff49d5fcedf2e030e80881aa436db27a5c0dea13f32e7d460dbf01240c2320c2bb5b3225b17145c72d61d47c8f84d1e19417ebd8ce3638a82d395cc6f7050b6209d9283dc7b93fecc04f3f9e7f566829ac41568ef799480c733c09759aa9734e2013d7640dc6151018ea902bc", "blinded_msg": "10c166c6a711e81c46f45b18e5873cc4f494f003180dd7f115585d871a28930259654fe28a54dab319cc5011204c8373b50a57b0fdc7a678bd74c523259dfe4fd5ea9f52f170e19dfa332930ad1609fc8a00902d725cfe50685c95e5b2968c9a2828a21207fcf393d15f849769e2af34ac4259d91dfd98c3a707c509e1af55647efaa31290ddf48e0133b798562af5eabd327270ac2fb6c594734ce339a14ea4fe1b9a2f81c0bc230ca523bda17ff42a377266bc2778a274c0ae5ec5a8cbbe364fcf0d2403f7ee178d77ff28b67a20c7ceec009182dbcaa9bc99b51ebbf13b7d542be337172c6474f2cd3561219fe0dfa3fb207cff89632091ab841cf38d8aa88af6891539f263adb8eac6402c41b6ebd72984e43666e537f5f5fe27b2b5aa114957e9a580730308a5f5a9c63a1eb599f093ab401d0c6003a451931b6d124180305705845060ebba6b0036154fcef3e5e9f9e4b87e8f084542fd1dd67e7782a5585150181c01eb6d90cb95883837384a5b91dbb606f266059ecc51b5acbaa280e45cfd2eec8cc1cdb1b7211c8e14805ba683f9b78824b2eb005bc8a7d7179a36c152cb87c8219e5569bba911bb32a1b923ca83de0e03fb10fba75d85c55907dda5a2606bf918b056c3808ba496a4d95532212040a5f44f37e1097f26dc27b98a51837daa78f23e532156296b64352669c94a8a855acf30533d8e0594ace7c442", "blind_sig": "364f6a40dbfbc3bbb257943337eeff791a0f290898a6791283bba581d9eac90a6376a837241f5f73a78a5c6746e1306ba3adab6067c32ff69115734ce014d354e2f259d4cbfb890244fd451a497fe6ecf9aa90d19a2d441162f7eaa7ce3fc4e89fd4e76b7ae585be2a2c0fd6fb246b8ac8d58bcb585634e30c9168a434786fe5e0b74bfe8187b47ac091aa571ffea0a864cb906d0e28c77a00e8cd8f6aba4317a8cc7bf32ce566bd1ef80c64de041728abe087bee6cadd0b7062bde5ceef308a23bd1ccc154fd0c3a26110df6193464fc0d24ee189aea8979d722170ba945fdcce9b1b4b63349980f3a92dc2e5418c54d38a862916926b3f9ca270a8cf40dfb9772bfbdd9a3e0e0892369c18249211ba857f35963d0e05d8da98f1aa0c6bba58f47487b8f663e395091275f82941830b050b260e4767ce2fa903e75ff8970c98bfb3a08d6db91ab1746c86420ee2e909bf681cac173697135983c3594b2def673736220452fde4ddec867d40ff42dd3da36c84e3e52508b891a00f50b4f62d112edb3b6b6cc3dbd546ba10f36b03f06c0d82aeec3b25e127af545fac28e1613a0517a6095ad18a98ab79f68801e05c175e15bae21f821e80c80ab4fdec6fb34ca315e194502b8f3dcf7892b511aee45060e3994cd15e003861bc7220a2babd7b40eda03382548a34a7110f9b1779bf3ef6011361611e6bc5c0dc851e1509de1a", "sig": "6fef8bf9bc182cd8cf7ce45c7dcf0e6f3e518ae48f06f3c670c649ac737a8b8119a34d51641785be151a697ed7825fdfece82865123445eab03eb4bb91cecf4d6951738495f8481151b62de869658573df4e50a95c17c31b52e154ae26a04067d5ecdc1592c287550bb982a5bb9c30fd53a768cee6baabb3d483e9f1e2da954c7f4cf492fe3944d2fe456c1ecaf0840369e33fb4010e6b44bb1d721840513524d8e9a3519f40d1b81ae34fb7a31ee6b7ed641cb16c2ac999004c2191de0201457523f5a4700dd649267d9286f5c1d193f1454c9f868a57816bf5ff76c838a2eeb616a3fc9976f65d4371deecfbab29362caebdff69c635fe5a2113da4d4d8c24f0b16a0584fa05e80e607c5d9a2f765f1f069f8d4da21f27c2a3b5c984b4ab24899bef46c6d9323df4862fe51ce300fca40fb539c3bb7fe2dcc9409e425f2d3b95e70e9c49c5feb6ecc9d43442c33d50003ee936845892fb8be475647da9a080f5bc7f8a716590b3745c2209fe05b17992830ce15f32c7b22cde755c8a2fe50bd814a0434130b807dc1b7218d4e85342d70695a5d7f29306f25623ad1e8aa08ef71b54b8ee447b5f64e73d09bdd6c3b7ca224058d7c67cc7551e9241688ada12d859cb7646fbd3ed8b34312f3b49d69802f0eaa11bc4211c2f7a29cd5c01ed01a39001c5856fab36228f5ee2f2e1110811872fe7c865c42ed59029c706195d52"}, "audit": {"model": "HuggingFaceTB/SmolLM2-135M-Instruct", "prompts": 17, "new_tokens": 32, "cheats": {"skip1": {"token_detect_rate": 1.0, "digest_detect_rate": 1.0}, "skip3": {"token_detect_rate": 1.0, "digest_detect_rate": 1.0}, "skip10": {"token_detect_rate": 1.0, "digest_detect_rate": 1.0}, "fp16w": {"token_detect_rate": 0.0, "digest_detect_rate": 1.0}, "int8w": {"token_detect_rate": 0.9411764705882353, "digest_detect_rate": 1.0}, "noise": {"token_detect_rate": 0.11764705882352941, "digest_detect_rate": 1.0}}}, "token": {"client_ms_2048": 0.6549435001943493, "issuer_ms_2048": 7.249910500149781, "verify_ms_2048": 0.12003849997199723}, "ledger": {"batches": [{"receipts": 64, "build_us_per_receipt": 1.3442499984250844, "proof_bytes": 192}, {"receipts": 1024, "build_us_per_receipt": 0.8928427734922195, "proof_bytes": 320}, {"receipts": 16384, "build_us_per_receipt": 0.9162930603087704, "proof_bytes": 448}]}, "fairness": {"params": {"loads": [0.6, 0.8, 1.0, 1.2, 1.4]}, "table": {"0.6|fifo": {"contributors_p95_wait_s": {"median": 46.84445104149745}, "others_p95_wait_s": {"median": 48.621042757918985}, "heavy_service_share": {"median": 0.34221316441701277}}, "0.6|vtc": {"contributors_p95_wait_s": {"median": 19.1966508653245}, "others_p95_wait_s": {"median": 17.92256331892895}, "heavy_service_share": {"median": 0.34219160625973144}}, "0.6|vtc_contrib": {"contributors_p95_wait_s": {"median": 7.731284099968434}, "others_p95_wait_s": {"median": 21.567113784674575}, "heavy_service_share": {"median": 0.34221177272134506}}, "0.6|budget": {"contributors_p95_wait_s": {"median": 3.0546428542429567}, "others_p95_wait_s": {"median": 463.53105171043444}, "heavy_service_share": {"median": 0.09280711312857928}}, "0.6|budget_load": {"contributors_p95_wait_s": {"median": 12.912900790769527}, "others_p95_wait_s": {"median": 17.16935228609509}, "heavy_service_share": {"median": 0.34221316441701277}}, "0.8|fifo": {"contributors_p95_wait_s": {"median": 306.63440924181305}, "others_p95_wait_s": {"median": 318.3777039110146}, "heavy_service_share": {"median": 0.3414979706603847}}, "0.8|vtc": {"contributors_p95_wait_s": {"median": 45.25370976473232}, "others_p95_wait_s": {"median": 42.38483814965548}, "heavy_service_share": {"median": 0.3414979706603847}}, "0.8|vtc_contrib": {"contributors_p95_wait_s": {"median": 12.243237938222592}, "others_p95_wait_s": {"median": 57.13275306338437}, "heavy_service_share": {"median": 0.3414979706603847}}, "0.8|budget": {"contributors_p95_wait_s": {"median": 24.220710825623428}, "others_p95_wait_s": {"median": 1132.5526759029835}, "heavy_service_share": {"median": 0.07080063281980825}}, "0.8|budget_load": {"contributors_p95_wait_s": {"median": 22.91013384030157}, "others_p95_wait_s": {"median": 168.2464810485044}, "heavy_service_share": {"median": 0.3414979706603847}}, "1.0|fifo": {"contributors_p95_wait_s": {"median": 1497.7311255343932}, "others_p95_wait_s": {"median": 1473.175993282066}, "heavy_service_share": {"median": 0.3476179061330132}}, "1.0|vtc": {"contributors_p95_wait_s": {"median": 221.0657420854718}, "others_p95_wait_s": {"median": 231.9681305402628}, "heavy_service_share": {"median": 0.3270609249086398}}, "1.0|vtc_contrib": {"contributors_p95_wait_s": {"median": 15.210974515652197}, "others_p95_wait_s": {"median": 300.27305731514735}, "heavy_service_share": {"median": 0.3267319655742581}}, "1.0|budget": {"contributors_p95_wait_s": {"median": 143.99791175718246}, "others_p95_wait_s": {"median": 2372.6401200825467}, "heavy_service_share": {"median": 0.058547949740004275}}, "1.0|budget_load": {"contributors_p95_wait_s": {"median": 62.456594446360214}, "others_p95_wait_s": {"median": 1744.9261206538135}, "heavy_service_share": {"median": 0.33444631184977924}}, "1.2|fifo": {"contributors_p95_wait_s": {"median": 4763.106292066659}, "others_p95_wait_s": {"median": 4736.957777100375}, "heavy_service_share": {"median": 0.34585469964720283}}, "1.2|vtc": {"contributors_p95_wait_s": {"median": 635.0561005722084}, "others_p95_wait_s": {"median": 644.0977379856913}, "heavy_service_share": {"median": 0.21130887393217335}}, "1.2|vtc_contrib": {"contributors_p95_wait_s": {"median": 17.791004492374668}, "others_p95_wait_s": {"median": 799.2569095088675}, "heavy_service_share": {"median": 0.21151478852578443}}, "1.2|budget": {"contributors_p95_wait_s": {"median": 271.94059402898347}, "others_p95_wait_s": {"median": 4639.4338674666715}, "heavy_service_share": {"median": 0.0515154300390203}}, "1.2|budget_load": {"contributors_p95_wait_s": {"median": 193.55228415813872}, "others_p95_wait_s": {"median": 4502.352848053693}, "heavy_service_share": {"median": 0.2644459939603648}}, "1.4|fifo": {"contributors_p95_wait_s": {"median": 7789.068361667305}, "others_p95_wait_s": {"median": 7784.493334968098}, "heavy_service_share": {"median": 0.34525361893173284}}, "1.4|vtc": {"contributors_p95_wait_s": {"median": 1597.5357076762612}, "others_p95_wait_s": {"median": 1544.1985119098763}, "heavy_service_share": {"median": 0.09800247238182375}}, "1.4|vtc_contrib": {"contributors_p95_wait_s": {"median": 18.2896593469643}, "others_p95_wait_s": {"median": 2051.3826861825473}, "heavy_service_share": {"median": 0.09728497266708895}}, "1.4|budget": {"contributors_p95_wait_s": {"median": 280.6502334768725}, "others_p95_wait_s": {"median": 6930.955421822015}, "heavy_service_share": {"median": 0.04763612410846058}}, "1.4|budget_load": {"contributors_p95_wait_s": {"median": 215.7887990735685}, "others_p95_wait_s": {"median": 6931.553017733031}, "heavy_service_share": {"median": 0.2096350703998836}}}}, "lab": {"all_pass": true, "summary": {"A_enrolment": true, "B_tokens": true, "C_inference": true, "D_owner_protection": true, "E_contributor_death": true, "F_audit": true, "K_replica_vs_pipeline": true, "G_admission": true, "L_load_indexed_issuance": true, "H_cloud_plane": true, "J_ledger": true, "I_information_flow": true}, "host": {"machine": "x86_64", "python": "3.13.18", "torch": "2.15.0+cpu", "cpus": 2}, "processes": 15, "A": {"forged_certificate_advert": {"code": 403, "error": "no_authority_certificate"}, "non_subscriber_enrol": {"code": 403, "error": "not_a_subscriber"}, "cloud_model_tag_advert": {"code": 422, "error": "cloud_model_is_not_mesh_compute"}, "pool_size": 5, "nodes": {"B1": {"stage": "s1", "role": "contributor", "cert_ok": true, "first_advert_code": 200, "params_held": 35400960, "params_total": 134515008, "pid": 15138}, "B2": {"stage": "s1", "role": "contributor", "cert_ok": true, "first_advert_code": 200, "params_held": 35400960, "params_total": 134515008, "pid": 15143}, "C1": {"stage": "s2", "role": "contributor", "cert_ok": true, "first_advert_code": 200, "params_held": 35400960, "params_total": 134515008, "pid": 15148}, "C2": {"stage": "s2", "role": "contributor", "cert_ok": true, "first_advert_code": 200, "params_held": 35400960, "params_total": 134515008, "pid": 15155}, "A1": {"stage": "s1", "role": "auditor", "cert_ok": true, "first_advert_code": 200, "params_held": 70801920, "params_total": 134515008, "pid": 15160}}}, "B": {"issue_subscriber_code": 200, "issue_non_subscriber": {"code": 403, "error": "not_a_subscriber"}, "issue_over_budget": {"code": 429, "error": "budget_exhausted"}, "issue_contrib_tier_without_credit_code": 429, "redeem_first": true, "redeem_again": "double_spend", "forged_signature": "invalid_token", "wrong_audience": "invalid_token", "local_only_class": "local_only_never_leaves_device", "mesh_only_class": "mesh_only_never_leaves_owner_devices", "confidential_class": "confidential_unavailable_no_attested_boundary", "plan_digest_in_lease": true, "lease_signature_valid": true, "pass": true}, "C": {"requests": 8, "new_tokens_each": 32, "token_exact": 8, "receipts_verified": 512, "honest_audited_steps": 32, "honest_audit_all_match": true, "seconds_per_request_median": 7.505063232999873, "hop_ms_median": 144.595503249775, "credits_after": {"m_alice": 256.0, "m_carol": 256.0}, "budgets_after": {"m_alice": {"base": 120, "contrib": 5}, "m_bob": {"base": 120, "contrib": 0}, "m_carol": {"base": 120, "contrib": 5}, "m_erin": {"base": 120, "contrib": 0}, "m_mallory": {"base": 120, "contrib": 0}, "m_dana": {"base": 120, "contrib": 0}, "m_thox_audit": {"base": 120, "contrib": 0}}, "pass": true}, "D": {"first_route": ["B1", "C1"], "events": [{"step": 8, "event": "hop_failed", "node": "B1", "code": 409, "error": "owner_active"}, {"step": 8, "event": "rerouted", "route": ["B2", "C1"]}], "final_route": ["B2", "C1"], "token_exact": true, "pool_owner_active_during": {"B1": true, "B2": false, "C1": false, "C2": false, "A1": false}, "new_lease_route_while_owner_active": ["B2", "C1"], "pool_owner_active_after": {"B1": false, "B2": false, "C1": false, "C2": false, "A1": false}, "pass": true}, "E": {"route_before": ["B1", "C1"], "killed": "C1", "killed_process_alive_after": false, "events": [{"step": 12, "event": "hop_failed", "node": "C1", "code": 502, "error": "downstream_failed"}, {"step": 12, "event": "rerouted", "route": ["B1", "C2"]}], "final_route": ["B1", "C2"], "token_exact": true, "pass": true}, "F": {"cheater": "B1", "audit_only": {"noise": {"digest_audit_detected_at_step": 0, "unaudited_output_token_exact": true, "first_token_divergence": null}, "fp16": {"digest_audit_detected_at_step": 0, "unaudited_output_token_exact": true, "first_token_divergence": null}, "skip1": {"digest_audit_detected_at_step": 0, "unaudited_output_token_exact": false, "first_token_divergence": 0}}, "sampled_audit_rate": 0.25, "events": [{"step": 1, "event": "audit_mismatch", "node": "B1"}, {"step": 1, "event": "fraud_proof", "accepted": true}, {"step": 1, "event": "rerouted_and_restarted", "tokens_discarded": 1, "route": ["B2", "C2"]}], "audits": [{"step": 1, "match": [false]}, {"step": 4, "match": [true, true]}, {"step": 6, "match": [true, true]}, {"step": 15, "match": [true, true]}, {"step": 18, "match": [true, true]}, {"step": 20, "match": [true, true]}, {"step": 22, "match": [true, true]}, {"step": 25, "match": [true, true]}, {"step": 26, "match": [true, true]}], "final_route": ["B2", "C2"], "detected_at_step": 1, "output_token_exact_after_restart": true, "suspended": {"B1": true, "B2": false, "C1": false, "C2": false, "A1": false}, "credits_after_slash": {"m_alice": 0.0, "m_carol": 448.0, "m_bob": 56.0}, "route_after_suspension": ["B2", "C2"], "pass": true}, "G": {"contributor_contrib_budget": 13, "consumer_contrib_budget": 0, "submitted": {"base": 8, "contrib": 4}, "tier_weight": {"base": 1, "contrib": 3}, "grant_order": ["base", "contrib", "contrib", "contrib", "base", "contrib", "base", "base", "base", "base", "base", "base"], "contrib_grants_in_first_half": 4, "heavy_member_over_budget": {"code": 429, "error": "budget_exhausted"}, "pass": true}, "H": {"plane_label": "cloud", "notice": "served by a hosted provider that can read this prompt", "tokens_match_local_whole_model": true, "seconds": 2.5864949189999606, "token_replay": "double_spend", "community_class_at_cloud": "privacy_class_forbids_cloud_plane", "pass": true}, "I": {"method": "each process records every request body it receives; the lab then searches those bytes for consumer account bearers, redeemed token values and prompt text. Sealed bodies are opaque to this scan by construction, so the scan shows what a party could read off the wire, not what it decrypts: the coordinator and gateway decrypt tokens, stage nodes decrypt activations, and the gateway decrypts the prompt.", "wire_matrix": {"authority": {"inbound_messages": 237, "inbound_bytes": 315988, "saw_consumer_account": true, "saw_token_value": false, "saw_prompt_text": false}, "coordinator": {"inbound_messages": 260, "inbound_bytes": 1036829, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "relay": {"inbound_messages": 1242, "inbound_bytes": 204579814, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "B1": {"inbound_messages": 406, "inbound_bytes": 90073250, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "B2": {"inbound_messages": 307, "inbound_bytes": 57102156, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "R1": {"inbound_messages": 249, "inbound_bytes": 43730562, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "C2": {"inbound_messages": 402, "inbound_bytes": 79629563, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "A1": {"inbound_messages": 61, "inbound_bytes": 12626310, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}, "gateway": {"inbound_messages": 4, "inbound_bytes": 2811, "saw_consumer_account": false, "saw_token_value": false, "saw_prompt_text": false}}, "decrypts_by_design": {"coordinator": ["token"], "gateway": ["token", "prompt"], "stage nodes and auditor": ["activations, which prior work shows can be inverted to text"], "authority": ["account, blinded token only"], "relay": []}, "tokens_issued": 213, "relay_ciphertext_bytes": 204535520, "pass": true}, "J": {"entries": 123, "entry_signatures_valid": 123, "epoch": 0, "root": "14ea8aed0f41456a688ab65449ad33be9a1cf117604ac3bac4f15b06e39aff13", "ledger_head_signature_valid": true, "witness_cosignatures_valid": 3, "witnesses": 3, "seal_build_ms": 0.23320699983742088, "seal_cosign_ms": 50.24938099995779, "replayed_credits": {"m_alice": 0.0, "m_carol": 696.0, "m_bob": 552.0}, "authority_credits": {"m_alice": 0.0, "m_carol": 696.0, "m_bob": 552.0}, "replay_matches_authority": true, "slash_entry_seq": 27, "inclusion_proof_hashes": 7, "inclusion_proof_valid": true, "tampered_entry_proof_valid": false, "fork_attempt": {"cosigned_by": 0, "refusals": ["fork_detected", "fork_detected", "fork_detected"]}, "next_epoch_chains": true, "ledger_contains_consumer_account": false, "ledger_contains_prompt": false, "pass": true}, "K": {"joined_mid_run": {"stage": "s12", "cert_ok": true, "first_advert_code": 200, "params_held": 70801920}, "tokens_per_trial": 8, "pipeline": {"trials": 30, "mean_ms": 134.48691008752576, "ci95_ms": [132.4904149667077, 136.51642533337358], "cv_percent": 4.283104557589847, "d37_dispersion_condition": true}, "replica": {"trials": 30, "mean_ms": 124.42778941248207, "ci95_ms": [122.66750533331485, 126.20106802080879], "cv_percent": 3.950711376573228, "d37_dispersion_condition": true}, "replica_over_pipeline": 0.9252037193173887, "all_token_exact": true, "attempts": 62, "completed": 62, "replica_receipts_per_step": 1, "pipeline_receipts_per_step": 2, "replica_audit_all_match": true, "pass": true}, "Lx": {"pool_idle_before": true, "over_budget_while_idle": {"code": 200, "surplus": true}, "pool_idle_while_all_routes_leased": false, "over_budget_while_busy": {"code": 429, "error": "budget_exhausted"}, "over_budget_after_release": {"code": 200, "surplus": true}, "contributor_tier_never_issued_as_surplus_code": 429, "surplus_issued": {"m_erin": 2}, "pass": true}}};
+const $ = (id) => document.getElementById(id);
+const hex = (b) => Array.from(b, (x) => x.toString(16).padStart(2, "0")).join("");
+const unhex = (h) => Uint8Array.from(h.match(/../g).map((x) => parseInt(x, 16)));
+const cat = (...a) => { const o = new Uint8Array(a.reduce((n, x) => n + x.length, 0)); let i = 0; for (const x of a) { o.set(x, i); i += x.length; } return o; };
+const enc = (s) => new TextEncoder().encode(s);
+
+// ---- SHA-256 (FIPS 180-4), pure JS
+const K256 = (() => { const k = [], isP = (n) => { for (let i = 2; i * i <= n; i++) if (n % i === 0) return false; return true; }; for (let n = 2; k.length < 64; n++) if (isP(n)) k.push(Math.floor((Math.cbrt(n) % 1) * 2 ** 32) >>> 0); return k; })();
+function sha256(msg) {
+  const H = [0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19];
+  const l = msg.length, n = ((l + 9 + 63) >> 6) << 6, m = new Uint8Array(n); m.set(msg); m[l] = 0x80;
+  const dv = new DataView(m.buffer); dv.setUint32(n - 4, (l * 8) >>> 0); dv.setUint32(n - 8, Math.floor(l / 2 ** 29));
+  const w = new Uint32Array(64), r = (x, s) => (x >>> s) | (x << (32 - s));
+  for (let o = 0; o < n; o += 64) {
+    for (let i = 0; i < 16; i++) w[i] = dv.getUint32(o + i * 4);
+    for (let i = 16; i < 64; i++) { const a = w[i - 15], b = w[i - 2]; w[i] = (w[i - 16] + (r(a, 7) ^ r(a, 18) ^ (a >>> 3)) + w[i - 7] + (r(b, 17) ^ r(b, 19) ^ (b >>> 10))) >>> 0; }
+    let [a, b, c, d, e, f, g, h] = H;
+    for (let i = 0; i < 64; i++) {
+      const t1 = (h + (r(e, 6) ^ r(e, 11) ^ r(e, 25)) + ((e & f) ^ (~e & g)) + K256[i] + w[i]) >>> 0;
+      const t2 = ((r(a, 2) ^ r(a, 13) ^ r(a, 22)) + ((a & b) ^ (a & c) ^ (b & c))) >>> 0;
+      h = g; g = f; f = e; e = (d + t1) >>> 0; d = c; c = b; b = a; a = (t1 + t2) >>> 0;
+    }
+    [a, b, c, d, e, f, g, h].forEach((v, i) => { H[i] = (H[i] + v) >>> 0; });
+  }
+  const out = new Uint8Array(32); H.forEach((v, i) => new DataView(out.buffer).setUint32(i * 4, v)); return out;
+}
+
+// ---- SHA-384 (FIPS 180-4) with BigInt words
+const M64 = (1n << 64n) - 1n;
+const K512 = (() => {
+  const primes = []; for (let n = 2; primes.length < 80; n++) { let p = true; for (let i = 2; i * i <= n; i++) if (n % i === 0) { p = false; break; } if (p) primes.push(n); }
+  const icbrt = (v) => { let x = BigInt(Math.floor(Math.cbrt(Number(v)))); while (x * x * x > v) x--; while ((x + 1n) ** 3n <= v) x++; return x; };
+  return primes.map((p) => icbrt(BigInt(p) << 192n) & M64);
+})();
+function sha384(msg) {
+  let H = [0xcbbb9d5dc1059ed8n, 0x629a292a367cd507n, 0x9159015a3070dd17n, 0x152fecd8f70e5939n, 0x67332667ffc00b31n, 0x8eb44a8768581511n, 0xdb0c2e0d64f98fa7n, 0x47b5481dbefa4fa4n];
+  const l = msg.length, n = ((l + 17 + 127) >> 7) << 7, m = new Uint8Array(n); m.set(msg); m[l] = 0x80;
+  const dv = new DataView(m.buffer); dv.setBigUint64(n - 8, BigInt(l) * 8n);
+  const r = (x, s) => ((x >> BigInt(s)) | (x << BigInt(64 - s))) & M64, w = new Array(80);
+  for (let o = 0; o < n; o += 128) {
+    for (let i = 0; i < 16; i++) w[i] = dv.getBigUint64(o + i * 8);
+    for (let i = 16; i < 80; i++) { const a = w[i - 15], b = w[i - 2]; w[i] = (w[i - 16] + (r(a, 1) ^ r(a, 8) ^ (a >> 7n)) + w[i - 7] + (r(b, 19) ^ r(b, 61) ^ (b >> 6n))) & M64; }
+    let [a, b, c, d, e, f, g, h] = H;
+    for (let i = 0; i < 80; i++) {
+      const t1 = (h + (r(e, 14) ^ r(e, 18) ^ r(e, 41)) + ((e & f) ^ (~e & M64 & g)) + K512[i] + w[i]) & M64;
+      const t2 = ((r(a, 28) ^ r(a, 34) ^ r(a, 39)) + ((a & b) ^ (a & c) ^ (b & c))) & M64;
+      h = g; g = f; f = e; e = (d + t1) & M64; d = c; c = b; b = a; a = (t1 + t2) & M64;
+    }
+    H = [a, b, c, d, e, f, g, h].map((v, i) => (H[i] + v) & M64);
+  }
+  const out = new Uint8Array(48); for (let i = 0; i < 6; i++) new DataView(out.buffer).setBigUint64(i * 8, H[i]); return out;
+}
+
+// ---- RFC 9474 RSABSSA-SHA384-PSS
+const b2i = (b) => BigInt("0x" + (hex(b) || "0"));
+const i2b = (v, len) => unhex(v.toString(16).padStart(len * 2, "0"));
+function modpow(b, e, m) { let r = 1n; b %= m; while (e > 0n) { if (e & 1n) r = (r * b) % m; b = (b * b) % m; e >>= 1n; } return r; }
+function modinv(a, m) { let [r0, r1, s0, s1] = [m, a % m, 0n, 1n]; while (r1 !== 0n) { const q = r0 / r1; [r0, r1] = [r1, r0 - q * r1]; [s0, s1] = [s1, s0 - q * s1]; } return ((s0 % m) + m) % m; }
+function mgf1(seed, len) { let out = new Uint8Array(0); for (let c = 0; out.length < len; c++) out = cat(out, sha384(cat(seed, Uint8Array.of(c >>> 24, c >>> 16, c >>> 8, c)))); return out.slice(0, len); }
+function pssEncode(msg, emBits, salt) {
+  const mh = sha384(msg), emLen = Math.ceil(emBits / 8);
+  const h = sha384(cat(new Uint8Array(8), mh, salt));
+  const db = cat(new Uint8Array(emLen - salt.length - 48 - 2), Uint8Array.of(1), salt), mask = mgf1(h, emLen - 49);
+  const masked = db.map((v, i) => v ^ mask[i]); masked[0] &= 0xff >> (8 * emLen - emBits);
+  return cat(masked, h, Uint8Array.of(0xbc));
+}
+function pssVerify(msg, em, emBits, sLen) {
+  const emLen = em.length; if (em[emLen - 1] !== 0xbc) return false;
+  const masked = em.slice(0, emLen - 49), h = em.slice(emLen - 49, emLen - 1), mask = mgf1(h, emLen - 49);
+  const db = masked.map((v, i) => v ^ mask[i]); db[0] &= 0xff >> (8 * emLen - emBits);
+  const ps = emLen - 48 - sLen - 2; for (let i = 0; i < ps; i++) if (db[i] !== 0) return false;
+  if (db[ps] !== 1) return false;
+  return hex(sha384(cat(new Uint8Array(8), sha384(msg), db.slice(ps + 1)))) === hex(h);
+}
+const V = S.kat_vector, N = BigInt("0x" + V.n), E = BigInt("0x" + V.e), D = BigInt("0x" + V.d), NB = V.n.length / 2, EMBITS = NB * 8 - 1;
+const P = BigInt("0x" + V.p), Q = BigInt("0x" + V.q), DP = D % (P - 1n), DQ = D % (Q - 1n), QI = modinv(Q, P);
+const signCrt = (z) => { const s1 = modpow(z % P, DP, P), s2 = modpow(z % Q, DQ, Q); return s2 + Q * ((QI * ((s1 - s2) % P + P)) % P); };
+function blind(msg, salt, r) { const m = b2i(pssEncode(msg, EMBITS, salt)); return { z: (m * modpow(r, E, N)) % N, inv: modinv(r, N) }; }
+
+// ---- known-answer tests
+const kats = {
+  "SHA-256 abc": hex(sha256(enc("abc"))) === "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+  "SHA-384 abc": hex(sha384(enc("abc"))) === "cb00753f45a35e8bb5a03d699ac65007272c32ab0eded1631a8b605a43ff5bed8086072ba1e7cc2358baeca134c825a7",
+};
+(() => {
+  const msg = unhex(V.prepared_msg), salt = unhex(V.salt);
+  kats["RFC 9474 encoded_msg"] = hex(pssEncode(msg, EMBITS, salt)) === V.encoded_msg;
+  const r = modinv(BigInt("0x" + V.inv), N), b = blind(msg, salt, r);
+  kats["RFC 9474 blinded_msg"] = b.z === BigInt("0x" + V.blinded_msg);
+  const bs = signCrt(b.z);
+  kats["RFC 9474 blind_sig"] = bs === BigInt("0x" + V.blind_sig);
+  const sig = (bs * b.inv) % N;
+  kats["RFC 9474 sig"] = sig === BigInt("0x" + V.sig);
+  kats["RFC 9474 verify"] = pssVerify(msg, i2b(modpow(sig, E, N), NB), EMBITS, 48);
+})();
+window.__katOk = Object.values(kats).every(Boolean);
+$("kat").innerHTML = Object.entries(kats).map(([k, v]) => `<span class="${v ? "c" : ""}">${v ? "pass" : "FAIL"} ${k}</span>`).join("");
+
+// ---- KPIs
+const f = (x, d = 1) => Number(x).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+const big = S.ledger.batches[S.ledger.batches.length - 1];
+$("kpis").innerHTML = [
+  [`${S.lab.C.token_exact} / ${S.lab.C.requests}`, "lab requests token-exact with the whole model"],
+  [`${Object.values(S.audit.cheats).filter((c) => c.digest_detect_rate === 1).length} / ${Object.keys(S.audit.cheats).length}`, "cheat classes caught by one digest audit"],
+  [`${f(S.token.client_ms_2048 + S.token.issuer_ms_2048, 1)} ms`, "to mint one unlinkable token (RSA-2048)"],
+  [`${f(big.build_us_per_receipt, 2)} µs`, "ledger cost per receipt, off the token path"],
+].map(([v, l]) => `<div class="kpi"><b>${v}</b><span>${l}</span></div>`).join("");
+
+// ---- 1. token flow
+let tok = null; const spent = new Set();
+$("tIssue").onclick = () => {
+  const msg = cat(crypto.getRandomValues(new Uint8Array(32)), enc("|aud=community"));
+  const salt = crypto.getRandomValues(new Uint8Array(48));
+  let r; do { r = b2i(crypto.getRandomValues(new Uint8Array(NB))) % N; } while (r < 2n);
+  const t0 = performance.now(), b = blind(msg, salt, r), bs = signCrt(b.z), sig = (bs * b.inv) % N;
+  const ok = pssVerify(msg, i2b(modpow(sig, E, N), NB), EMBITS, 48), ms = performance.now() - t0;
+  tok = { msg, sig };
+  const zs = b.z.toString(16).padStart(NB * 2, "0"), ss = sig.toString(16).padStart(NB * 2, "0");
+  $("tOut").textContent = `authority saw (blinded):  ${zs.slice(0, 48)}...\ntoken you hold (message): ${hex(msg).slice(0, 48)}...\ntoken you hold (signature): ${ss.slice(0, 48)}...\nsignature verifies under the authority's public key: ${ok}\nblinded value equals signature: ${zs === ss}\nblind + sign + unblind + verify in this browser: ${ms.toFixed(0)} ms`;
+};
+const redeem = () => {
+  if (!tok) return "No token yet.";
+  const id = hex(sha256(tok.msg));
+  if (!pssVerify(tok.msg, i2b(modpow(tok.sig, E, N), NB), EMBITS, 48)) return "refused: invalid_token";
+  if (spent.has(id)) return "refused: double_spend";
+  spent.add(id); return "accepted: lease granted. The pool learned the token is valid. It did not learn whose it is.";
+};
+$("tRedeem").onclick = $("tAgain").onclick = () => { $("tOut").textContent += "\n" + redeem(); };
+
+// ---- 2. audit calculator
+const CH = { skip1: "skip 1 of 10 layers", skip3: "skip 3 of 10 layers", skip10: "skip the whole stage", fp16w: "fp16 weights", int8w: "int8 weights", noise: "0.1% output noise" };
+$("aCheat").innerHTML = Object.keys(S.audit.cheats).map((k) => `<option value="${k}">${CH[k]}</option>`).join("");
+const audit = () => {
+  const q = $("aQ").value / 100, c = S.audit.cheats[$("aCheat").value]; $("aQv").textContent = q.toFixed(2);
+  const n99 = (d) => (d > 0 ? Math.ceil(Math.log(0.01) / Math.log(1 - q * d)) : Infinity);
+  const line = (name, d) => `${name}: catches ${(d * 100).toFixed(0)}% of audited requests -> 99% sure after ${n99(d) === Infinity ? "never" : n99(d).toLocaleString() + " requests"}`;
+  $("aOut").textContent = line("boundary-digest audit", c.digest_detect_rate) + "\n" + line("token-exact audit   ", c.token_detect_rate) +
+    `\nmeasured on ${S.audit.prompts} prompts x ${S.audit.new_tokens} tokens, ${S.audit.model.split("/")[1]}`;
+};
+$("aQ").oninput = $("aCheat").onchange = audit; audit();
+
+// ---- 3. tier-weighted admission (same rule as the lab coordinator)
+$("gRun").onclick = () => {
+  const w = { base: 1, contrib: Math.max(1, +$("gW").value) }, left = { base: +$("gB").value, contrib: +$("gC").value }, served = { base: 0, contrib: 0 }, order = [];
+  while (left.base + left.contrib > 0) {
+    const t = ["base", "contrib"].filter((x) => left[x] > 0).sort((a, b) => served[a] / w[a] - served[b] / w[b] || a.localeCompare(b))[0];
+    order.push(t); left[t]--; served[t] += 32;
+  }
+  $("gOut").innerHTML = order.map((t, i) => `<span class="${t === "contrib" ? "c" : ""}">${i + 1} ${t}</span>`).join("");
+  const half = order.slice(0, Math.ceil(order.length / 2));
+  $("gNote").textContent = `first half of the queue: ${half.filter((t) => t === "contrib").length} contributor-tier, ${half.filter((t) => t === "base").length} base-tier\nlab run granted: ${S.lab.G.grant_order.join(" ")}`;
+};
+
+// ---- 4. Merkle ledger with witnesses (RFC 9162 hashing)
+const leafH = (b) => sha256(cat(Uint8Array.of(0), b)), nodeH = (a, b) => sha256(cat(Uint8Array.of(1), a, b));
+const levels = (ls) => { const L = [ls]; while (L[L.length - 1].length > 1) { const c = L[L.length - 1], n = []; for (let i = 0; i < c.length; i += 2) n.push(i + 1 < c.length ? nodeH(c[i], c[i + 1]) : c[i]); L.push(n); } return L; };
+const prove = (L, i) => { const p = []; for (const l of L.slice(0, -1)) { const s = i ^ 1; if (s < l.length) p.push([s < i, l[s]]); i >>= 1; } return p; };
+const check = (e, p, root) => { let h = leafH(e); for (const [left, s] of p) h = left ? nodeH(s, h) : nodeH(h, s); return hex(h) === hex(root); };
+const members = ["m_alice", "m_bob", "m_carol"]; let entries = [], heads = [], witnesses = [[], [], []];
+const mk = (i) => enc(JSON.stringify(i === 5 ? { seq: i, kind: "slash", member: "m_alice", node_id: "B1" } : { seq: i, kind: "service", member: members[i % 3], tokens: 32 }));
+const cosign = (head) => witnesses.map((seen) => { const prev = seen.length ? hex(sha256(enc(JSON.stringify(seen[seen.length - 1])))) : "0".repeat(64); if (head.epoch !== seen.length || head.prev !== prev) return false; seen.push(head); return true; });
+$("lSeal").onclick = () => {
+  for (let i = 0; i < 8; i++) entries.push(mk(entries.length));
+  const root = levels(entries.map(leafH)).pop()[0], prev = heads.length ? hex(sha256(enc(JSON.stringify(heads[heads.length - 1])))) : "0".repeat(64);
+  const head = { epoch: heads.length, size: entries.length, root: hex(root), prev }, votes = cosign(head);
+  if (votes.filter(Boolean).length >= 2) heads.push(head);
+  $("lOut").textContent = `epoch ${head.epoch}: ${head.size} entries\nroot ${head.root}\nprev ${head.prev.slice(0, 32)}...\nwitness cosignatures: ${votes.filter(Boolean).length} of 3`;
+};
+const need = () => { if (!heads.length) { $("lOut").textContent = "Seal an epoch first."; return true; } return false; };
+$("lProve").onclick = () => { if (need()) return; const L = levels(entries.map(leafH)), p = prove(L, 3); $("lOut").textContent = `entry 3: ${new TextDecoder().decode(entries[3])}\nproof: ${p.length} hashes, ${p.length * 32} bytes\nverifies against the cosigned root: ${check(entries[3], p, L.pop()[0])}`; };
+$("lTamper").onclick = () => { if (need()) return; const L = levels(entries.map(leafH)), p = prove(L, 3), bad = enc(new TextDecoder().decode(entries[3]).replace("32", "3200")); $("lOut").textContent = `tampered entry 3: ${new TextDecoder().decode(bad)}\nverifies against the cosigned root: ${check(bad, p, L.pop()[0])}`; };
+$("lFork").onclick = () => { if (need()) return; const last = heads[heads.length - 1], forged = entries.slice(1); const head = { epoch: last.epoch, size: forged.length, root: hex(levels(forged.map(leafH)).pop()[0]), prev: last.prev }; const votes = cosign(head); $("lOut").textContent = `operator re-issues epoch ${last.epoch} with one entry dropped\nforged root ${head.root}\nwitness cosignatures: ${votes.filter(Boolean).length} of 3 (each witness refuses: fork_detected)\nlab run: ${S.lab.J.fork_attempt.cosigned_by} of ${S.lab.J.witnesses} witnesses cosigned the forged head`; };
+
+// ---- 5. lab evidence
+const L = S.lab, yn = (b) => `<span class="${b ? "ok" : "no"}">${b ? "pass" : "FAIL"}</span>`;
+$("labNote").textContent = `${L.processes} operating-system processes on one host over loopback, real cryptography, ${S.audit.model.split("/")[1]} split into three stages. Not THOX hardware, not a wide-area network.`;
+$("labRows").innerHTML = [
+  ["A. Enrolment", `forged device certificate: ${L.A.forged_certificate_advert.error}; cloud-tagged model advertised as mesh compute: ${L.A.cloud_model_tag_advert.error}`, L.summary.A_enrolment],
+  ["B. Tokens", `second redemption: ${L.B.redeem_again}; forged signature: ${L.B.forged_signature}; over budget: ${L.B.issue_over_budget.error}`, L.summary.B_tokens],
+  ["C. Inference", `${L.C.token_exact} of ${L.C.requests} requests token-exact; ${L.C.receipts_verified} signed receipts verified; ${L.C.honest_audited_steps} honest hops audited, all match`, L.summary.C_inference],
+  ["D. Owner returns", `request moved from ${L.D.first_route[0]} to ${L.D.final_route[0]} mid-stream; output token-exact: ${L.D.token_exact}`, L.summary.D_owner_protection],
+  ["E. Contributor dies", `${L.E.killed} killed at step 12; failed over to ${L.E.final_route[1]}; output token-exact: ${L.E.token_exact}`, L.summary.E_contributor_death],
+  ["F. Cheating contributor", `sampled audit (q = ${L.F.sampled_audit_rate}) caught ${L.F.cheater} at step ${L.F.detected_at_step}; fraud proof accepted; node suspended, credits zeroed; request restarted, token-exact: ${L.F.output_token_exact_after_restart}`, L.summary.F_audit],
+  ["G. Admission", `grant order: ${L.G.grant_order.map((t) => t[0]).join(" ")}; heavy member over budget: ${L.G.heavy_member_over_budget.error}`, L.summary.G_admission],
+  ["H. Cloud plane", `label "${L.H.plane_label}"; token replay: ${L.H.token_replay}; community-class request: ${L.H.community_class_at_cloud}`, L.summary.H_cloud_plane],
+  ["I. Information flow", `relay received ${f(L.I.wire_matrix.relay.inbound_bytes / 1e6, 1)} MB and could read no account, token or prompt`, L.summary.I_information_flow],
+  ["K. Replica route", `whole replica ${f(L.K.replica.mean_ms, 0)} ms against pipeline ${f(L.K.pipeline.mean_ms, 0)} ms per remote round trip, ${L.K.replica.trials} trials each; all token-exact: ${L.K.all_token_exact}`, L.summary.K_replica_vs_pipeline],
+  ["L. Load-indexed issuance", `past budget with the pool idle: issued as surplus; with every route leased: ${L.Lx.over_budget_while_busy.error}`, L.summary.L_load_indexed_issuance],
+  ["J. Ledger", `${L.J.entries} entries; ${L.J.witness_cosignatures_valid} of ${L.J.witnesses} cosignatures valid; replayed balances match: ${L.J.replay_matches_authority}; forged head cosigned by ${L.J.fork_attempt.cosigned_by}`, L.summary.J_ledger],
+].map(([a, b, c]) => `<tr><td>${a}</td><td>${b}</td><td>${yn(c)}</td></tr>`).join("");
+
+// ---- 6. simulation table
+const POL = { fifo: "FIFO", vtc: "least-served-first", vtc_contrib: "contribution-weighted", budget: "fixed issuance budget (unlinkable)", budget_load: "load-indexed budget (unlinkable)" };
+$("sLoad").innerHTML = S.fairness.params.loads.map((l) => `<option value="${l}" ${l === 1.2 ? "selected" : ""}>${l}</option>`).join("");
+const sim = () => { const l = $("sLoad").value; $("sRows").innerHTML = Object.keys(POL).map((p) => { const r = S.fairness.table[`${l}|${p}`]; return `<tr><td>${POL[p]}</td><td>${f(r.contributors_p95_wait_s.median, 0)} s</td><td>${f(r.others_p95_wait_s.median, 0)} s</td><td>${f(r.heavy_service_share.median * 100, 1)}%</td></tr>`; }).join(""); };
+$("sLoad").onchange = sim; sim();
+</script>
+</body>
+</html>
