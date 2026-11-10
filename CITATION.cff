@@ -9,14 +9,15 @@ authors:
     given-names: Tommy
     affiliation: THOX.ai LLC
     orcid: "https://orcid.org/0009-0000-4425-9565"
-version: 1.1.0
+version: 1.1.1
 date-released: 2026-11-10
 license: CC-BY-4.0
-doi: "10.5281/zenodo.24118129"
+doi: "10.5281/zenodo.24120004"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.24118129"
-    description: "Version DOI (v1.1.0), Zenodo record 24118129"
+    value: "10.5281/zenodo.24120004"
+    description: "Version DOI (v1.1.1, erratum version), Zenodo record 24120004"
   - type: doi
     value: "10.5281/zenodo.24115595"
     description: "Concept DOI (all versions)"
+
