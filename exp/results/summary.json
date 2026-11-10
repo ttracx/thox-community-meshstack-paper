@@ -1,0 +1,210 @@
+{
+  "lab": "THOX Community MeshStack Virtual Lab v1.0.0",
+  "date": "2026-11-10",
+  "evidence_classes": {
+    "calculated": "admission arithmetic",
+    "simulated": "lab runs on a general host",
+    "measured_household": "reused from DOI 10.5281/zenodo.23969070"
+  },
+  "measured_household_reused": {
+    "kv_compression_real_gguf": "1.17-1.20x",
+    "hmac_us_per_64token_chunk_household": 9.7,
+    "cross_host_transfer_overhead_s": 0.196
+  },
+  "capacity_calculated": [
+    {
+      "model": "Qwen3-8B",
+      "weights_gb": 5.0,
+      "layers": 36,
+      "household_trio_2_4_6GB": {
+        "stages": 3,
+        "mode": "pipeline"
+      },
+      "community_10_mixed": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "community_4x16GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "community_4x32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_16GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_64GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      }
+    },
+    {
+      "model": "Gemma-3-27B",
+      "weights_gb": 16.5,
+      "layers": 62,
+      "household_trio_2_4_6GB": "unplaceable",
+      "community_10_mixed": {
+        "stages": 3,
+        "mode": "pipeline"
+      },
+      "community_4x16GB": {
+        "stages": 2,
+        "mode": "pipeline"
+      },
+      "community_4x32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_16GB": "unplaceable",
+      "single_32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_64GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      }
+    },
+    {
+      "model": "Qwen3-32B",
+      "weights_gb": 20.1,
+      "layers": 64,
+      "household_trio_2_4_6GB": "unplaceable",
+      "community_10_mixed": {
+        "stages": 3,
+        "mode": "pipeline"
+      },
+      "community_4x16GB": {
+        "stages": 2,
+        "mode": "pipeline"
+      },
+      "community_4x32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_16GB": "unplaceable",
+      "single_32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_64GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      }
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "weights_gb": 43.2,
+      "layers": 80,
+      "household_trio_2_4_6GB": "unplaceable",
+      "community_10_mixed": {
+        "stages": 5,
+        "mode": "pipeline"
+      },
+      "community_4x16GB": {
+        "stages": 4,
+        "mode": "pipeline"
+      },
+      "community_4x32GB": {
+        "stages": 2,
+        "mode": "pipeline"
+      },
+      "single_16GB": "unplaceable",
+      "single_32GB": "unplaceable",
+      "single_64GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      }
+    },
+    {
+      "model": "THOX-27B-ref",
+      "weights_gb": 14.6,
+      "layers": 48,
+      "household_trio_2_4_6GB": "unplaceable",
+      "community_10_mixed": {
+        "stages": 2,
+        "mode": "pipeline"
+      },
+      "community_4x16GB": {
+        "stages": 2,
+        "mode": "pipeline"
+      },
+      "community_4x32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_16GB": "unplaceable",
+      "single_32GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      },
+      "single_64GB": {
+        "stages": 1,
+        "mode": "whole-request"
+      }
+    }
+  ],
+  "household_trio_27B_unplaceable_calculated": true,
+  "privacy_drills_simulated": {
+    "valid_kv_grant_accepted": true,
+    "attenuation_widening_rejected": true,
+    "cross_principal_grant_rejected": true,
+    "stale_epoch_rejected": true,
+    "fingerprint_mismatch_rejected": true,
+    "ungranted_right_rejected": true,
+    "revoked_root_descendants_rejected": true,
+    "crypto_shred_descendants": [
+      "kv1",
+      "root",
+      "stale"
+    ],
+    "coordinator_sees_metadata_only": true,
+    "all_pass": true
+  },
+  "hmac_lab": {
+    "chunks": 2000,
+    "median_us_per_64token_chunk": 9.32,
+    "p95_us": 9.46,
+    "class": "LAB-MEASURED on this general host (VM, shared vCPU); not a device measurement"
+  },
+  "kv_compression_lab_simulated": {
+    "input_bytes": 524288,
+    "compressed_bytes": 395719,
+    "ratio": 1.325,
+    "bit_exact_roundtrip": true,
+    "class": "SIMULATED synthetic tensors in this lab; the paper's wire ratio is the household MEASURED 1.17-1.20x on real GGUF KV"
+  },
+  "churn_simulated": {
+    "seeds": 30,
+    "model": "Gemma-3-27B",
+    "placed_on_first_plan": 30,
+    "replanned_after_stage_loss": 30,
+    "fail_closed_total": 0,
+    "class": "SIMULATED"
+  },
+  "credits_calculated": {
+    "earn_rule": "1 credit per GB-hour offered and available",
+    "example_earned_credits": 352,
+    "spend_rule": "stage-hours consumed x stage GB, debited against subscription grant first, then earned credits",
+    "owner_priority": "P0 owner foreground work preempts; preempted stage-hours are not charged",
+    "class": "CALCULATED example; no live credit market is claimed"
+  },
+  "ledger_lab": {
+    "entries": 5000,
+    "append_us_per_entry": 8.65,
+    "full_chain_verify_ms": 25.2,
+    "chain_valid_before_tamper": true,
+    "merkle_proof_len": 13,
+    "proof_verify_us_median_1000": 18.44,
+    "tamper_detected": true,
+    "design": "Ledger sits on the metadata/control plane only, batched Merkle anchoring; grant checks use a local signed epoch checkpoint, so steady-state inference adds 0 ledger operations per token or per activation.",
+    "class": "LAB-MEASURED append/verify timing on this general host; tamper and proof drills SIMULATED in this lab"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THOX Community MeshStack — Virtual Lab Demo v1.0.0</title>
+<style>body{font-family:system-ui,sans-serif;background:#0B0F14;color:#F3F4F6;margin:0;padding:24px}main{max-width:860px;margin:0 auto}h1{font-size:22px}.g{color:#05A451}label{display:block;margin:12px 0 4px;font-size:13px;color:#9CA3AF}select,input{width:100%;padding:10px;border-radius:8px;border:1px solid #374151;background:#111827;color:#fff}button{margin-top:16px;background:#05A451;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer;width:100%}#out{margin-top:18px;background:#111827;border:1px solid #1F2937;border-left:3px solid #05A451;padding:14px;border-radius:6px;white-space:pre-wrap;font-family:ui-monospace,monospace;font-size:13px}.note{font-size:12px;color:#9CA3AF}</style></head>
+<body><main><h1>THOX Community MeshStack <span class="g">Virtual Lab</span></h1>
+<p>Run the paper's two-domain admission planner in your browser. Same arithmetic as <code>exp/community_lab.py</code>: per-stage weights + KV must fit usable memory, and a 20% workspace reserve must remain, or the plan fails closed.</p>
+<label>Model</label><select id="m">
+<option value="8|36|5.0|80000|0">Qwen3-8B (5.0 GB, 36 layers)</option>
+<option value="27|62|16.5|65536|0.157" selected>Gemma-3-27B (16.5 GB, 62 layers)</option>
+<option value="32|64|20.1|256000|0">Qwen3-32B (20.1 GB, 64 layers)</option>
+<option value="70|80|43.2|320000|0">Llama-3.3-70B (43.2 GB, 80 layers)</option></select>
+<label>Pool</label><select id="p">
+<option value="1.6,3.2,4.8">Household trio (usable 1.6 / 3.2 / 4.8 GB)</option>
+<option value="16">Single 16 GB node</option>
+<option value="16,16,16,16" selected>Community 4 x 16 GB</option>
+<option value="32,32,32,32">Community 4 x 32 GB</option>
+<option value="64">Single 64 GB node</option></select>
+<label>Sequence length (tokens)</label><input id="t" type="number" value="4096" min="128" step="128">
+<button onclick="run()">Plan placement</button>
+<div id="out">Choose a model and a pool, then plan.</div>
+<p class="note">Evidence class: CALCULATED. No production community mesh and no device measurement is claimed. Paper: THOX MeshStack Community Mesh, THOX.ai Research v1.0.0, 2026-11-10. Your AI. Your Data. Your Rules.</p>
+<script>
+function run(){const [nm,L,W,KV,FX]=document.getElementById('m').value.split('|');const layers=+L,wtot=+W,kv=+KV,fx=+FX;
+const pool=document.getElementById('p').value.split(',').map(Number);const T=+document.getElementById('t').value;
+const emb=0.15,head=0.15,wpl=Math.max(0,wtot-emb-head)/layers,kvl=kv/layers,GB=1073741824;
+let placed=0,stages=[];
+for(let i=0;i<pool.length&&placed<layers;i++){const usable=pool[i];let take=0;
+for(let n=layers-placed;n>=0;n--){let w=wpl*n+(placed===0?emb+fx:0)+(placed+n===layers?head:0);let need=w+(kvl*n*T)/GB;
+if(need<=usable&&(usable-need)>=0.20*usable){take=n;break}}
+if(take>0){stages.push(`Stage ${stages.length+1}: node ${i+1} (${usable} GB usable) — layers ${placed}–${placed+take-1}`);placed+=take}}
+document.getElementById('out').textContent = placed<layers ? `UNPLACEABLE — fail-closed.\nPlaced ${placed} of ${layers} layers. No partial admission.` :
+`PLACED in ${stages.length} stage(s) — ${stages.length===1?'whole-request routing (preferred)':'pipeline sharding'}.\n\n`+stages.join('\n');}
+</script></main></body></html>
