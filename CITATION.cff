@@ -12,4 +12,11 @@ authors:
 version: 1.0.0
 date-released: 2026-11-10
 license: CC-BY-4.0
-# DOI: none issued yet. Zenodo deposit is a founder-gated step; do not cite a DOI until one exists.
+doi: "10.5281/zenodo.24115596"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24115596"
+    description: "Version DOI (v1.0.0), Zenodo record 24115596"
+  - type: doi
+    value: "10.5281/zenodo.24115595"
+    description: "Concept DOI (all versions)"

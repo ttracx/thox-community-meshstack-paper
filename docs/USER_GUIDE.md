@@ -4,7 +4,7 @@
 
 The official THOX.ai Research paper specifying the Community Mesh extension of MeshStack, plus the complete Virtual Lab that generates its supporting evidence. It is for MeshStack subscribers, contributors and engineers who want to understand how opt-in contributed hardware can be pooled for distributed inference without giving up the household mesh's privacy properties.
 
-**Status: preprint, not peer reviewed. No DOI has been issued yet. No production community mesh is claimed anywhere in this repository.**
+**Status: preprint, not peer reviewed. Published on Zenodo: version DOI [10.5281/zenodo.24115596](https://doi.org/10.5281/zenodo.24115596). No production community mesh is claimed anywhere in this repository.**
 
 ## The paper in one page
 
@@ -17,7 +17,7 @@ The official THOX.ai Research paper specifying the Community Mesh extension of M
 ## Major workflows
 
 ### Read and cite the paper
-Use `dist/` — PDF for reading, HTML for the web, DOCX for editing. Cite via `CITATION.cff`. Do not cite a DOI; none exists yet.
+Use `dist/` — PDF for reading, HTML for the web, DOCX for editing. Cite via `CITATION.cff`, version DOI [10.5281/zenodo.24115596](https://doi.org/10.5281/zenodo.24115596).
 
 ### Run the Virtual Lab
 The lab (`exp/community_lab.py`, Python stdlib only) implements the specification at lab fidelity: planner, grant DAG, HMAC chunk keying, churn simulation, credits and ledger. `python3 exp/community_lab.py` prints the full evidence record; `exp/results/summary.json` is the file the paper was built from. `python3 exp/test_lab.py` runs the five unit tests.
@@ -42,7 +42,7 @@ The lab takes no configuration files. Model geometry, node pools, sequence lengt
 
 **Is the community mesh a shipped product?** No. This is a research specification and a lab. The paper's repository review (Section 6) records that multi-principal enrollment and credit accounting did not exist in any THOX repository at writing time.
 
-**Is there a DOI?** Not yet. A Zenodo deposit is a separate founder-gated step.
+**Is there a DOI?** Yes — version DOI [10.5281/zenodo.24115596](https://doi.org/10.5281/zenodo.24115596), Zenodo record https://zenodo.org/records/24115596. The concept DOI [10.5281/zenodo.24115595](https://doi.org/10.5281/zenodo.24115595) covers all versions.
 
 **Is this the household MeshStack paper?** No — that is the predecessor, DOI 10.5281/zenodo.23969070, at https://github.com/ttracx/thox-meshstack-paper. This paper extends it from one household to a permissioned community.
 
