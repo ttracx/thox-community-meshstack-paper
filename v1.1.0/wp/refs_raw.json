@@ -1,0 +1,356 @@
+{
+  "petals": {
+    "arxiv_id": "2209.01188v2",
+    "title": "Petals: Collaborative Inference and Fine-tuning of Large Models",
+    "authors": [
+      "Alexander Borzunov",
+      "Dmitry Baranchuk",
+      "Tim Dettmers",
+      "Max Ryabinin",
+      "Younes Belkada",
+      "Artem Chumachenko",
+      "Pavel Samygin",
+      "Colin Raffel"
+    ],
+    "published": "2022-09-02T17:38:03Z",
+    "updated": "2023-03-02T19:33:31Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2209.01188",
+    "status": "resolved"
+  },
+  "petalsinternet": {
+    "arxiv_id": "2312.08361v1",
+    "title": "Distributed Inference and Fine-tuning of Large Language Models Over The Internet",
+    "authors": [
+      "Alexander Borzunov",
+      "Max Ryabinin",
+      "Artem Chumachenko",
+      "Dmitry Baranchuk",
+      "Tim Dettmers",
+      "Younes Belkada",
+      "Pavel Samygin",
+      "Colin Raffel"
+    ],
+    "published": "2023-12-13T18:52:49Z",
+    "updated": "2023-12-13T18:52:49Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2312.08361",
+    "status": "resolved"
+  },
+  "vtc": {
+    "arxiv_id": "2401.00588v2",
+    "title": "Fairness in Serving Large Language Models",
+    "authors": [
+      "Ying Sheng",
+      "Shiyi Cao",
+      "Dacheng Li",
+      "Banghua Zhu",
+      "Zhuohan Li",
+      "Danyang Zhuo",
+      "Joseph E. Gonzalez",
+      "Ion Stoica"
+    ],
+    "published": "2023-12-31T21:15:54Z",
+    "updated": "2024-06-05T06:43:16Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2401.00588",
+    "status": "resolved"
+  },
+  "boinc": {
+    "arxiv_id": "1903.01699v1",
+    "title": "BOINC: A Platform for Volunteer Computing",
+    "authors": [
+      "David P. Anderson"
+    ],
+    "published": "2019-03-05T06:56:34Z",
+    "updated": "2019-03-05T06:56:34Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1903.01699",
+    "status": "resolved"
+  },
+  "pia": {
+    "arxiv_id": "2503.09022v3",
+    "title": "Prompt Inversion Attack against Collaborative Inference of Large Language Models",
+    "authors": [
+      "Wenjie Qu",
+      "Yuguang Zhou",
+      "Yongji Wu",
+      "Tingsong Xiao",
+      "Binhang Yuan",
+      "Yiming Li",
+      "Jiaheng Zhang"
+    ],
+    "published": "2025-03-12T03:20:03Z",
+    "updated": "2025-05-02T06:50:37Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2503.09022",
+    "status": "resolved"
+  },
+  "piadef": {
+    "arxiv_id": "2606.11592v1",
+    "title": "Defense Against Prompt Inversion Attacks: An Information-Theoretic Approach for LLM Collaborative Inference",
+    "authors": [
+      "Sayedeh Leila Noorbakhsh",
+      "Hossein Khalili",
+      "Nader Sehatbakhsh"
+    ],
+    "published": "2026-06-10T02:36:26Z",
+    "updated": "2026-06-10T02:36:26Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2606.11592",
+    "status": "resolved"
+  },
+  "toploc": {
+    "arxiv_id": "2501.16007v2",
+    "title": "TOPLOC: A Locality Sensitive Hashing Scheme for Trustless Verifiable Inference",
+    "authors": [
+      "Jack Min Ong",
+      "Matthew Di Ferrante",
+      "Aaron Pazdera",
+      "Ryan Garner",
+      "Sami Jaghouar",
+      "Manveer Basra",
+      "Max Ryabinin",
+      "Johannes Hagemann"
+    ],
+    "published": "2025-01-27T12:46:45Z",
+    "updated": "2025-05-30T23:07:40Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2501.16007",
+    "status": "resolved"
+  },
+  "svip": {
+    "arxiv_id": "2410.22307v3",
+    "title": "SVIP: Towards Verifiable Inference of Open-source Large Language Models",
+    "authors": [
+      "Yifan Sun",
+      "Yuhang Li",
+      "Yue Zhang",
+      "Yuchen Jin",
+      "Huan Zhang"
+    ],
+    "published": "2024-10-29T17:52:45Z",
+    "updated": "2026-01-31T07:38:35Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2410.22307",
+    "status": "resolved"
+  },
+  "pos": {
+    "arxiv_id": "2405.00295v3",
+    "title": "Proof of Sampling: A Nash Equilibrium-Based Verification Protocol for Decentralized Systems",
+    "authors": [
+      "Yue Zhang",
+      "Shouqiao Wang",
+      "Sijun Tan",
+      "Xiaoyuan Liu",
+      "Ciamac C. Moallemi",
+      "Raluca Ada Popa"
+    ],
+    "published": "2024-05-01T03:27:58Z",
+    "updated": "2025-05-31T22:32:57Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2405.00295",
+    "status": "resolved"
+  },
+  "vec2text": {
+    "arxiv_id": "2310.06816v1",
+    "title": "Text Embeddings Reveal (Almost) As Much As Text",
+    "authors": [
+      "John X. Morris",
+      "Volodymyr Kuleshov",
+      "Vitaly Shmatikov",
+      "Alexander M. Rush"
+    ],
+    "published": "2023-10-10T17:39:03Z",
+    "updated": "2023-10-10T17:39:03Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2310.06816",
+    "status": "resolved"
+  },
+  "lmi": {
+    "arxiv_id": "2311.13647v1",
+    "title": "Language Model Inversion",
+    "authors": [
+      "John X. Morris",
+      "Wenting Zhao",
+      "Justin T. Chiu",
+      "Vitaly Shmatikov",
+      "Alexander M. Rush"
+    ],
+    "published": "2023-11-22T19:04:04Z",
+    "updated": "2023-11-22T19:04:04Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2311.13647",
+    "status": "resolved"
+  },
+  "opml": {
+    "arxiv_id": "2401.17555v2",
+    "title": "opML: Optimistic Machine Learning on Blockchain",
+    "authors": [
+      "KD Conway",
+      "Cathie So",
+      "Xiaohang Yu",
+      "Kartin Wong"
+    ],
+    "published": "2024-01-31T02:43:38Z",
+    "updated": "2024-02-05T05:23:59Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2401.17555",
+    "status": "resolved"
+  },
+  "dlpm": {
+    "arxiv_id": "2501.14312v1",
+    "title": "Locality-aware Fair Scheduling in LLM Serving",
+    "authors": [
+      "Shiyi Cao",
+      "Yichuan Wang",
+      "Ziming Mao",
+      "Pin-Lun Hsu",
+      "Liangsheng Yin",
+      "Tian Xia",
+      "Dacheng Li",
+      "Shu Liu",
+      "Yineng Zhang",
+      "Yang Zhou",
+      "Ying Sheng",
+      "Joseph Gonzalez",
+      "Ion Stoica"
+    ],
+    "published": "2025-01-24T08:12:47Z",
+    "updated": "2025-01-24T08:12:47Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2501.14312",
+    "status": "resolved"
+  },
+  "parallax": {
+    "arxiv_id": "2509.26182v1",
+    "title": "Parallax: Efficient LLM Inference Service over Decentralized Environment",
+    "authors": [
+      "Chris Tong",
+      "Youhe Jiang",
+      "Gufeng Chen",
+      "Tianyi Zhao",
+      "Sibian Lu",
+      "Wenjie Qu",
+      "Eric Yang",
+      "Lynn Ai",
+      "Binhang Yuan"
+    ],
+    "published": "2025-09-30T12:40:37Z",
+    "updated": "2025-09-30T12:40:37Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2509.26182",
+    "status": "resolved"
+  },
+  "poq": {
+    "arxiv_id": "2512.16317v1",
+    "title": "Design and Evaluation of Cost-Aware PoQ for Decentralized LLM Inference",
+    "authors": [
+      "Arther Tian",
+      "Alex Ding",
+      "Frank Chen",
+      "Alan Wu",
+      "Aaron Chan",
+      "Bruce Zhang"
+    ],
+    "published": "2025-12-18T08:57:17Z",
+    "updated": "2025-12-18T08:57:17Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2512.16317",
+    "status": "resolved"
+  },
+  "primacpp": {
+    "arxiv_id": "2504.08791v3",
+    "title": "Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters",
+    "authors": [
+      "Zonghang Li",
+      "Tao Li",
+      "Wenjiao Feng",
+      "Rongxing Xiao",
+      "Jianshu She",
+      "Hong Huang",
+      "Mohsen Guizani",
+      "Hongfang Yu",
+      "Qirong Ho",
+      "Wei Xiang",
+      "Xue Liu"
+    ],
+    "published": "2025-04-07T13:46:21Z",
+    "updated": "2026-07-04T08:07:08Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2504.08791",
+    "status": "resolved"
+  },
+  "teecost": {
+    "arxiv_id": "2509.18886v1",
+    "title": "Confidential LLM Inference: Performance and Cost Across CPU and GPU TEEs",
+    "authors": [
+      "Marcin Chrapek",
+      "Marcin Copik",
+      "Etienne Mettaz",
+      "Torsten Hoefler"
+    ],
+    "published": "2025-09-23T10:36:47Z",
+    "updated": "2025-09-23T10:36:47Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2509.18886",
+    "status": "resolved"
+  },
+  "fairinference": {
+    "arxiv_id": "2609.18112v1",
+    "title": "Token Latency Fairness: Performance Isolation for Multi-Tenant LLM Serving",
+    "authors": [
+      "Dev Bali",
+      "Soujanya Ponnapalli",
+      "Yichuan Wang",
+      "Natacha Crooks",
+      "Scott Shenker",
+      "Matei Zaharia"
+    ],
+    "published": "2026-09-16T04:33:08Z",
+    "updated": "2026-09-16T04:33:08Z",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.18112",
+    "status": "resolved"
+  },
+  "puma": {
+    "arxiv_id": "2307.12533v3",
+    "title": "PUMA: Secure Inference of LLaMA-7B in Five Minutes",
+    "authors": [
+      "Ye Dong",
+      "Wen-jie Lu",
+      "Yancheng Zheng",
+      "Haoqi Wu",
+      "Derun Zhao",
+      "Jin Tan",
+      "Zhicong Huang",
+      "Cheng Hong",
+      "Tao Wei",
+      "Wenguang Chen"
+    ],
+    "published": "2023-07-24T05:43:19Z",
+    "updated": "2023-09-26T10:04:08Z",
+    "journal_ref": "2025",
+    "doi": "10.1051/sands/2025014",
+    "url": "https://arxiv.org/abs/2307.12533",
+    "status": "resolved"
+  }
+}

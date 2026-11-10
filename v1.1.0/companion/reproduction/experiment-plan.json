@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "seed": 20261110,
+  "blocks": 30,
+  "warmups_per_configuration": 2,
+  "prompt": "MeshStack virtual lab evidence.",
+  "max_new_tokens": 8,
+  "configurations": [
+    {
+      "id": "replica_0ms",
+      "mode": "replica",
+      "delay_ms": 0
+    },
+    {
+      "id": "pipeline_0ms",
+      "mode": "pipeline",
+      "delay_ms": 0
+    },
+    {
+      "id": "pipeline_5ms",
+      "mode": "pipeline",
+      "delay_ms": 5
+    },
+    {
+      "id": "pipeline_15ms",
+      "mode": "pipeline",
+      "delay_ms": 15
+    },
+    {
+      "id": "pipeline_audit_paused",
+      "mode": "pipeline",
+      "delay_ms": 0,
+      "pause_audit": true
+    }
+  ],
+  "ordering": "randomized within each block using a fixed PRNG seed",
+  "metric_boundary": "coordinator request start to observed token results; not browser network timestamps",
+  "delay_semantics": "actual extra sleep before each worker RPC computation, not full WAN emulation",
+  "failure_rule": "all attempts retained; no replacement of failed or slow trials",
+  "claim_gate": "diagnostic prototype observations only; >=30 trials does not complete production claims-register gates"
+}

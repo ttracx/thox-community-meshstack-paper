@@ -1,0 +1,188 @@
+{
+ "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+ "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+ "layers": 30,
+ "params": 134515008,
+ "stages": [
+  [
+   0,
+   10
+  ],
+  [
+   10,
+   20
+  ],
+  [
+   20,
+   30
+  ]
+ ],
+ "new_tokens": 32,
+ "prompts": 17,
+ "reps": 5,
+ "host": {
+  "machine": "x86_64",
+  "python": "3.13.18",
+  "torch": "2.15.0+cpu",
+  "threads": 2
+ },
+ "staged_vs_whole_token_exact_prompts": 17,
+ "honest_repeat_digest_equal_prompts": 17,
+ "honest_1thread_digest_equal_prompts": 17,
+ "honest_1thread_token_equal_prompts": 17,
+ "boundary_bytes_per_request_median": 327168,
+ "cheats": {
+  "skip1": {
+   "token_mismatch_prompts": 17,
+   "digest_mismatch_prompts": 17,
+   "first_divergence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "skip3": {
+   "token_mismatch_prompts": 17,
+   "digest_mismatch_prompts": 17,
+   "first_divergence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "skip10": {
+   "token_mismatch_prompts": 17,
+   "digest_mismatch_prompts": 17,
+   "first_divergence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "fp16w": {
+   "token_mismatch_prompts": 0,
+   "digest_mismatch_prompts": 17,
+   "first_divergence": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "int8w": {
+   "token_mismatch_prompts": 16,
+   "digest_mismatch_prompts": 17,
+   "first_divergence": [
+    25,
+    3,
+    16,
+    6,
+    0,
+    13,
+    0,
+    8,
+    14,
+    18,
+    0,
+    0,
+    19,
+    6,
+    null,
+    0,
+    0
+   ]
+  },
+  "noise": {
+   "token_mismatch_prompts": 2,
+   "digest_mismatch_prompts": 17,
+   "first_divergence": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    0,
+    0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ },
+ "seconds_whole_all_prompts": [
+  25.966975804000867,
+  24.24745302600013,
+  25.170347294001203,
+  26.149760311999216,
+  26.220725536998998
+ ],
+ "seconds_staged_all_prompts": [
+  24.25323488400136,
+  24.8631393020014,
+  26.464868996999485,
+  26.771618423999826,
+  25.95405334499901
+ ]
+}

@@ -7,7 +7,7 @@
 
 Official THOX.ai Research paper: **THOX MeshStack Community Mesh — Opt-In User-Contributed Hardware for a Privacy-Centric Shared Computing and Distributed Inference Mesh**, by Craig Ross (Chief Executive Officer) and Tommy Xaypanya (Chief Technology Officer and Co-Founder, corresponding author, ORCID [0009-0000-4425-9565](https://orcid.org/0009-0000-4425-9565)), THOX.ai LLC.
 
-The household MeshStack specification pools one owner's devices. This paper extends it to a permissioned community: MeshStack subscribers opt their own hardware in under epoch-bearing leases, and the pooled capacity serves models no single household can place — with the coordinator still outside the payload path, KV and activation transfers still grant-gated and principal-bound, and a blockchain-like hash-chained ledger confined to the control plane (enrollments, grants, MeshCredits) so verifiable accounting costs zero operations per token in the inference path. Status: **preprint, not peer reviewed.** Published on Zenodo: version DOI [10.5281/zenodo.24115596](https://doi.org/10.5281/zenodo.24115596) (concept DOI [10.5281/zenodo.24115595](https://doi.org/10.5281/zenodo.24115595)).
+The household MeshStack specification pools one owner's devices. This paper extends it to a permissioned community: MeshStack subscribers opt their own hardware in under epoch-bearing leases, and the pooled capacity serves models no single household can place — with the coordinator still outside the payload path, KV and activation transfers still grant-gated and principal-bound, and a blockchain-like hash-chained ledger confined to the control plane (enrollments, grants, MeshCredits) so verifiable accounting costs zero operations per token in the inference path. Status: **preprint, not peer reviewed.** Published on Zenodo: current version v1.1.0, DOI [10.5281/zenodo.24118129](https://doi.org/10.5281/zenodo.24118129) (concept DOI [10.5281/zenodo.24115595](https://doi.org/10.5281/zenodo.24115595); v1.0.0 was DOI 10.5281/zenodo.24115596). v1.1.0 is the consolidated edition: THOX Community Mesh: Unlinkable Subscriber Tokens, Digest-Audited Stage Execution and a Witness-Cosigned Settlement Ledger for Member-Contributed Inference (Craig Ross and Tommy Xaypanya), in dist/ and v1.1.0/.
 
 ![Paper cover page](docs/previews/paper-page-01.png)
 
@@ -47,7 +47,7 @@ Formal releases live on the [Releases page](https://github.com/ttracx/thox-commu
 
 ## Governance note
 
-Public publishing (social, website, store listings, public repo flips, registries, campaigns) requires Craig Ross's explicit approval via craig@thox.ai, CC tommy@thox.ai. This repository was published on the CTO's direct order of 2026-11-10. Citation metadata is in [CITATION.cff](CITATION.cff); cite the version DOI [10.5281/zenodo.24115596](https://doi.org/10.5281/zenodo.24115596).
+Public publishing (social, website, store listings, public repo flips, registries, campaigns) requires Craig Ross's explicit approval via craig@thox.ai, CC tommy@thox.ai. This repository was published on the CTO's direct order of 2026-11-10. Citation metadata is in [CITATION.cff](CITATION.cff); cite the version DOI [10.5281/zenodo.24118129](https://doi.org/10.5281/zenodo.24118129).
 
 ## License
 

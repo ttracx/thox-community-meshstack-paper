@@ -1,0 +1,1614 @@
+[
+ {
+  "t": 1794331057.197,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331061.423,
+  "event": "advert_ok",
+  "node": "B2",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331065.355,
+  "event": "advert_ok",
+  "node": "C1",
+  "stage": "s2",
+  "owner_active": false
+ },
+ {
+  "t": 1794331069.307,
+  "event": "advert_ok",
+  "node": "C2",
+  "stage": "s2",
+  "owner_active": false
+ },
+ {
+  "t": 1794331073.628,
+  "event": "advert_ok",
+  "node": "A1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331081.102,
+  "event": "advert_refused",
+  "reason": "no_authority_certificate",
+  "node": "X9"
+ },
+ {
+  "t": 1794331081.105,
+  "event": "advert_refused",
+  "reason": "cloud_model_is_not_mesh_compute",
+  "node": "B2"
+ },
+ {
+  "t": 1794331081.107,
+  "event": "advert_ok",
+  "node": "B2",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331081.22,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "c65e9a1d801b",
+  "granted": true
+ },
+ {
+  "t": 1794331081.223,
+  "event": "token_refused",
+  "reason": "double_spend"
+ },
+ {
+  "t": 1794331081.226,
+  "event": "token_refused",
+  "reason": "invalid"
+ },
+ {
+  "t": 1794331081.237,
+  "event": "token_refused",
+  "reason": "invalid"
+ },
+ {
+  "t": 1794331081.239,
+  "event": "lease_refused",
+  "reason": "local_only_never_leaves_device"
+ },
+ {
+  "t": 1794331081.242,
+  "event": "lease_refused",
+  "reason": "mesh_only_never_leaves_owner_devices"
+ },
+ {
+  "t": 1794331081.244,
+  "event": "lease_refused",
+  "reason": "confidential_unavailable"
+ },
+ {
+  "t": 1794331081.246,
+  "event": "lease_closed",
+  "lease": "ae15fd3c40a6a9cf",
+  "credited": {}
+ },
+ {
+  "t": 1794331083.83,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "aa1458ec2d98",
+  "granted": true
+ },
+ {
+  "t": 1794331095.647,
+  "event": "lease_closed",
+  "lease": "34e4130f5ed53ba0",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331098.108,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "16eeb8a8787a",
+  "granted": true
+ },
+ {
+  "t": 1794331105.394,
+  "event": "lease_closed",
+  "lease": "48c549b0483e15f1",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331107.808,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "87d8a8e1f92d",
+  "granted": true
+ },
+ {
+  "t": 1794331115.26,
+  "event": "lease_closed",
+  "lease": "bc2a4124c70f15a8",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331117.663,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "f5d8076897b3",
+  "granted": true
+ },
+ {
+  "t": 1794331125.438,
+  "event": "lease_closed",
+  "lease": "9dc91d946e5c76a9",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331127.896,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "4bbb410fade0",
+  "granted": true
+ },
+ {
+  "t": 1794331135.251,
+  "event": "lease_closed",
+  "lease": "18e36eb24da253e0",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331137.778,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "48540222828f",
+  "granted": true
+ },
+ {
+  "t": 1794331144.95,
+  "event": "lease_closed",
+  "lease": "6a5a237089f41994",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331147.603,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "4336e31a0402",
+  "granted": true
+ },
+ {
+  "t": 1794331155.161,
+  "event": "lease_closed",
+  "lease": "98dfa39da5b3701c",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331157.665,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "2fd7a578a012",
+  "granted": true
+ },
+ {
+  "t": 1794331165.277,
+  "event": "lease_closed",
+  "lease": "19999b324b1272f6",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331167.763,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "a42753ac9390",
+  "granted": true
+ },
+ {
+  "t": 1794331169.408,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": true
+ },
+ {
+  "t": 1794331169.475,
+  "event": "reroute",
+  "lease": "a6dbecb57b697aea",
+  "exclude": [
+   "B1"
+  ],
+  "ok": true
+ },
+ {
+  "t": 1794331175.374,
+  "event": "lease_closed",
+  "lease": "f91e872a85da6af6",
+  "credited": {
+   "m_alice": 8,
+   "m_carol": 32,
+   "m_bob": 24
+  }
+ },
+ {
+  "t": 1794331175.391,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "fdeace943674",
+  "granted": true
+ },
+ {
+  "t": 1794331175.393,
+  "event": "lease_closed",
+  "lease": "5d9963f6418b026a",
+  "credited": {}
+ },
+ {
+  "t": 1794331175.397,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331177.898,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "638576bb56d1",
+  "granted": true
+ },
+ {
+  "t": 1794331180.591,
+  "event": "reroute",
+  "lease": "75f83d52aed04979",
+  "exclude": [
+   "C1"
+  ],
+  "ok": true
+ },
+ {
+  "t": 1794331185.488,
+  "event": "lease_closed",
+  "lease": "72eb1455ac2cf11d",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331185.492,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331187.905,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "25ef2730d953",
+  "granted": true
+ },
+ {
+  "t": 1794331195.151,
+  "event": "lease_closed",
+  "lease": "81f23433cac353dc",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331195.164,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "31ed9a467367",
+  "granted": true
+ },
+ {
+  "t": 1794331195.419,
+  "event": "lease_closed",
+  "lease": "9e5cf1ed5221c1c5",
+  "credited": {}
+ },
+ {
+  "t": 1794331195.424,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331197.862,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "d7d13eab6352",
+  "granted": true
+ },
+ {
+  "t": 1794331205.288,
+  "event": "lease_closed",
+  "lease": "3270ed06d91889c1",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331205.3,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "27e27b9a418f",
+  "granted": true
+ },
+ {
+  "t": 1794331205.578,
+  "event": "lease_closed",
+  "lease": "f4fb9ae61775b653",
+  "credited": {}
+ },
+ {
+  "t": 1794331205.582,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331208.028,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "5a7e8985c57c",
+  "granted": true
+ },
+ {
+  "t": 1794331215.372,
+  "event": "lease_closed",
+  "lease": "7393d482f0f6f9f3",
+  "credited": {
+   "m_alice": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331215.386,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "814fa5361bbe",
+  "granted": true
+ },
+ {
+  "t": 1794331215.653,
+  "event": "lease_closed",
+  "lease": "aaeef9c45edbabda",
+  "credited": {}
+ },
+ {
+  "t": 1794331218.104,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "3d86acead308",
+  "granted": true
+ },
+ {
+  "t": 1794331218.563,
+  "event": "slashed",
+  "node": "B1",
+  "member": "m_alice"
+ },
+ {
+  "t": 1794331218.566,
+  "event": "reroute",
+  "lease": "95331318cb3b407c",
+  "exclude": [
+   "B1"
+  ],
+  "ok": true
+ },
+ {
+  "t": 1794331227.09,
+  "event": "lease_closed",
+  "lease": "3f0301d6937db43c",
+  "credited": {
+   "m_bob": 32,
+   "m_carol": 32
+  }
+ },
+ {
+  "t": 1794331227.105,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "e0e761e503ca",
+  "granted": true
+ },
+ {
+  "t": 1794331227.108,
+  "event": "lease_closed",
+  "lease": "e6645bc6ea322d63",
+  "credited": {}
+ },
+ {
+  "t": 1794331227.111,
+  "event": "advert_ok",
+  "node": "B1",
+  "stage": "s1",
+  "owner_active": false
+ },
+ {
+  "t": 1794331231.446,
+  "event": "advert_ok",
+  "node": "R1",
+  "stage": "s12",
+  "owner_active": false
+ },
+ {
+  "t": 1794331231.637,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "15138ca6afb9",
+  "granted": true
+ },
+ {
+  "t": 1794331233.26,
+  "event": "lease_closed",
+  "lease": "4b6d792648859090",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331234.033,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "18a84ee97b04",
+  "granted": true
+ },
+ {
+  "t": 1794331235.627,
+  "event": "lease_closed",
+  "lease": "1034bb82c60c119d",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331236.333,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "db60e3cbcaa3",
+  "granted": true
+ },
+ {
+  "t": 1794331239.024,
+  "event": "lease_closed",
+  "lease": "3c13ab96035ce333",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331239.752,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "9f12e5ca8bb1",
+  "granted": true
+ },
+ {
+  "t": 1794331242.239,
+  "event": "lease_closed",
+  "lease": "5d37ca720e399300",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331242.947,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "b4a681404371",
+  "granted": true
+ },
+ {
+  "t": 1794331244.522,
+  "event": "lease_closed",
+  "lease": "7e4cc86eee8567a7",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331245.251,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "80011677440c",
+  "granted": true
+ },
+ {
+  "t": 1794331246.893,
+  "event": "lease_closed",
+  "lease": "b615bc9ef0aa0947",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331247.616,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "6aa3e3776c3b",
+  "granted": true
+ },
+ {
+  "t": 1794331249.205,
+  "event": "lease_closed",
+  "lease": "25d6af10dc10aab1",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331249.904,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "6a87efec4eba",
+  "granted": true
+ },
+ {
+  "t": 1794331251.416,
+  "event": "lease_closed",
+  "lease": "23f76a6a8eb75d53",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331252.048,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "ffe6c4ab9cc4",
+  "granted": true
+ },
+ {
+  "t": 1794331253.602,
+  "event": "lease_closed",
+  "lease": "57a161ab707af408",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331254.296,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "da0804bdb1e4",
+  "granted": true
+ },
+ {
+  "t": 1794331255.999,
+  "event": "lease_closed",
+  "lease": "741cbd6bcdc9347f",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331256.7,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "f15a06fb0e00",
+  "granted": true
+ },
+ {
+  "t": 1794331258.331,
+  "event": "lease_closed",
+  "lease": "bb0fcfea6c4eff04",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331259.042,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "21c7f35ac402",
+  "granted": true
+ },
+ {
+  "t": 1794331260.58,
+  "event": "lease_closed",
+  "lease": "2651ea84356c4449",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331261.254,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "95d2e5b268a5",
+  "granted": true
+ },
+ {
+  "t": 1794331262.877,
+  "event": "lease_closed",
+  "lease": "7f149aba10994c56",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331263.602,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "05bdb88ca897",
+  "granted": true
+ },
+ {
+  "t": 1794331265.215,
+  "event": "lease_closed",
+  "lease": "14558fe42ee12642",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331265.934,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "7acb380f8ff9",
+  "granted": true
+ },
+ {
+  "t": 1794331267.609,
+  "event": "lease_closed",
+  "lease": "cf0cbec9eda09380",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331268.308,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "77abcdf57044",
+  "granted": true
+ },
+ {
+  "t": 1794331269.84,
+  "event": "lease_closed",
+  "lease": "a030ef0ea67770c0",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331270.484,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "405daee56098",
+  "granted": true
+ },
+ {
+  "t": 1794331272.072,
+  "event": "lease_closed",
+  "lease": "f0d0bac03fd83d9a",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331272.778,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "dc36344098ab",
+  "granted": true
+ },
+ {
+  "t": 1794331274.399,
+  "event": "lease_closed",
+  "lease": "b326b4c43315226b",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331275.109,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "994b3cb52279",
+  "granted": true
+ },
+ {
+  "t": 1794331276.865,
+  "event": "lease_closed",
+  "lease": "ae783c19c28b661f",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331277.56,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "653905704bb6",
+  "granted": true
+ },
+ {
+  "t": 1794331279.122,
+  "event": "lease_closed",
+  "lease": "385e8eb559f2bd65",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331279.786,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "facfa35662ad",
+  "granted": true
+ },
+ {
+  "t": 1794331281.341,
+  "event": "lease_closed",
+  "lease": "0199087bcd5d6652",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331282.034,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "0fb5188b4669",
+  "granted": true
+ },
+ {
+  "t": 1794331283.704,
+  "event": "lease_closed",
+  "lease": "8494df26f4b6843e",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331284.454,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "9c72d91d5127",
+  "granted": true
+ },
+ {
+  "t": 1794331286.125,
+  "event": "lease_closed",
+  "lease": "b78a844e0b005012",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331286.876,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "37ad9a4b9df5",
+  "granted": true
+ },
+ {
+  "t": 1794331288.495,
+  "event": "lease_closed",
+  "lease": "b1552d31f660d2b0",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331289.284,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "5c3638ccee0a",
+  "granted": true
+ },
+ {
+  "t": 1794331290.922,
+  "event": "lease_closed",
+  "lease": "04d5b877cdef943a",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331291.654,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "97e929f9c11f",
+  "granted": true
+ },
+ {
+  "t": 1794331293.412,
+  "event": "lease_closed",
+  "lease": "f5de3ca8cfa1cb1c",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331294.161,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "4b71e32d8c02",
+  "granted": true
+ },
+ {
+  "t": 1794331295.961,
+  "event": "lease_closed",
+  "lease": "0b3befe881e8c4aa",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331296.679,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "a0861d91fac1",
+  "granted": true
+ },
+ {
+  "t": 1794331298.274,
+  "event": "lease_closed",
+  "lease": "e5588a848e00db36",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331298.966,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "a197a9f839a5",
+  "granted": true
+ },
+ {
+  "t": 1794331300.501,
+  "event": "lease_closed",
+  "lease": "fc7dc58608c2503f",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331301.204,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "44ac29eaec2e",
+  "granted": true
+ },
+ {
+  "t": 1794331302.766,
+  "event": "lease_closed",
+  "lease": "e93e378a1a0d74b9",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331303.445,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "e8832eade0ef",
+  "granted": true
+ },
+ {
+  "t": 1794331305.01,
+  "event": "lease_closed",
+  "lease": "d63223f76200eb19",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331305.768,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "f9d8995f185f",
+  "granted": true
+ },
+ {
+  "t": 1794331307.217,
+  "event": "lease_closed",
+  "lease": "eb2db825bdbd5ca1",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331307.85,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "c6f361fa834d",
+  "granted": true
+ },
+ {
+  "t": 1794331309.449,
+  "event": "lease_closed",
+  "lease": "42bbf6ba2d2d0505",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331310.109,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "aad004573e37",
+  "granted": true
+ },
+ {
+  "t": 1794331311.88,
+  "event": "lease_closed",
+  "lease": "6ec34396e45f21fa",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331312.596,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "7342399a1974",
+  "granted": true
+ },
+ {
+  "t": 1794331314.194,
+  "event": "lease_closed",
+  "lease": "ce2cbc8a6fd2402b",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331314.914,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "4c84476581ac",
+  "granted": true
+ },
+ {
+  "t": 1794331316.519,
+  "event": "lease_closed",
+  "lease": "993b0aabc363e514",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331317.241,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "214acb0cddd7",
+  "granted": true
+ },
+ {
+  "t": 1794331318.833,
+  "event": "lease_closed",
+  "lease": "6811f4c8ec9a3aa1",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331319.52,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "cf5f4bc5cb97",
+  "granted": true
+ },
+ {
+  "t": 1794331321.181,
+  "event": "lease_closed",
+  "lease": "b273490a82d8e162",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331321.892,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "cf1b3f6635c7",
+  "granted": true
+ },
+ {
+  "t": 1794331323.562,
+  "event": "lease_closed",
+  "lease": "66f129c2d5b9f93d",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331324.43,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "5a6e67ff6d41",
+  "granted": true
+ },
+ {
+  "t": 1794331326.133,
+  "event": "lease_closed",
+  "lease": "2088576fb75e4b05",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331326.874,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "d91b98ebcef9",
+  "granted": true
+ },
+ {
+  "t": 1794331328.455,
+  "event": "lease_closed",
+  "lease": "b86635265efdd457",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331329.227,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "94ffe7127db2",
+  "granted": true
+ },
+ {
+  "t": 1794331331.022,
+  "event": "lease_closed",
+  "lease": "02f91a57d5f8d8be",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331331.78,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "8e11a2bb46b3",
+  "granted": true
+ },
+ {
+  "t": 1794331333.58,
+  "event": "lease_closed",
+  "lease": "f63410fbcb2a65a1",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331334.254,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "aaed8ea4571a",
+  "granted": true
+ },
+ {
+  "t": 1794331335.774,
+  "event": "lease_closed",
+  "lease": "c02c18e0b4a57666",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331336.424,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "e2db59146150",
+  "granted": true
+ },
+ {
+  "t": 1794331337.938,
+  "event": "lease_closed",
+  "lease": "7cbb47040a5dd4dc",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331338.564,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "9f8aabf50398",
+  "granted": true
+ },
+ {
+  "t": 1794331340.232,
+  "event": "lease_closed",
+  "lease": "41deced8bb16abc2",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331340.93,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "d63b54fa88f0",
+  "granted": true
+ },
+ {
+  "t": 1794331342.641,
+  "event": "lease_closed",
+  "lease": "d23ca67402856d56",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331343.363,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "c46eb486c46a",
+  "granted": true
+ },
+ {
+  "t": 1794331344.885,
+  "event": "lease_closed",
+  "lease": "be399d63ce5d5857",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331345.547,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "14db61a79bb2",
+  "granted": true
+ },
+ {
+  "t": 1794331347.048,
+  "event": "lease_closed",
+  "lease": "89c938e1dff8ad1e",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331347.745,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "52be07ce8a9c",
+  "granted": true
+ },
+ {
+  "t": 1794331349.444,
+  "event": "lease_closed",
+  "lease": "47edc071cd5d1da4",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331350.191,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "a73cd04f5ab3",
+  "granted": true
+ },
+ {
+  "t": 1794331351.832,
+  "event": "lease_closed",
+  "lease": "a2e2131d9b37c527",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331352.528,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "5514804c36c8",
+  "granted": true
+ },
+ {
+  "t": 1794331354.165,
+  "event": "lease_closed",
+  "lease": "de68a22c09a21939",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331354.876,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "273e13bf255d",
+  "granted": true
+ },
+ {
+  "t": 1794331356.434,
+  "event": "lease_closed",
+  "lease": "07599b0272f8d11e",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331357.145,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "cc2212d0247c",
+  "granted": true
+ },
+ {
+  "t": 1794331358.912,
+  "event": "lease_closed",
+  "lease": "8058278562d0425d",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331359.637,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "44582374fbb8",
+  "granted": true
+ },
+ {
+  "t": 1794331361.357,
+  "event": "lease_closed",
+  "lease": "29733c280ef74b5d",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331362.07,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "95bf522cb7b3",
+  "granted": true
+ },
+ {
+  "t": 1794331363.767,
+  "event": "lease_closed",
+  "lease": "b1ba1d044dfab5b1",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331364.451,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "dc680fac8743",
+  "granted": true
+ },
+ {
+  "t": 1794331366.016,
+  "event": "lease_closed",
+  "lease": "a4728d42813b6879",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331366.642,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "fed6d85e817e",
+  "granted": true
+ },
+ {
+  "t": 1794331368.243,
+  "event": "lease_closed",
+  "lease": "37c795a51c871502",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331368.922,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "82e76cf3e8ca",
+  "granted": true
+ },
+ {
+  "t": 1794331370.535,
+  "event": "lease_closed",
+  "lease": "fec411bbf98c945c",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331371.263,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "47286baf29a0",
+  "granted": true
+ },
+ {
+  "t": 1794331372.774,
+  "event": "lease_closed",
+  "lease": "db3ef191e3b5648b",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331373.445,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "64dfd30d65ce",
+  "granted": true
+ },
+ {
+  "t": 1794331375.029,
+  "event": "lease_closed",
+  "lease": "824e665ce076bf1f",
+  "credited": {
+   "m_bob": 8
+  }
+ },
+ {
+  "t": 1794331375.777,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "acc0a876648a",
+  "granted": true
+ },
+ {
+  "t": 1794331377.467,
+  "event": "lease_closed",
+  "lease": "caef73eeb86faec8",
+  "credited": {
+   "m_bob": 8,
+   "m_carol": 8
+  }
+ },
+ {
+  "t": 1794331378.252,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "cb205ab797ea",
+  "granted": false
+ },
+ {
+  "t": 1794331378.255,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "9c8535536919",
+  "granted": false
+ },
+ {
+  "t": 1794331378.258,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "c450f71f134e",
+  "granted": false
+ },
+ {
+  "t": 1794331378.26,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "dfe0e4deb10a",
+  "granted": false
+ },
+ {
+  "t": 1794331378.263,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "1a55af8d85c7",
+  "granted": false
+ },
+ {
+  "t": 1794331378.269,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "24e7da76ece9",
+  "granted": false
+ },
+ {
+  "t": 1794331378.271,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "bb683d674e39",
+  "granted": false
+ },
+ {
+  "t": 1794331378.274,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "5482a497ad31",
+  "granted": false
+ },
+ {
+  "t": 1794331378.277,
+  "event": "token_redeemed",
+  "tier": "contrib",
+  "ticket": "43bd7a2d547d",
+  "granted": false
+ },
+ {
+  "t": 1794331378.279,
+  "event": "token_redeemed",
+  "tier": "contrib",
+  "ticket": "2b171e06c22a",
+  "granted": false
+ },
+ {
+  "t": 1794331378.282,
+  "event": "token_redeemed",
+  "tier": "contrib",
+  "ticket": "f65231e73c9d",
+  "granted": false
+ },
+ {
+  "t": 1794331378.285,
+  "event": "token_redeemed",
+  "tier": "contrib",
+  "ticket": "59886cf8ee22",
+  "granted": false
+ },
+ {
+  "t": 1794331378.29,
+  "event": "lease_closed",
+  "lease": "30f9bc7b5b89fe13",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.315,
+  "event": "lease_closed",
+  "lease": "d77efc7d8a212199",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.321,
+  "event": "lease_closed",
+  "lease": "d4c72b71b0dab4bf",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.327,
+  "event": "lease_closed",
+  "lease": "8f28435ff7543b45",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.334,
+  "event": "lease_closed",
+  "lease": "a2434be2cef01500",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.354,
+  "event": "lease_closed",
+  "lease": "a492670bd7875c78",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.36,
+  "event": "lease_closed",
+  "lease": "285ea4bd61cdc0b7",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.365,
+  "event": "lease_closed",
+  "lease": "217273a4575350d5",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.371,
+  "event": "lease_closed",
+  "lease": "d013c0ebe29d44ab",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.377,
+  "event": "lease_closed",
+  "lease": "54a382e505f7019e",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.383,
+  "event": "lease_closed",
+  "lease": "00ebb41294e41968",
+  "credited": {}
+ },
+ {
+  "t": 1794331378.388,
+  "event": "lease_closed",
+  "lease": "1c5c9d88e60fe477",
+  "credited": {}
+ },
+ {
+  "t": 1794331379.355,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "dc8bca2677aa",
+  "granted": true
+ },
+ {
+  "t": 1794331379.367,
+  "event": "token_redeemed",
+  "tier": "base",
+  "ticket": "428ef0f31263",
+  "granted": true
+ },
+ {
+  "t": 1794331379.373,
+  "event": "lease_closed",
+  "lease": "497fd6ef308f20b7",
+  "credited": {}
+ },
+ {
+  "t": 1794331379.375,
+  "event": "lease_closed",
+  "lease": "1100c3aa02edc081",
+  "credited": {}
+ }
+]

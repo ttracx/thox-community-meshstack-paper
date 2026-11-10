@@ -1,0 +1,47 @@
+{
+  "run_id": "a2ea5b4a911e45deb2ee99953d5a6225",
+  "pid": 2,
+  "started_at_utc": "2026-11-10T16:37:29.771474+00:00",
+  "worker_pids": {
+    "replica": 5,
+    "stage0": 8,
+    "stage1": 11,
+    "stage2": 14,
+    "stage3": 17,
+    "stage2_backup": 20
+  },
+  "model": {
+    "config": {
+      "architecture": "tiny_causal_transformer_v1",
+      "seed": 20261110,
+      "num_layers": 4,
+      "hidden_size": 64,
+      "num_heads": 4,
+      "ffn_hidden_size": 256,
+      "vocab_size": 256,
+      "max_context": 128,
+      "dtype": "float64",
+      "tokenizer": "utf8_bytes",
+      "position_encoding": "learned_absolute_random",
+      "normalization": "pre_layer_norm",
+      "layer_norm_epsilon": 1e-05,
+      "activation": "gelu_tanh",
+      "weight_initialization": "numpy_PCG64_standard_normal_v1",
+      "trained": false,
+      "kv_cache": false
+    },
+    "fingerprint": "e5d69cfa0005f8586fb4b13c98bc3a65a9f558b5fd379024cea44c00d03d36ea",
+    "fingerprint_algorithm": "sha256(canonical_config_and_named_actual_weight_bytes)",
+    "parameter_count": 241280,
+    "numpy_version": "2.3.5",
+    "status": "untrained deterministic reference model; no language-quality claim",
+    "generation": "full-prefix recomputation; no KV cache"
+  },
+  "topology": "one physical host; six independent loopback TLS worker processes",
+  "security": "trusted lab authority; no TEE or hostile-host confidentiality",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "injected_delay": "additional per-RPC worker wait; not physical WAN emulation",
+  "retention": "local synthetic outputs and metadata retained for research; prompts omitted from audit logs"
+}

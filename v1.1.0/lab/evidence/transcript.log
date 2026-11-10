@@ -1,0 +1,29 @@
+[11:17:31] starting authority, coordinator, relay
+[11:17:33] starting stage node B1
+[11:17:37] starting stage node B2
+[11:17:41] starting stage node C1
+[11:17:45] starting stage node C2
+[11:17:49] starting stage node A1
+[11:17:53] starting cloud gateway
+[11:18:01] A. enrolment, signed advertisements, refused advertisements
+[11:18:01] B. blind tokens: issue, redeem, double spend, forgery, audience, budget
+[11:18:01] C. community-plane inference, token-exact against the whole model, every hop of one request audited
+[11:18:15]    prompt 1/8 token_exact=True 11.8s
+[11:18:25]    prompt 2/8 token_exact=True 7.3s
+[11:18:35]    prompt 3/8 token_exact=True 7.5s
+[11:18:45]    prompt 4/8 token_exact=True 7.8s
+[11:18:55]    prompt 5/8 token_exact=True 7.4s
+[11:19:04]    prompt 6/8 token_exact=True 7.2s
+[11:19:15]    prompt 7/8 token_exact=True 7.6s
+[11:19:25]    prompt 8/8 token_exact=True 7.6s
+[11:19:25] D. owner returns mid-request: device drains, request moves to the standby contributor
+[11:19:35] E. a contributor process is killed mid-request: hop fails closed with attribution, request fails over
+[11:19:45] F. cheating contributor: audit-only detection for three cheats, then slashing and reroute
+[11:20:27] K. replica route against pipeline route: a device joins mid-run holding both remote ranges
+[11:22:58] G. contribution raises the issuance budget; admission interleaves tiers 3:1
+[11:22:58] L. load-indexed issuance: past the budget, a token is issued only while the pool reports idle capacity
+[11:22:59] H. cloud plane through the relay, labelled, refused for community-class requests
+[11:23:04] J. settlement ledger: seal an epoch, witness cosignatures, inclusion proof, replay, fork attempt
+[11:23:04] I. information-flow scan over everything each process received
+[11:24:06] summary {'A_enrolment': True, 'B_tokens': True, 'C_inference': True, 'D_owner_protection': True, 'E_contributor_death': True, 'F_audit': True, 'K_replica_vs_pipeline': True, 'G_admission': True, 'L_load_indexed_issuance': True, 'H_cloud_plane': True, 'J_ledger': True, 'I_information_flow': True}
+[11:24:06] evidence sha256 820718dd3b7a29338989dcde044fa1c22d119e9912892424f1f2dbf740e9f448

@@ -1,0 +1,7454 @@
+[
+ {
+  "t": 1794331081.212,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331081.222,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331081.225,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331081.236,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 812
+ },
+ {
+  "t": 1794331081.239,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 856
+ },
+ {
+  "t": 1794331081.241,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 852
+ },
+ {
+  "t": 1794331081.244,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 856
+ },
+ {
+  "t": 1794331081.246,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331083.828,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331083.891,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331084.02,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 165160
+ },
+ {
+  "t": 1794331084.224,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331084.352,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 169256
+ },
+ {
+  "t": 1794331084.543,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331084.666,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 173352
+ },
+ {
+  "t": 1794331084.852,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331084.978,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 177448
+ },
+ {
+  "t": 1794331085.178,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331085.306,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 181544
+ },
+ {
+  "t": 1794331085.491,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331085.637,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 185640
+ },
+ {
+  "t": 1794331085.863,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331086.006,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 189736
+ },
+ {
+  "t": 1794331086.217,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331086.342,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 193832
+ },
+ {
+  "t": 1794331086.536,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197728
+ },
+ {
+  "t": 1794331086.661,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 197928
+ },
+ {
+  "t": 1794331086.901,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201824
+ },
+ {
+  "t": 1794331087.042,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 202024
+ },
+ {
+  "t": 1794331087.27,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331087.414,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 206124
+ },
+ {
+  "t": 1794331087.623,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331087.76,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 210220
+ },
+ {
+  "t": 1794331087.991,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331088.128,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 214316
+ },
+ {
+  "t": 1794331088.328,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331088.469,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 218412
+ },
+ {
+  "t": 1794331088.685,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331088.842,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 222508
+ },
+ {
+  "t": 1794331089.05,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331089.206,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 226604
+ },
+ {
+  "t": 1794331089.41,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331089.548,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 230700
+ },
+ {
+  "t": 1794331089.763,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331089.909,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 234796
+ },
+ {
+  "t": 1794331090.124,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331090.263,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 238892
+ },
+ {
+  "t": 1794331090.47,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331090.622,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 242988
+ },
+ {
+  "t": 1794331090.855,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331091.024,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 247084
+ },
+ {
+  "t": 1794331091.238,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331091.389,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 251180
+ },
+ {
+  "t": 1794331091.632,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331091.773,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 255276
+ },
+ {
+  "t": 1794331092.007,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331092.168,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 259372
+ },
+ {
+  "t": 1794331092.413,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331092.57,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 263468
+ },
+ {
+  "t": 1794331092.804,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331092.985,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 267564
+ },
+ {
+  "t": 1794331093.214,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331093.392,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 271660
+ },
+ {
+  "t": 1794331093.622,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331093.787,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 275756
+ },
+ {
+  "t": 1794331094.036,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331094.189,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 279852
+ },
+ {
+  "t": 1794331094.429,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331094.606,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 283948
+ },
+ {
+  "t": 1794331094.852,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331095.016,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 288044
+ },
+ {
+  "t": 1794331095.286,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331095.457,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 292140
+ },
+ {
+  "t": 1794331095.631,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331098.107,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331098.163,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 156772
+ },
+ {
+  "t": 1794331098.356,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331098.566,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331098.806,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331099.029,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331099.254,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331099.456,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331099.653,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331099.853,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331100.048,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331100.273,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331100.495,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331100.737,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331100.964,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331101.19,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331101.405,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331101.618,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331101.837,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331102.062,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331102.282,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331102.503,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331102.731,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331102.981,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331103.234,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331103.482,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331103.74,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331103.981,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331104.206,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331104.458,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331104.704,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331104.955,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331105.213,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331105.38,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331107.807,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331107.875,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331108.084,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331108.304,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331108.529,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331108.75,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331108.97,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331109.182,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331109.4,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331109.64,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331109.843,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331110.051,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331110.267,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331110.496,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331110.713,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331110.932,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331111.151,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331111.371,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331111.581,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331111.815,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331112.04,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331112.263,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331112.496,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331112.737,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331112.984,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331113.213,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331113.464,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331113.708,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331113.98,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331114.231,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331114.492,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331114.787,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 296036
+ },
+ {
+  "t": 1794331115.069,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 300132
+ },
+ {
+  "t": 1794331115.243,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331117.661,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331117.726,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331117.966,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331118.177,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331118.398,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331118.64,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331118.875,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331119.075,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331119.283,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331119.507,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331119.732,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331119.956,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331120.185,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331120.397,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331120.626,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331120.859,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331121.105,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331121.328,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331121.583,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331121.829,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331122.08,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331122.371,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331122.637,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331122.909,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331123.153,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331123.429,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331123.68,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331123.955,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331124.209,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331124.454,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331124.726,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331124.973,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331125.233,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331125.424,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331127.895,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331127.953,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331128.166,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331128.367,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331128.581,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331128.794,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331128.982,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331129.197,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331129.389,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331129.61,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331129.821,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331130.03,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331130.236,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331130.447,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331130.679,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331130.914,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331131.137,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331131.375,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331131.623,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331131.859,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331132.116,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331132.375,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331132.605,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331132.829,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331133.065,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331133.303,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331133.534,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331133.778,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331134.011,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331134.243,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331134.524,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331134.794,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331135.053,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331135.237,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331137.777,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331137.838,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 156772
+ },
+ {
+  "t": 1794331138.024,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331138.221,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331138.408,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331138.615,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331138.819,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331139.022,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331139.218,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331139.427,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331139.643,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331139.858,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331140.091,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331140.309,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331140.514,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331140.725,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331140.936,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331141.148,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331141.359,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331141.573,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331141.795,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331142.018,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331142.26,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331142.485,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331142.727,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331142.997,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331143.252,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331143.473,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331143.728,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331143.996,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331144.241,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331144.487,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331144.76,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331144.936,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331147.602,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331147.663,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331147.873,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331148.087,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331148.291,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331148.491,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331148.73,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331148.943,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331149.136,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331149.329,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331149.55,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331149.792,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331150.001,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331150.216,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331150.436,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331150.664,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331150.876,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331151.091,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331151.341,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331151.601,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331151.835,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331152.05,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331152.271,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331152.493,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331152.725,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331152.963,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331153.196,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331153.459,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331153.722,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331153.996,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331154.345,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331154.673,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331154.972,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331155.147,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331157.664,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331157.724,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331157.909,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331158.102,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331158.319,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331158.538,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331158.759,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331158.954,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331159.176,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331159.382,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331159.643,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331159.849,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331160.055,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331160.265,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331160.499,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331160.756,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331161.003,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331161.25,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331161.471,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331161.7,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331161.928,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331162.181,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331162.464,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331162.738,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331162.984,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331163.229,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331163.496,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331163.769,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331164.017,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331164.263,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331164.554,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331164.824,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331165.08,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331165.262,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331167.762,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331167.826,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 156772
+ },
+ {
+  "t": 1794331168.02,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331168.221,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331168.46,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331168.671,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331168.863,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331169.059,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331169.266,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331169.47,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331169.474,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 228
+ },
+ {
+  "t": 1794331169.54,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331169.744,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331169.962,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331170.2,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331170.409,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331170.645,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331170.889,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331171.111,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331171.337,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331171.555,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331171.806,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331172.046,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331172.294,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331172.562,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331172.902,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331173.171,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331173.422,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331173.664,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331173.926,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331174.178,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331174.418,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331174.666,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331174.91,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331175.171,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331175.353,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331175.389,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331175.393,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331177.897,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331177.975,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331178.176,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331178.377,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331178.592,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331178.807,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331179.008,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331179.209,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197732
+ },
+ {
+  "t": 1794331179.413,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331179.621,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331179.833,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331180.042,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331180.272,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331180.516,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331180.59,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 228
+ },
+ {
+  "t": 1794331180.67,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331180.901,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331181.127,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331181.357,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331181.594,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331181.828,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331182.07,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331182.306,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331182.546,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331182.782,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331183.02,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331183.257,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331183.505,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331183.779,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331184.03,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331184.274,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331184.538,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331184.789,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331185.037,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 296036
+ },
+ {
+  "t": 1794331185.29,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 300132
+ },
+ {
+  "t": 1794331185.473,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331187.903,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331187.978,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331188.191,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331188.396,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331188.601,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331188.786,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331188.985,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331189.182,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331189.367,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331189.576,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197728
+ },
+ {
+  "t": 1794331189.78,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201824
+ },
+ {
+  "t": 1794331189.98,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331190.193,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331190.392,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331190.597,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331190.814,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331191.056,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331191.284,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331191.506,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331191.75,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331191.989,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331192.215,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331192.461,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331192.704,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331192.963,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331193.19,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331193.433,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331193.692,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331193.928,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331194.179,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331194.419,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331194.702,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331194.946,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331195.137,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331195.163,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331195.234,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331195.354,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 165160
+ },
+ {
+  "t": 1794331195.418,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331197.86,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331197.916,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331198.115,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331198.338,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331198.53,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331198.722,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331198.915,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331199.115,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331199.318,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331199.521,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197728
+ },
+ {
+  "t": 1794331199.74,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201824
+ },
+ {
+  "t": 1794331199.97,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331200.164,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331200.37,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331200.579,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331200.787,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331201.018,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331201.261,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331201.49,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331201.717,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331201.956,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331202.201,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331202.46,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331202.724,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331202.962,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331203.21,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331203.463,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331203.726,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331204.018,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331204.316,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331204.578,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331204.824,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331205.08,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331205.273,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331205.299,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331205.365,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331205.51,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 165160
+ },
+ {
+  "t": 1794331205.577,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331208.026,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331208.086,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331208.265,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331208.444,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331208.661,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331208.886,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331209.103,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331209.306,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331209.556,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331209.758,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 197728
+ },
+ {
+  "t": 1794331209.958,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 201824
+ },
+ {
+  "t": 1794331210.147,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331210.341,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331210.556,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331210.761,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331210.99,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331211.212,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331211.423,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331211.675,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331211.887,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331212.107,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331212.355,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331212.598,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331212.849,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331213.06,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331213.288,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331213.522,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331213.784,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331214.076,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331214.341,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331214.615,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331214.873,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331215.159,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 291940
+ },
+ {
+  "t": 1794331215.359,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331215.385,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331215.452,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331215.584,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 165160
+ },
+ {
+  "t": 1794331215.652,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331218.103,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331218.162,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331218.37,
+  "event": "forward",
+  "to": "B1",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331218.498,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 165160
+ },
+ {
+  "t": 1794331218.559,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 1348
+ },
+ {
+  "t": 1794331218.565,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 228
+ },
+ {
+  "t": 1794331218.628,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160864
+ },
+ {
+  "t": 1794331218.82,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331219.029,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331219.228,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331219.434,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331219.569,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 177448
+ },
+ {
+  "t": 1794331219.748,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331219.941,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331220.07,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 185640
+ },
+ {
+  "t": 1794331220.27,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331220.475,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331220.687,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 197728
+ },
+ {
+  "t": 1794331220.918,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 201828
+ },
+ {
+  "t": 1794331221.174,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 205924
+ },
+ {
+  "t": 1794331221.388,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 210020
+ },
+ {
+  "t": 1794331221.59,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 214116
+ },
+ {
+  "t": 1794331221.807,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 218212
+ },
+ {
+  "t": 1794331222.009,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 222308
+ },
+ {
+  "t": 1794331222.16,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 222508
+ },
+ {
+  "t": 1794331222.367,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 226404
+ },
+ {
+  "t": 1794331222.585,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 230500
+ },
+ {
+  "t": 1794331222.821,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 234596
+ },
+ {
+  "t": 1794331222.972,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 234796
+ },
+ {
+  "t": 1794331223.191,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 238692
+ },
+ {
+  "t": 1794331223.457,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 242788
+ },
+ {
+  "t": 1794331223.618,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 242988
+ },
+ {
+  "t": 1794331223.828,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 246884
+ },
+ {
+  "t": 1794331224.066,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 250980
+ },
+ {
+  "t": 1794331224.247,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 251180
+ },
+ {
+  "t": 1794331224.468,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 255076
+ },
+ {
+  "t": 1794331224.697,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 259172
+ },
+ {
+  "t": 1794331224.947,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 263268
+ },
+ {
+  "t": 1794331225.107,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 263468
+ },
+ {
+  "t": 1794331225.334,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 267364
+ },
+ {
+  "t": 1794331225.501,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 267564
+ },
+ {
+  "t": 1794331225.77,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 271460
+ },
+ {
+  "t": 1794331226.008,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 275556
+ },
+ {
+  "t": 1794331226.261,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 279652
+ },
+ {
+  "t": 1794331226.557,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 283748
+ },
+ {
+  "t": 1794331226.849,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 287844
+ },
+ {
+  "t": 1794331227.072,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 35692
+ },
+ {
+  "t": 1794331227.104,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 816
+ },
+ {
+  "t": 1794331227.107,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331231.636,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331231.695,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331231.909,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331232.101,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331232.298,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331232.484,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331232.692,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331232.908,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331233.112,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331233.249,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331234.032,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331234.092,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331234.289,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331234.461,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331234.665,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331234.886,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331235.09,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331235.28,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189324
+ },
+ {
+  "t": 1794331235.489,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193420
+ },
+ {
+  "t": 1794331235.623,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331236.332,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331236.407,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331236.544,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 165160
+ },
+ {
+  "t": 1794331236.713,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331236.828,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 169256
+ },
+ {
+  "t": 1794331237.038,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331237.184,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 173352
+ },
+ {
+  "t": 1794331237.375,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331237.493,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 177448
+ },
+ {
+  "t": 1794331237.695,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331237.832,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 181544
+ },
+ {
+  "t": 1794331238.049,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331238.165,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 185640
+ },
+ {
+  "t": 1794331238.369,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331238.495,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 189736
+ },
+ {
+  "t": 1794331238.7,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331238.854,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 193832
+ },
+ {
+  "t": 1794331239.015,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331239.75,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331239.81,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331239.93,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 156416
+ },
+ {
+  "t": 1794331240.102,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331240.201,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 160512
+ },
+ {
+  "t": 1794331240.379,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331240.495,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 164608
+ },
+ {
+  "t": 1794331240.673,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331240.786,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 168704
+ },
+ {
+  "t": 1794331240.994,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331241.139,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 172800
+ },
+ {
+  "t": 1794331241.341,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331241.462,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 176896
+ },
+ {
+  "t": 1794331241.659,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331241.788,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 180992
+ },
+ {
+  "t": 1794331241.985,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331242.11,
+  "event": "forward",
+  "to": "A1",
+  "bytes": 185088
+ },
+ {
+  "t": 1794331242.235,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331242.946,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331243.007,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331243.179,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331243.367,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331243.553,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331243.746,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331243.977,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193424
+ },
+ {
+  "t": 1794331244.157,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197520
+ },
+ {
+  "t": 1794331244.384,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201616
+ },
+ {
+  "t": 1794331244.517,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331245.25,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331245.309,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331245.493,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331245.688,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331245.887,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331246.096,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331246.308,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331246.521,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331246.747,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331246.883,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331247.615,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331247.675,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160864
+ },
+ {
+  "t": 1794331247.86,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331248.067,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331248.27,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331248.457,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331248.644,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331248.838,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331249.051,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331249.197,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331249.903,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331249.963,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331250.138,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331250.32,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331250.515,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331250.716,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331250.896,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331251.091,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331251.291,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331251.411,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331252.047,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331252.103,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331252.278,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331252.467,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331252.665,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331252.866,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331253.048,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331253.243,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331253.459,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331253.597,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331254.295,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331254.364,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331254.576,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331254.761,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331254.96,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331255.171,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331255.419,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331255.64,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331255.845,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331255.991,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331256.699,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331256.769,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331256.966,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331257.168,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331257.357,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331257.558,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331257.771,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331257.972,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331258.181,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331258.322,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331259.041,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331259.111,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331259.326,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331259.495,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331259.699,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331259.897,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331260.081,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331260.266,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331260.451,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331260.576,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331261.253,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331261.32,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331261.515,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331261.721,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331261.912,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331262.088,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331262.31,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193424
+ },
+ {
+  "t": 1794331262.504,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197520
+ },
+ {
+  "t": 1794331262.73,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201616
+ },
+ {
+  "t": 1794331262.872,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331263.601,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331263.665,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331263.886,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331264.071,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331264.259,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331264.444,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331264.642,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331264.843,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331265.063,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331265.207,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331265.932,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331266.006,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331266.192,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331266.378,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331266.609,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331266.807,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331267.018,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331267.248,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331267.44,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331267.598,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331268.307,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331268.366,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156556
+ },
+ {
+  "t": 1794331268.525,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331268.705,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331268.891,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331269.081,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331269.279,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331269.463,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331269.697,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331269.835,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331270.483,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331270.556,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331270.741,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331270.927,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331271.137,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331271.319,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331271.49,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331271.733,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331271.937,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331272.067,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331272.777,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331272.842,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331273.036,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331273.252,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331273.45,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331273.656,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331273.856,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331274.055,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331274.246,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331274.389,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331275.108,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331275.175,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331275.378,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331275.593,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331275.815,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331276.031,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331276.26,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331276.496,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331276.701,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331276.856,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331277.559,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331277.62,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156556
+ },
+ {
+  "t": 1794331277.808,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331277.98,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331278.164,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331278.38,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331278.618,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331278.81,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331278.993,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331279.117,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331279.785,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331279.853,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331280.046,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331280.223,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331280.401,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331280.588,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331280.812,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193424
+ },
+ {
+  "t": 1794331281.017,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197520
+ },
+ {
+  "t": 1794331281.213,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201616
+ },
+ {
+  "t": 1794331281.337,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331282.032,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331282.106,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331282.31,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331282.525,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331282.726,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331282.943,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331283.152,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331283.361,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331283.553,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331283.696,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331284.453,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331284.511,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160864
+ },
+ {
+  "t": 1794331284.739,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331284.954,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331285.163,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331285.363,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331285.569,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331285.767,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331285.961,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331286.116,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331286.874,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331286.933,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331287.108,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331287.289,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331287.488,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331287.689,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331287.876,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331288.106,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331288.348,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331288.491,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331289.282,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331289.361,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331289.565,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331289.744,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331289.93,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331290.148,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331290.359,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331290.567,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331290.774,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331290.916,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331291.652,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331291.732,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331291.924,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331292.116,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331292.337,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331292.547,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331292.763,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331293.003,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331293.231,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331293.402,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331294.159,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331294.23,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331294.436,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331294.655,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331294.886,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331295.109,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331295.315,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331295.526,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331295.768,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331295.952,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331296.678,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331296.758,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331296.968,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331297.155,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331297.335,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331297.513,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331297.728,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331297.951,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331298.15,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331298.27,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331298.964,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331299.03,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331299.217,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331299.389,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331299.563,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331299.757,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189324
+ },
+ {
+  "t": 1794331299.942,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193420
+ },
+ {
+  "t": 1794331300.133,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197516
+ },
+ {
+  "t": 1794331300.337,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201612
+ },
+ {
+  "t": 1794331300.496,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331301.203,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331301.267,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331301.46,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331301.647,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331301.839,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331302.029,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331302.23,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331302.416,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331302.611,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331302.757,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331303.444,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331303.504,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331303.707,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331303.914,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331304.118,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331304.303,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331304.491,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331304.683,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331304.864,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331305.0,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331305.767,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331305.822,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156556
+ },
+ {
+  "t": 1794331305.99,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331306.155,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331306.327,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331306.5,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331306.692,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331306.884,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331307.08,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331307.212,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331307.849,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331307.913,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331308.09,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331308.265,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331308.442,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331308.657,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331308.885,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331309.111,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331309.316,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331309.445,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331310.107,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331310.184,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331310.385,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331310.57,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331310.783,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331311.021,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331311.252,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331311.478,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331311.728,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331311.869,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331312.594,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331312.654,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331312.845,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331313.039,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331313.249,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331313.459,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331313.658,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331313.862,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331314.05,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331314.185,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331314.913,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331314.977,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156556
+ },
+ {
+  "t": 1794331315.204,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331315.402,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331315.589,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331315.81,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331315.995,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331316.182,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331316.376,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331316.513,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331317.24,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331317.315,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331317.519,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331317.723,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331317.913,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331318.112,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331318.311,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193424
+ },
+ {
+  "t": 1794331318.499,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197520
+ },
+ {
+  "t": 1794331318.697,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201616
+ },
+ {
+  "t": 1794331318.828,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331319.518,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331319.579,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331319.786,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331320.002,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331320.211,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331320.412,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331320.626,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331320.823,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331321.022,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331321.173,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331321.89,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331321.945,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331322.146,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331322.366,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331322.578,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331322.767,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331322.964,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331323.175,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331323.407,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331323.55,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331324.428,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331324.487,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331324.661,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331324.862,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331325.084,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331325.279,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331325.488,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331325.724,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331325.963,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331326.127,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331326.872,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331326.944,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331327.121,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331327.322,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331327.503,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331327.709,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331327.927,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331328.126,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331328.324,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189324
+ },
+ {
+  "t": 1794331328.45,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331329.226,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331329.303,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164960
+ },
+ {
+  "t": 1794331329.543,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169056
+ },
+ {
+  "t": 1794331329.77,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173152
+ },
+ {
+  "t": 1794331329.974,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177248
+ },
+ {
+  "t": 1794331330.224,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181344
+ },
+ {
+  "t": 1794331330.456,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185440
+ },
+ {
+  "t": 1794331330.652,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189536
+ },
+ {
+  "t": 1794331330.862,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193632
+ },
+ {
+  "t": 1794331331.014,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331331.779,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331331.858,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331332.087,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331332.303,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331332.531,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331332.767,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331332.985,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331333.213,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331333.425,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331333.572,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331334.252,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331334.315,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331334.518,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331334.7,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331334.883,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331335.081,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331335.273,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331335.453,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331335.639,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331335.769,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331336.422,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331336.493,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331336.68,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331336.878,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331337.061,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331337.243,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331337.422,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193424
+ },
+ {
+  "t": 1794331337.61,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197520
+ },
+ {
+  "t": 1794331337.805,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201616
+ },
+ {
+  "t": 1794331337.933,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331338.563,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331338.624,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331338.811,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331338.998,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331339.184,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331339.379,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331339.598,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331339.825,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331340.066,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331340.223,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331340.929,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331341.012,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331341.255,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331341.444,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331341.638,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331341.843,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331342.075,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331342.287,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331342.493,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331342.629,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331343.362,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331343.429,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331343.622,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331343.816,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331343.988,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331344.177,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331344.354,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331344.539,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331344.754,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331344.88,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331345.545,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331345.604,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331345.785,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331345.97,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331346.152,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331346.339,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331346.517,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331346.699,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331346.898,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189324
+ },
+ {
+  "t": 1794331347.043,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331347.744,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331347.829,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331348.041,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331348.238,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331348.418,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331348.626,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331348.879,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331349.098,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331349.297,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331349.435,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331350.189,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331350.255,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331350.452,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331350.65,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331350.859,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331351.085,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331351.282,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331351.478,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331351.672,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331351.824,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331352.527,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331352.588,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156556
+ },
+ {
+  "t": 1794331352.763,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331352.942,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331353.139,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331353.336,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331353.551,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331353.768,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331354.0,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331354.159,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331354.874,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331354.935,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331355.127,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331355.307,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331355.495,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331355.697,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189324
+ },
+ {
+  "t": 1794331355.898,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193420
+ },
+ {
+  "t": 1794331356.083,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197516
+ },
+ {
+  "t": 1794331356.288,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201612
+ },
+ {
+  "t": 1794331356.429,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331357.144,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331357.205,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331357.403,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331357.604,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331357.816,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331358.055,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331358.279,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331358.512,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331358.744,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331358.904,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331359.632,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331359.716,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 160868
+ },
+ {
+  "t": 1794331359.942,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331360.172,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331360.396,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331360.593,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331360.784,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331361.012,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331361.202,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331361.349,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331362.068,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331362.147,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331362.36,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331362.554,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331362.752,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331362.956,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331363.171,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331363.412,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331363.625,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331363.761,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331364.45,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331364.502,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160652
+ },
+ {
+  "t": 1794331364.677,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164748
+ },
+ {
+  "t": 1794331364.847,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168844
+ },
+ {
+  "t": 1794331365.044,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172940
+ },
+ {
+  "t": 1794331365.292,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177036
+ },
+ {
+  "t": 1794331365.508,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181132
+ },
+ {
+  "t": 1794331365.696,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185228
+ },
+ {
+  "t": 1794331365.885,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189324
+ },
+ {
+  "t": 1794331366.011,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331366.64,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331366.712,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331366.934,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331367.137,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331367.34,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331367.522,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331367.711,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331367.9,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331368.092,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331368.235,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331368.921,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331368.986,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331369.185,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331369.374,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331369.571,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331369.758,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331369.989,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331370.187,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331370.392,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331370.526,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331371.261,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331371.326,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 156560
+ },
+ {
+  "t": 1794331371.509,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 160656
+ },
+ {
+  "t": 1794331371.69,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 164752
+ },
+ {
+  "t": 1794331371.86,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 168848
+ },
+ {
+  "t": 1794331372.036,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331372.224,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331372.427,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331372.63,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331372.769,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331373.444,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331373.511,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 172944
+ },
+ {
+  "t": 1794331373.703,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 177040
+ },
+ {
+  "t": 1794331373.887,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 181136
+ },
+ {
+  "t": 1794331374.098,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 185232
+ },
+ {
+  "t": 1794331374.29,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 189328
+ },
+ {
+  "t": 1794331374.482,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 193424
+ },
+ {
+  "t": 1794331374.689,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 197520
+ },
+ {
+  "t": 1794331374.885,
+  "event": "forward",
+  "to": "R1",
+  "bytes": 201616
+ },
+ {
+  "t": 1794331375.024,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 4656
+ },
+ {
+  "t": 1794331375.775,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331375.855,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 164964
+ },
+ {
+  "t": 1794331376.082,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 169060
+ },
+ {
+  "t": 1794331376.276,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 173156
+ },
+ {
+  "t": 1794331376.485,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 177252
+ },
+ {
+  "t": 1794331376.682,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 181348
+ },
+ {
+  "t": 1794331376.868,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 185444
+ },
+ {
+  "t": 1794331377.07,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 189540
+ },
+ {
+  "t": 1794331377.297,
+  "event": "forward",
+  "to": "B2",
+  "bytes": 193636
+ },
+ {
+  "t": 1794331377.457,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 9072
+ },
+ {
+  "t": 1794331378.251,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.254,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.257,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.259,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.262,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.267,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.27,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.273,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 832
+ },
+ {
+  "t": 1794331378.276,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 836
+ },
+ {
+  "t": 1794331378.278,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 836
+ },
+ {
+  "t": 1794331378.281,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 836
+ },
+ {
+  "t": 1794331378.284,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 836
+ },
+ {
+  "t": 1794331378.286,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.289,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.292,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.295,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.298,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.3,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.303,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.306,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.309,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.312,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.314,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.317,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.32,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.323,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.326,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.329,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.331,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.334,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.336,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.338,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.341,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.343,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.346,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.348,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.351,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.354,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.356,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.359,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.362,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.365,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.368,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.371,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.373,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.376,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.379,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.382,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331378.385,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 192
+ },
+ {
+  "t": 1794331378.388,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331379.354,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331379.366,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 844
+ },
+ {
+  "t": 1794331379.372,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331379.374,
+  "event": "forward",
+  "to": "coordinator",
+  "bytes": 220
+ },
+ {
+  "t": 1794331381.955,
+  "event": "forward",
+  "to": "gateway",
+  "bytes": 912
+ },
+ {
+  "t": 1794331384.541,
+  "event": "forward",
+  "to": "gateway",
+  "bytes": 912
+ },
+ {
+  "t": 1794331384.544,
+  "event": "forward",
+  "to": "gateway",
+  "bytes": 916
+ }
+]
